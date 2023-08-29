@@ -501,28 +501,31 @@ input[type="submit"] {
     width: 100%; } }
 
 html:not([data-scroll='0']) menu, .page-template-contato menu, .error404 menu, .single menu {
-  background: #fff; }
+  background: #181818; }
   html:not([data-scroll='0']) menu ul li a, .page-template-contato menu ul li a, .error404 menu ul li a, .single menu ul li a {
-    color: #000; }
+    color: #F5F5F5; }
     @media screen and (max-width: 1170px) {
       html:not([data-scroll='0']) menu ul li a, .page-template-contato menu ul li a, .error404 menu ul li a, .single menu ul li a {
-        color: #fff; } }
+        color: #181818; } }
     html:not([data-scroll='0']) menu ul li a:after, .page-template-contato menu ul li a:after, .error404 menu ul li a:after, .single menu ul li a:after {
       background: #D08CF8; }
 
 html:not([data-scroll='0']) .menu__burguer, .page-template-contato .menu__burguer, .error404 .menu__burguer, .single .menu__burguer {
-  border-color: #000; }
+  border-color: #F5F5F5; }
   html:not([data-scroll='0']) .menu__burguer:before, html:not([data-scroll='0']) .menu__burguer:after, .page-template-contato .menu__burguer:before, .page-template-contato .menu__burguer:after, .error404 .menu__burguer:before, .error404 .menu__burguer:after, .single .menu__burguer:before, .single .menu__burguer:after {
-    background: #000; }
+    background: #F5F5F5; }
   @media screen and (max-width: 1170px) {
     html:not([data-scroll='0']) .menu__burguer.is-active, .page-template-contato .menu__burguer.is-active, .error404 .menu__burguer.is-active, .single .menu__burguer.is-active {
-      border-color: #fff; } }
+      border-color: #181818; } }
   @media screen and (max-width: 1170px) {
     html:not([data-scroll='0']) .menu__burguer.is-active:before, html:not([data-scroll='0']) .menu__burguer.is-active:after, .page-template-contato .menu__burguer.is-active:before, .page-template-contato .menu__burguer.is-active:after, .error404 .menu__burguer.is-active:before, .error404 .menu__burguer.is-active:after, .single .menu__burguer.is-active:before, .single .menu__burguer.is-active:after {
-      background: #fff; } }
+      background: #181818; } }
+
+html:not([data-scroll='0']) .menu__logo, .page-template-contato .menu__logo, .error404 .menu__logo, .single .menu__logo {
+  filter: invert(1) brightness(5); }
 
 menu {
-  background: transparent;
+  background: #fff;
   box-shadow: none;
   margin: 0;
   padding: 0;
@@ -571,9 +574,8 @@ menu {
       menu ul li a {
         display: inline-block;
         font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
-        font-size: 18px;
-        font-weight: 400;
-        padding: 20px;
+        font-size: 22px;
+        padding: 25px 20px;
         position: relative;
         text-decoration: none;
         transition: color .5s ease-in-out; }
@@ -596,12 +598,12 @@ menu {
         menu ul li a:after {
           background: #D08CF8;
           content: '';
-          bottom: 10px;
+          bottom: 15px;
           height: 2px;
           left: 0;
           opacity: 0;
           position: absolute;
-          transition: width 1.3s ease-in-out, opacity .3s ease-in-out;
+          transition: width 1.3s ease-in-out, opacity .1s ease-in-out;
           width: 0; }
           @media screen and (max-width: 960px) {
             menu ul li a:after {
@@ -610,20 +612,12 @@ menu {
         menu ul li a:hover:after {
           opacity: 1;
           width: 100%;
-          transition: width .3s ease-in-out, opacity .5s ease-in-out; }
+          transition: width .3s ease-in-out, opacity .1s ease-in-out; }
           @media screen and (max-width: 758px) {
             menu ul li a:hover:after {
               left: 15px;
               transform: none;
               width: 0; } }
-  menu i {
-    font-size: 14px;
-    margin-left: 5px; }
-    @media screen and (max-width: 1170px) {
-      menu i {
-        font-size: 16px;
-        font-weight: 200;
-        margin-left: 10px; } }
 
 .menu {
   transition: background .5s ease-in-out; }
@@ -634,6 +628,8 @@ menu {
       pointer-events: auto;
       z-index: 7; }
   .menu__logo {
+    margin-top: -3px;
+    transition: filter .5s ease-in-out;
     width: 15%;
     z-index: 8; }
     @media screen and (max-width: 960px) {
@@ -644,7 +640,7 @@ menu {
         width: auto; } }
     .menu__logo img {
       transition: opacity .5s ease-in-out;
-      width: 210px; }
+      width: 170px; }
       @media screen and (max-width: 1170px) {
         .menu__logo img {
           margin-top: 7px;
@@ -795,15 +791,15 @@ menu {
       width: 100%; } }
 
 menu ul li a {
-  color: #fff;
+  color: #181818;
   transition: all .5s ease-in-out; }
   menu ul li a:after {
     background: #D08CF8; }
 
 .menu__burguer {
-  border-color: #fff; }
+  border-color: #181818; }
   .menu__burguer:before, .menu__burguer:after {
-    background: #fff; }
+    background: #181818; }
 
 footer {
   background: #A6F7CB;

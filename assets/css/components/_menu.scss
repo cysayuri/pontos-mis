@@ -1,11 +1,12 @@
 html:not([data-scroll='0']), .page-template-contato, .error404, .single {
     menu {
-        background: #fff;
+        background: $black;
         
         ul li a {
-            color: #000;
+            color: $white;
+
             @include MQ($L) {
-                color: #fff;
+                color: $black;
             }
             
             &:after {
@@ -16,29 +17,33 @@ html:not([data-scroll='0']), .page-template-contato, .error404, .single {
     
     .menu {
         &__burguer {
-            border-color: #000;
+            border-color: $white;
             
             &:before, &:after {
-                background: #000;
+                background: $white;
             }
             
             &.is-active {
                 @include MQ($L) {
-                    border-color: #fff;
+                    border-color: $black;
                 }
                 
                 &:before, &:after {
                     @include MQ($L) {
-                        background: #fff;
+                        background: $black;
                     }
                 }
             }
+        }
+
+        &__logo {
+            filter: invert(1) brightness(5);
         }
     }
 }
 
 menu {
-    background: transparent;
+    background: #fff;
     box-shadow: none;
     margin: 0;
     padding: 0;
@@ -102,9 +107,8 @@ menu {
             a {
                 display: inline-block;
                 font-family: $title-m;
-                font-size: 18px;
-                font-weight: 400;
-                padding: 20px;
+                font-size: 22px;
+                padding: 25px 20px;
                 position: relative;
                 text-decoration: none;
                 transition: color .5s ease-in-out;
@@ -132,12 +136,12 @@ menu {
                 &:after {
                     background: $primary;
                     content: '';
-                    bottom: 10px;
+                    bottom: 15px;
                     height: 2px;
                     left: 0;
                     opacity: 0;
                     position: absolute;
-                    transition: width 1.3s ease-in-out, opacity .3s ease-in-out;
+                    transition: width 1.3s ease-in-out, opacity .1s ease-in-out;
                     width: 0;
                     
                     @include MQ($M) {
@@ -146,11 +150,11 @@ menu {
                     }
                 }
                 
-                &:hover {                    
+                &:hover {
                     &:after {
                         opacity: 1;
                         width: 100%;
-                        transition: width .3s ease-in-out, opacity .5s ease-in-out;
+                        transition: width .3s ease-in-out, opacity .1s ease-in-out;
                         
                         @include MQ($S) {
                             left: 15px;
@@ -160,17 +164,6 @@ menu {
                     }
                 }
             }
-        }
-    }
-    
-    i {
-        font-size: 14px;
-        margin-left: 5px;
-        
-        @include MQ($L) {
-            font-size: 16px;
-            font-weight: 200;
-            margin-left: 10px;
         }
     }
 }
@@ -189,6 +182,8 @@ menu {
     }
     
     &__logo {
+        margin-top: -3px;
+        transition: filter .5s ease-in-out;
         width: 15%;
         z-index: 8;
         
@@ -202,7 +197,7 @@ menu {
         
         img {
             transition: opacity .5s ease-in-out;
-            width: 210px;
+            width: 170px;
             
             @include MQ($L) {
                 margin-top: 7px;
@@ -414,7 +409,7 @@ menu {
 
 
 menu ul li a {
-    color: #fff;
+    color: $black;
     transition: all .5s ease-in-out;
 
     &:after {
@@ -424,10 +419,10 @@ menu ul li a {
 
 .menu {
     &__burguer {
-        border-color: #fff;
+        border-color: $black;
         
         &:before, &:after {
-            background: #fff;
+            background: $black;
         }
     }
 }
