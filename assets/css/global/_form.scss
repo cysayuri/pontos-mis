@@ -1,0 +1,248 @@
+//Form Code
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.input, .checkbox, .radio, .select, .textarea, .submit {
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.checkbox, .radio {
+    flex-direction: row;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: $bold;
+    margin: 10px 0 7px;
+}
+
+input, select, textarea {
+    background: transparent;
+    border: 1px solid #E7E3E3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000;
+    font-family: $font;
+    height: 44px;
+    outline: none;
+    padding: 10px 16px;
+    transition: all .5s ease-in-out;
+    width: 100%;
+    
+    &:not(:placeholder-shown) {
+        border-color: #000;
+    }
+    
+    &:focus, &:hover {
+        box-shadow: 0 0 1px 2px rgba(153, 127, 227, 0.4);
+        border-color: $primary;
+    }
+    
+    &:invalid {
+        border-color: $status-failed;
+    }
+}
+
+.input {
+    margin-bottom: 15px;
+    
+    &--icon {
+        position: relative;
+        
+        i {
+            font-size: 16px;
+            left: 16px;
+            line-height: 1.2em;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        input {
+            padding-left: 45px;
+            width: 311px;
+        }
+    }
+    
+    &--small {
+        input {
+            height: 32px;
+        }
+        
+        i {
+            font-size: 14px;
+        }
+        
+        label, .input__desc {
+            font-size: 12px;
+        }
+    }
+    
+    &--large input {
+        height: 52px;
+    }
+    
+    &__desc {
+        color: #898989;
+        display: block;
+        font-size: 14px;
+        font-weight: $regular;
+        margin-top: 5px;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    text-indent: 0.01px; /* Remove seta padrão do FireFox */
+    text-overflow: '';  /* Remove seta padrão do FireFox */
+    
+    &::-ms-expand {
+        display: none;
+    }
+    
+    &:not(:placeholder-shown) {
+        border-color: #E7E3E3;
+    }
+}
+
+.select {
+    cursor: pointer;
+    margin: 15px 20px 30px;
+    padding: 0;
+    position: relative;
+    
+    &:after {
+        border: 1px solid transparent;
+        border-bottom-color: $primary;
+        border-right-color: $primary;
+        content: '';
+        height: 10px;
+        position: absolute;
+        right: 25px;
+        top: calc(50% - 5px);
+        transform: rotate(45deg) translateY(-50%);
+        transition: transform .2s ease-out;
+        width: 10px;
+    }
+}
+
+textarea {
+    box-sizing: border-box;
+    height: 80px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    resize: none;
+    
+    &::-webkit-scrollbar-track {
+        margin: 7px 20px 7px 0;
+    }
+}
+
+::placeholder {
+    color: #898989;
+    font-size: 14px;
+    font-weight: $medium;
+}
+
+.checkbox, .radio {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+    
+    label {
+        font-weight: $regular;
+        font-size: 16px;
+    }
+}
+
+input[type="checkbox"], input[type="radio"] {
+    border: transparent;
+    border-radius: 3px;
+    height: 17px;
+    margin: 0 13px 0 1px;
+    padding: 0;
+    position: relative;
+    width: 17px;
+    
+    &:focus {
+        box-shadow: none;
+    }
+    
+    &:before, &:after {
+        border-radius: 3px;
+        content: '';
+        cursor: pointer;
+        position: absolute;
+        transition: all .5s ease-in-out;
+    }
+    
+    &:before {
+        background: #fff;
+        border: 1px solid #C8C8C8;
+        left: -1px;
+        top: -1px;
+        height: 20px;
+        width: 20px;
+    }
+    
+    &:after {
+        background-image: url(../images/icons/check.svg);
+        background-repeat: no-repeat;
+        background-size: 12px 10px;
+        background-position: center;
+        background-color: #997FE340;
+        left: -1px;
+        opacity: 0;
+        top: -1px;
+        height: 22px;
+        width: 22px;
+    }
+    
+    &:checked, &:hover {
+        &:before {
+            border-color: transparent;
+        }
+        
+        &:after {
+            opacity: 1;
+        }
+    }
+    
+    &:focus, &:hover {
+        box-shadow: none;
+        border-color: transparent;
+    }
+}
+
+input[type="radio"] {
+    &:before, &:after {
+        border-radius: 100%;
+    }
+    
+    &:after {
+        background-size: 10px 10px;
+    }
+}
+
+input[type="submit"] {
+    border-color: $primary;
+    width: fit-content;
+    
+    &:focus, &:hover {
+        box-shadow: none;
+    }
+}
+
+.required {
+    color: $status-failed;
+}

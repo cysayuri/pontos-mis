@@ -1,0 +1,58 @@
+/* ___ Fonts ___ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url(../fonts/Unbounded/Unbounded-VariableFont_wght.ttf);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Julius';
+    src: url(../fonts/Julius/JuliusSansOne-Regular.ttf);
+}
+
+$font: 'Unbounded', 'Roboto', 'Calibri', 'sans-serif';
+$font-secondary: 'Julius', 'Roboto', 'Calibri', 'sans-serif';
+$font-tertiary: 'Cinzel', 'Roboto', 'Calibri', 'sans-serif';
+$roboto: 'Roboto', 'Calibri', 'sans-serif';
+ 
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 580;
+$bold: 750;
+
+
+/* ___ Colors ___ */
+$primary: #38F2F2;
+$secondary: #263640;
+
+$gray-dark: #516373;
+$gray: #7C92A6;
+$gray-light: #DFE7F2;
+
+$status-success: #21B35B;
+$status-warning: #FFB21D;
+$status-failed: #D92124;
+$status-info: #297FFF;
+
+
+/* ___ Media Query ___ */
+@mixin MQ($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+$XS: 500px;
+$S: 758px;
+$M: 960px;
+$L: 1170px;
+$XL: 1380px;

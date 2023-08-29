@@ -1,0 +1,28 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Cyntia's project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cysayuri/pontos-mis.git"
+  },
+  "author": "Cyntia Sayuri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cysayuri/pontos-mis/issues"
+  },
+  "homepage": "https://github.com/cysayuri/pontos-mis#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-image": "^6.2.1"
+  }
+}

@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px 0;
+}
+
+thead {
+    tr {
+        background: #ccc;
+        line-height: 1.3em;
+    }
+}
+
+tbody {
+    tr {
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+tr {
+    border-bottom: 1px solid #666;
+    
+    td {
+        color: #000;
+        font-size: 15px;
+        padding: 10px 15px;
+        
+        &:not(:last-child) {
+            border-right: 1px solid #666;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.banner {
+    align-items: center;
+    background: url(../images/global/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    // position: relative;
+    width: 100vw;
+    
+    // &::after {
+    //     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #231F20;
+    //     content: '';
+    //     height: 100%;
+    //     left: 0;
+    //     mix-blend-mode: multiply;
+    //     opacity: 0.5;
+    //     position: absolute;
+    //     top: 0;
+    //     width: 100%;
+    // }
+    
+    @include MQ($S) {
+        height: 200px;
+    }
+    
+    // &__title {
+    //     bottom: 50px;
+    //     left: 0;
+    //     position: absolute;
+    //     z-index: 1;
+        
+    //     @include MQ($S) {
+    //         bottom: 20px;
+    //     }
+        
+    //     .h1 {
+    //         color: #fff;
+    //         margin: 0;
+    //     }
+    // }
+
+    img {
+        height: 335px;
+        object-fit: contain;
+        width: 570px;
+    }
+}

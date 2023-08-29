@@ -1,0 +1,229 @@
+.chips {
+    align-items: center;
+    background: $primary;
+    border: 1px solid $primary;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 0;
+    padding: 4px 12px;
+    width: fit-content;
+    
+    @include MQ($XS) {
+        padding: 4px 8px;
+        margin: 5px 7px 5px 0;
+    }
+    
+    &__text {
+        color: #000;
+        font-family: $roboto;
+        font-size: 16px;
+        font-weight: $regular;
+        transition: color .5s ease-in-out;
+        
+        @include MQ($M) {
+            font-size: 14px;
+        }
+        
+        @include MQ($XS) {
+            font-size: 11px;
+        }
+    }
+    
+    &--disabled {
+        background: #E9E9E9;
+        border-color: transparent;
+        cursor: not-allowed;
+        
+        .chips {
+            &__img {
+                filter: grayscale(3);
+            }
+            
+            &__text {
+                color: #B9B9B9;
+            }
+        }
+    }
+    
+    &--clicable {
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+        
+        &:hover {
+            background: transparent;
+            
+            .chips__text {
+                color: $primary;
+            }
+        }
+    }
+    
+    &--secondary {
+        background: transparent;
+        
+        .chips__text {
+            color: $primary;
+        }
+        
+        &.chips--clicable:hover {
+            background: $primary;
+            
+            .chips__text {
+                color: #000;
+            }
+        }
+    }
+    
+    &--tertiary {
+        background: $secondary;
+        border-color: $secondary;
+        
+        .chips__text {
+            color: #fff;
+        }
+        
+        &.chips--clicable:hover {
+            .chips__text {
+                color: $secondary;
+            }
+        }
+        
+        &.chips--secondary {
+            background: transparent;
+            
+            .chips__text {
+                color: $secondary;
+            }
+            
+            &.chips--clicable:hover {
+                background: $secondary;
+                
+                .chips__text {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    &--datas {
+        background: $gray-dark;
+        border-color: $gray-dark;
+        
+        .chips__text {
+            color: #fff;
+        }
+        
+        &.chips--clicable:hover {
+            .chips__text {
+                color: $gray-dark;
+            }
+        }
+        
+        &.chips--secondary {
+            background: transparent;
+            
+            .chips__text {
+                color: $gray-dark;
+            }
+            
+            &.chips--clicable:hover {
+                background: $gray-dark;
+                
+                .chips__text {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    &--andamento {
+        background: $status-warning;
+        border-color: $status-warning;
+        
+        &.chips--clicable:hover {
+            .chips__text {
+                color: $status-warning;
+            }
+        }
+        
+        &.chips--secondary {
+            background: transparent;
+            
+            .chips__text {
+                color: $status-warning;
+            }
+            
+            &.chips--clicable:hover {
+                background: $status-warning;
+                
+                .chips__text {
+                    color: #000;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    
+    &--concluido {
+        background: $status-success;
+        border-color: $status-success;
+        
+        .chips__text {
+            color: #fff;
+        }
+        
+        &.chips--clicable:hover {
+            .chips__text {
+                color: $status-success;
+            }
+        }
+        
+        &.chips--secondary {
+            background: transparent;
+            
+            .chips__text {
+                color: $status-success;
+            }
+            
+            &.chips--clicable:hover {
+                background: $status-success;
+                
+                .chips__text {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    &--cancelado {
+        background: $status-failed;
+        border-color: $status-failed;
+        
+        .chips__text {
+            color: #fff;
+        }
+        
+        &.chips--clicable:hover {
+            .chips__text {
+                color: $status-failed;
+            }
+        }
+        
+        &.chips--secondary {
+            background: transparent;
+            
+            .chips__text {
+                color: $status-failed;
+            }
+            
+            &.chips--clicable:hover {
+                background: $status-failed;
+                
+                .chips__text {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import './shared/variables';
+@import './shared/base';
+
+@import './global/quotes';
+@import './global/list';
+@import './global/table';
+@import './global/text';
+@import './global/buttons';
+@import './global/form';
+@import './global/icons';
+@import './global/grid';
+@import './global/chips';
+
+@import './components/menu';
+@import './components/footer';
+@import './components/cookies';
+
+@import './sections/banner';
+@import './sections/about';
+@import './sections/mission';
+@import './sections/projs';

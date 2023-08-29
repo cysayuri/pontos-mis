@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: $font;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.style {
+    section {
+        margin: 30px;
+    }
+
+    #chips section {
+        display: flex;
+    }
+    
+    #buttons section {
+        margin: 30px 10px;
+        
+        .btn, button {
+            margin: 0 20px;
+        }
+    }
+}
+
+.show-desk {
+    display: block;
+    
+    @include MQ($L) {
+        display: none;
+    }
+}
+
+.show-tablet {
+    display: none;
+    
+    @include MQ($L) {
+        display: block;
+    }
+}
+
+.show-mobile {
+    display: none;
+    
+    @include MQ($S) {
+        display: block;
+    }
+}
+
+::-webkit-scrollbar {
+    background: #fff;
+    border-radius: 10px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary; 
+    border-radius: 5px;
+}

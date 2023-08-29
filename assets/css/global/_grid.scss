@@ -1,0 +1,222 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    position: relative;
+    
+    @include MQ($L) {
+        margin: 0 40px;
+    }
+    
+    @include MQ($S) {
+        margin: 0 20px;
+    }
+}
+
+.wrapper--small {
+    margin: 0 auto;
+    max-width: 920px;
+    position: relative;
+    
+    @include MQ($L) {
+        margin: 0 40px;
+    }
+    
+    @include MQ($S) {
+        margin: 0 20px;
+    }
+}
+
+.container {
+    margin: 40px 0;
+}
+
+.flex {
+    &--ct {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &--sb {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &--st {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    &--end {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.col {
+    &-1,  &-2,  &-3,  &-4,  &-5,  &-6,  &-7,  &-8,  &-9,  &-10, &-11, &-12 {
+        box-sizing: border-box;
+        
+        @include MQ($M) {
+            width: 100%;
+        }
+    }
+    
+    &-m-1,  &-m-2,  &-m-3,  &-m-4,  &-m-5,  &-m-6,  &-m-7,  &-m-8,  &-m-9,  &-m-10, &-m-11, &-m-12 {
+        @include MQ($S) {
+            width: 100%;
+        }
+    }
+    
+    &-1 {
+        width: 8.3%;
+    }
+    
+    &-2 {
+        width: 16.6%;
+    }
+    
+    &-3 {
+        width: 25%;
+    }
+    
+    &-4 {
+        width: 33.4%;
+    }
+    
+    &-5 {
+        width: 41.6%;
+    }
+    
+    &-6 {
+        width: 50%;
+    }
+    
+    &-7 {
+        width: 58.3%;
+    }
+    
+    &-8 {
+        width: 66.7%;
+    }
+    
+    &-9 {
+        width: 75%;
+    }
+    
+    &-10 {
+        width: 83.3%;
+    }
+    
+    &-11 {
+        width: 91.6%;
+    }
+    
+    &-12 {
+        width: 100%;
+    }
+}
+
+@include MQ($M) {
+    .col {
+        &-m-1 {
+            width: 8.3%;
+        }
+        
+        &-m-2 {
+            width: 16.6%;
+        }
+        
+        &-m-3 {
+            width: 25%;
+        }
+        
+        &-m-4 {
+            width: 33.4%;
+        }
+        
+        &-m-5 {
+            width: 41.6%;
+        }
+        
+        &-m-6 {
+            width: 50%;
+        }
+        
+        &-m-7 {
+            width: 58.3%;
+        }
+        
+        &-m-8 {
+            width: 66.7%;
+        }
+        
+        &-m-9 {
+            width: 75%;
+        }
+        
+        &-m-10 {
+            width: 83.3%;
+        }
+        
+        &-m-11 {
+            width: 91.6%;
+        }
+        
+        &-m-12 {
+            width: 100%;
+        }
+    }
+}
+
+@include MQ($S) {
+    .col {
+        &-xs-1 {
+            width: 8.3%;
+        }
+        
+        &-xs-2 {
+            width: 16.6%;
+        }
+        
+        &-xs-3 {
+            width: 25%;
+        }
+        
+        &-xs-4 {
+            width: 33.4%;
+        }
+        
+        &-xs-5 {
+            width: 41.6%;
+        }
+        
+        &-xs-6 {
+            width: 50%;
+        }
+        
+        &-xs-7 {
+            width: 58.3%;
+        }
+        
+        &-xs-8 {
+            width: 66.7%;
+        }
+        
+        &-xs-9 {
+            width: 75%;
+        }
+        
+        &-xs-10 {
+            width: 83.3%;
+        }
+        
+        &-xs-11 {
+            width: 91.6%;
+        }
+        
+        &-xs-12 {
+            width: 100%;
+        }
+    }
+}

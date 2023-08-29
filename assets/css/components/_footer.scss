@@ -1,0 +1,62 @@
+//Footer code
+footer {
+    background: $secondary;
+    padding: 40px 0 30px;
+}
+
+.footer {
+    &__container {
+        align-items: center;
+        margin: auto;
+        
+        @include MQ($S) {
+            flex-wrap: wrap;
+        }
+    }
+    
+    &__direitos {
+        width: 50%;
+        
+        @include MQ($S) {
+            width: 100%;
+        }
+        
+        h6 {
+            color: $gray-light;
+            font-family: $font-secondary;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+    
+    &__social {
+        align-items: center;
+        
+        @include MQ($S) {
+            justify-content: center;
+        }
+        
+        a {
+            align-items: center;
+            background: $primary;
+            border-radius: 3px;
+            margin-left: 20px;
+            height: 27px;
+            text-decoration: none;
+            width: 27px;
+
+            @include MQ($S) {
+                margin: 0 15px;
+            }
+            
+            i {
+                color: $secondary;
+                font-size: 22px;
+                
+                &.fa-facebook-f {
+                    margin: 0 -2px -5px 0;
+                }
+            }
+        }
+    }
+}

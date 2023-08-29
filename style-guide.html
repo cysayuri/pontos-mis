@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="../assets/images/fontawesome-pro-6.1.1-web/css/all.css" rel="stylesheet">
+  <title>Style Guide</title>
+</head>
+<body class="style">
+  <section id="tipografia">
+    <h1> Teste H1 </h1>
+    <h2> Teste H2 </h2>
+    <h3> Teste H3 </h3>
+    <h4> Teste H4 </h4>
+    <h5> Teste H5 </h5>
+    <h6> Teste H6 </h6>
+    <p> Teste p </p>
+    <span style="display: block;">Teste span</span>
+    <small>Teste small</small>
+  </section>
+  
+  <container id="buttons">
+    <section class="flex--st">
+      <button class="btn btn--small">Small button</button>
+      <button>Medium button</button>
+      <button class="btn btn--large">Large button</button>
+    </section>
+    
+    <section class="flex--st">
+      <button class="btn btn--small btn--secondary">Small Secondary</button>
+      <button class="btn btn--secondary">Button secondary</button>
+      <button class="btn btn--secondary btn--rounded">Button secondary</button>
+    </section>
+    
+    <section class="flex--st">
+      <button class="btn btn--tertiary">Tertiary</button>
+      <a href="" class="btn btn--icon">Button icon <i class="fa-light fa-arrow-right-long"></i></a>
+      <a href="" class="btn btn--link">Button link</a>
+      <a href="" class="btn btn--link btn--icon">Button icon <i class="fa-light fa-arrow-right-long"></i></a>
+    </section>
+  </container>
+  
+  <container id="forms">
+    <section>
+      <form action="">
+        <div class="input input--small col-3">
+          <label for="">Campo 'nome' pequeno</label>
+          <input type="text" placeholder="Nome">
+          <small class="input__desc">Help or description text</small>
+        </div>
+        
+        <div class="input input--small col-3">
+          <label for="">Campo 'email' pequeno</label>
+          <input type="email" placeholder="E-mail">
+          <small class="input__desc">Help or description text</small>
+        </div>
+        
+        <div class="input input--small col-3">
+          <label for="">Campo 'login' pequeno</label>
+          <input type="text" placeholder="Login">
+          <small class="input__desc">Help or description text</small>
+        </div>
+        
+        <div class="input input--small col-3">
+          <label for="">Campo 'senha' pequeno</label>
+          <input type="password" placeholder="Senha">
+          <small class="input__desc">Help or description text</small>
+        </div>
+      </form>
+    </section>
+    
+    <section>
+      <form action="">
+        <div class="input col-4">
+          <label for="">Nome: <span class="required">*</span></label>
+          <input type="text" placeholder="Nome" required>
+          <small class="input__desc">Help or description text</small>
+        </div>
+        
+        <div class="input col-4">
+          <label for="">E-mail: <span class="required">*</span></label>
+          <input type="email" placeholder="E-mail" required>
+          <small class="input__desc">Help or description text</small>
+        </div>
+        
+        <div class="input col-4">
+          <label for="">Senha: <span class="required">*</span></label>
+          <input type="password" placeholder="Senha" required>
+          <small class="input__desc">Help or description text</small>
+        </div>
+      </form>
+    </section>
+    
+    <section>
+      <form action="">
+        <div class="input input--large col-6">
+          <label for="">Campo 'nome' grande</label>
+          <input type="text" placeholder="Nome">
+        </div>
+        
+        <div class="input input--large col-6">
+          <label for="">Campo 'email' grande</label>
+          <input type="email" placeholder="E-mail">
+        </div>
+      </form>
+    </section>
+    
+    <section>
+      <form action="">
+        <div class="input col-12">
+          <label for="">Campo 'nome' c/ ícone</label>
+          <div class="input--icon">
+            <i class="fa-light fa-user"></i>
+            <input type="text" placeholder="Nome">
+          </div>
+        </div>
+        
+        <div class="input col-12">
+          <label for="">Campo 'email' c/ ícone</label>
+          <div class="input--icon">
+            <i class="fa-light fa-envelope"></i>
+            <input type="email" placeholder="E-mail">
+          </div>
+        </div>
+      </form>
+    </section>
+    
+    <section>
+      <form action="">
+        <div class="input input--large col-12">
+          <label for="">Campo 'nome' grande e c/ ícone</label>
+          <div class="input--icon">
+            <i class="fa-light fa-user"></i>
+            <input type="text" placeholder="Nome">
+          </div>
+        </div>
+        
+        <div class="input input--large col-12">
+          <label for="">Campo 'email' grande e c/ ícone</label>
+          <div class="input--icon">
+            <i class="fa-light fa-envelope"></i>
+            <input type="email" placeholder="E-mail">
+          </div>
+        </div>
+        
+        <div class="checkbox col-12">
+          <input type="checkbox" name="" id="">
+          <label for="">Checkbox Button</label>
+        </div>
+        
+        <div class="radio col-12">
+          <input type="radio" name="pergunta" id="">
+          <label for="">Opção 1 Radio Button</label>
+        </div>
+        
+        <div class="radio col-12">
+          <input type="radio" name="pergunta" id="">
+          <label for="">Opção 2 Radio Button</label>
+        </div>
+        
+        <div class="select col-2">
+          <select>
+            <option value="" disabled="">Selecione</option>
+            <option value="5">5 - Concordo Totalmente</option>
+            <option value="4">4 - Concordo Parcialmente</option>
+            <option value="3">3 - Indiferente</option>
+            <option value="2">2 - Discordo Parcialmente</option>
+            <option value="1">1 - Discordo Totalmente</option>
+            <option value="" disabled="">__________________________</option>
+            <option value="0">0 - Não sei avaliar</option>
+          </select>
+        </div>
+        
+        <div class="textarea col-12">
+          <textarea placeholder="Mensagem" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="submit col-12">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+  </container>
+  
+  <container id="chips">
+    <section>
+      <div class="chips chips--small">
+        <div class="chips__text">
+          Small chip
+        </div>
+      </div>
+      
+      <div class="chips">
+        <div class="chips__text">
+          Name/category
+        </div>
+      </div>
+      
+      <div class="chips chips--large">
+        <div class="chips__text">
+          Large chip
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="chips chips--secondary">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </div>
+      
+      <div class="chips chips--square">
+        <div class="chips__text">
+          Square chip
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <a href="" class="chips chips--clicable">
+        <div class="chips__text">
+          Option 1
+        </div>
+      </a>
+      
+      <div class="chips chips--disabled">
+        <div class="chips__text">
+          Option 1
+        </div>
+      </div>
+      
+      <a href="" class="chips chips--secondary chips--clicable">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </a>
+    </section>
+    
+    <section>
+      <a href="" class="chips chips--clicable chips--tertiary">
+        <div class="chips__text">
+          chips--tertiary
+        </div>
+      </a>
+      
+      <a href="" class="chips chips--secondary chips--clicable  chips--tertiary">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </a>
+    </section>
+    
+    <section>
+      <a href="" class="chips chips--clicable chips--datas">
+        <div class="chips__text">
+          chips--datas
+        </div>
+      </a>
+      
+      <a href="" class="chips chips--secondary chips--clicable  chips--datas">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </a>
+    </section>
+    
+    <section>
+      <a href="" class="chips chips--clicable chips--andamento">
+        <div class="chips__text">
+          chips--andamento
+        </div>
+      </a>
+      
+      <a href="" class="chips chips--secondary chips--clicable  chips--andamento">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </a>
+    </section>
+    
+    <section>
+      <a href="" class="chips chips--clicable chips--concluido">
+        <div class="chips__text">
+          chips--concluido
+        </div>
+      </a>
+      
+      <a href="" class="chips chips--secondary chips--clicable  chips--concluido">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </a>
+    </section>
+    
+    <section>
+      <a href="" class="chips chips--clicable chips--cancelado">
+        <div class="chips__text">
+          chips--cancelado
+        </div>
+      </a>
+      
+      <a href="" class="chips chips--secondary chips--clicable  chips--cancelado">
+        <div class="chips__text">
+          Secondary chip
+        </div>
+      </a>
+    </section>
+  </container>
+  
+  <container id="icons">
+    <section>
+      <i class="fa-thin fa-house"></i>
+      <i class="fa-light fa-house"></i>
+      <i class="fa-regular fa-house"></i>
+      <i class="fa-solid fa-house"></i>
+    </section>
+    
+    <section>
+      <i class="fa-regular fa-check"></i>
+      <i class="fa-regular fa-image"></i>
+      <i class="fa-regular fa-phone"></i>
+      <i class="fa-regular fa-envelope"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-comment"></i>
+      <i class="fa-regular fa-filter"></i>
+      <i class="fa-regular fa-gear"></i>
+      <i class="fa-regular fa-bookmark"></i>
+      <i class="fa-regular fa-print"></i>
+      <i class="fa-regular fa-pen-to-square"></i>
+      <i class="fa-regular fa-link"></i>
+      <i class="fa-regular fa-user"></i>
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-regular fa-cart-circle-plus"></i>
+      <i class="fa-regular fa-trash-can"></i>
+      <i class="fa-regular fa-share-nodes"></i>
+      <i class="fa-regular fa-arrow-down-to-bracket"></i>
+      <i class="fa-regular fa-calendar"></i>
+      <i class="fa-regular fa-arrow-right-from-bracket"></i>
+      <i class="fa-regular fa-message-lines"></i>
+      <i class="fa-regular fa-magnifying-glass"></i>
+      <i class="fa-light fa-question"></i>
+      <i class="fa-regular fa-paper-plane-top"></i>
+      <i class="fa-regular fa-paperclip-vertical"></i>
+    </section>
+    
+    <section>
+      <i class="fa-solid fa-arrow-left"></i>
+      <i class="fa-solid fa-arrow-right"></i>
+      <i class="fa-light fa-arrow-left-long"></i>
+      <i class="fa-light fa-arrow-right-long"></i>
+      <i class="fa-solid fa-angle-left"></i>
+      <i class="fa-solid fa-angle-right"></i>
+      <i class="fa-regular fa-chevron-left"></i>
+      <i class="fa-regular fa-chevron-right"></i>
+    </section>
+    
+    <section>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </section>
+  </container>
+  
+  <section id="tooltip">
+    <div class="tooltip">Hover me</div>
+    
+    <div class="tooltip__txt" role="tooltip">
+      This is a tooltip
+      <div class="tooltip__arrow" data-popper-arrow></div>
+    </div>
+  </section>
+  
+  <section id="quotes">
+    <blockquote>
+      <p>“Teste Lorem ipsum dolor sit amet”</p>
+      <cite>Teste Lorem ipsum dolor sit amet</cite>
+    </blockquote>
+    
+    <blockquote class="wp-block-quote">
+      <p>“amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas”</p>
+      <cite>autor xyz</cite>
+    </blockquote>
+    
+    <blockquote class="wp-block-quote has-text-align-center">
+      <p>“Sustainability is an essential part of business, and the FSI 2025 strategy contains the components which are needed to let the sector become a solution to the current challenges.”</p>
+      <cite>autor xyz</cite>
+    </blockquote>
+    
+    <blockquote class="wp-block-quote has-text-align-right">
+      <p>“fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu”</p>
+      <cite>autor xyz</cite>
+    </blockquote>
+  </section>
+  
+  <section id="listas">
+    <ul>
+      <li>Teste de lista</li>
+      <li>Teste de lista</li>
+      <li>Teste de lista</li>
+    </ul>
+    <ol>
+      <li>Teste de lista numérica</li>
+      <li>Teste de lista numérica</li>
+      <li>Teste de lista numérica</li>
+    </ol>
+  </section>
+  
+  <section id="tabela">
+    <table>
+      <thead>
+        <tr>
+          <td>Teste tabela</td>
+          <td>Teste tabela</td>
+          <td>Teste tabela</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Teste tabela</td>
+          <td>Teste tabela</td>
+          <td>Teste tabela</td>
+        </tr>
+        <tr>
+          <td>Teste tabela</td>
+          <td>Teste tabela</td>
+          <td>Teste tabela</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="../assets/js/tooltip.js"></script>
+</body>
+</html>
