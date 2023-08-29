@@ -1,14 +1,14 @@
 //Button Code
 button, .btn, input[type="submit"] {
     align-items: center;
-    background: $primary;
-    border-radius: 50px;
+    background: transparent;
+    border: 2px solid $primary;
+    border-radius: 20px;
+    color: $primary;
     cursor: pointer;
-    color: #000;
     display: flex;
-    font-family: $roboto;
-    font-size: 20px;
-    font-weight: $regular;
+    font-family: $font-m;
+    font-size: 18px;
     height: 44px;
     letter-spacing: 0.05em;
     margin: 0;
@@ -19,22 +19,13 @@ button, .btn, input[type="submit"] {
     width: fit-content;
     
     &:hover {
-        background: $secondary;
-        color: $primary;
+        background: $primary;
+        border-color: $primary;
+        color: #fff;
     }
 }
 
 .btn {
-    &--secondary {
-        background: transparent;
-        color: $primary;
-        
-        &:hover {
-            background: $primary;
-            color: #fff;
-        }
-    }
-    
     &--link {
         background: transparent;
         border: none;
@@ -50,7 +41,11 @@ button, .btn, input[type="submit"] {
         }
     }
     
-    &--icon i {
-        margin-left: 5px;
+    &--icon {
+        text-decoration: none;
+        
+        i {
+            margin-left: 10px;
+        }
     }
 }

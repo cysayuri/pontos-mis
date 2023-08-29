@@ -9,9 +9,9 @@ html {
 }
 
 body {
-    background: #fff;
-    color: #000;
-    font-family: $font;
+    background: $white;
+    color: $black;
+    font-family: $font-r;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
@@ -21,10 +21,6 @@ body {
 .style {
     section {
         margin: 30px;
-    }
-
-    #chips section {
-        display: flex;
     }
     
     #buttons section {
@@ -61,9 +57,9 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background: #fff;
+    background: #e7e7e7;
     border-radius: 10px;
-    width: 5px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -71,6 +67,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $primary; 
-    border-radius: 5px;
+    background: $primary;
+    border-radius: 7px;
 }

@@ -2,25 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 @font-face {
-    font-family: 'Unbounded';
-    src: url(../fonts/Unbounded/Unbounded-VariableFont_wght.ttf);
-    font-weight: 100 900;
+    font-family: 'DMSans Bold';
+    src: url(../fonts/DMSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'DMSans Medium';
+    src: url(../fonts/DMSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'DMSans Regular';
+    src: url(../fonts/DMSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Cinzel';
-    src: url(../fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
-    font-weight: 100 900;
+    font-family: 'TypoRound Bold';
+    src: url(../fonts/TypoRoundBoldDemo-KAZ7.ttf);
 }
-
 @font-face {
-    font-family: 'Julius';
-    src: url(../fonts/Julius/JuliusSansOne-Regular.ttf);
+    font-family: 'TypoRound Regular';
+    src: url(../fonts/TypoRoundRegularDemo-mJ8P.ttf);
+}
+@font-face {
+    font-family: 'TypoRound Thin';
+    src: url(../fonts/TypoRoundThinDemo-dJyK.ttf);
 }
 
-$font: 'Unbounded', 'Roboto', 'Calibri', 'sans-serif';
-$font-secondary: 'Julius', 'Roboto', 'Calibri', 'sans-serif';
-$font-tertiary: 'Cinzel', 'Roboto', 'Calibri', 'sans-serif';
+$font-b: 'DMSans Bold', 'Roboto', 'Calibri', 'sans-serif';
+$font-m: 'DMSans Medium', 'Roboto', 'Calibri', 'sans-serif';
+$font-r: 'DMSans Regular', 'Roboto', 'Calibri', 'sans-serif';
+$title-b: 'TypoRound Bold', 'Roboto', 'Calibri', 'sans-serif';
+$title-m: 'TypoRound Regular', 'Roboto', 'Calibri', 'sans-serif';
+$title-t: 'TypoRound Thin', 'Roboto', 'Calibri', 'sans-serif';
 $roboto: 'Roboto', 'Calibri', 'sans-serif';
  
 $thin: 100;
@@ -31,12 +43,13 @@ $bold: 750;
 
 
 /* ___ Colors ___ */
-$primary: #38F2F2;
-$secondary: #263640;
+$primary: #D08CF8;
+$secondary: #A6F7CB;
+$tertiary: #F5D49A;
 
-$gray-dark: #516373;
-$gray: #7C92A6;
-$gray-light: #DFE7F2;
+$black: #181818;
+$gray: #EBEBEB;
+$white: #F5F5F5;
 
 $status-success: #21B35B;
 $status-warning: #FFB21D;

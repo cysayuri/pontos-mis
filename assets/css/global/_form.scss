@@ -29,7 +29,7 @@ input, select, textarea {
     border-radius: 5px;
     box-sizing: border-box;
     color: #000;
-    font-family: $font;
+    font-family: $font-r;
     height: 44px;
     outline: none;
     padding: 10px 16px;
@@ -196,23 +196,16 @@ input[type="checkbox"], input[type="radio"] {
     }
     
     &:after {
-        background-image: url(../images/icons/check.svg);
-        background-repeat: no-repeat;
-        background-size: 12px 10px;
-        background-position: center;
-        background-color: #997FE340;
-        left: -1px;
+        background-color: $primary;
+        left: 60%;
         opacity: 0;
-        top: -1px;
-        height: 22px;
-        width: 22px;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        height: 12px;
+        width: 12px;
     }
     
     &:checked, &:hover {
-        &:before {
-            border-color: transparent;
-        }
-        
         &:after {
             opacity: 1;
         }

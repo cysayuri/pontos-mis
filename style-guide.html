@@ -23,125 +23,42 @@
   
   <container id="buttons">
     <section class="flex--st">
-      <button class="btn btn--small">Small button</button>
-      <button>Medium button</button>
-      <button class="btn btn--large">Large button</button>
-    </section>
-    
-    <section class="flex--st">
-      <button class="btn btn--small btn--secondary">Small Secondary</button>
-      <button class="btn btn--secondary">Button secondary</button>
-      <button class="btn btn--secondary btn--rounded">Button secondary</button>
-    </section>
-    
-    <section class="flex--st">
-      <button class="btn btn--tertiary">Tertiary</button>
-      <a href="" class="btn btn--icon">Button icon <i class="fa-light fa-arrow-right-long"></i></a>
+      <button class="btn">Button</button>
+      <a href="" class="btn btn--icon">Button icon <i class="fa-regular fa-arrow-right-long"></i></a>
       <a href="" class="btn btn--link">Button link</a>
-      <a href="" class="btn btn--link btn--icon">Button icon <i class="fa-light fa-arrow-right-long"></i></a>
+      <a href="" class="btn btn--link btn--icon">Button icon <i class="fa-regular fa-arrow-right-long"></i></a>
     </section>
   </container>
   
   <container id="forms">
     <section>
       <form action="">
-        <div class="input input--small col-3">
-          <label for="">Campo 'nome' pequeno</label>
-          <input type="text" placeholder="Nome">
-          <small class="input__desc">Help or description text</small>
-        </div>
-        
-        <div class="input input--small col-3">
-          <label for="">Campo 'email' pequeno</label>
-          <input type="email" placeholder="E-mail">
-          <small class="input__desc">Help or description text</small>
-        </div>
-        
-        <div class="input input--small col-3">
-          <label for="">Campo 'login' pequeno</label>
-          <input type="text" placeholder="Login">
-          <small class="input__desc">Help or description text</small>
-        </div>
-        
-        <div class="input input--small col-3">
-          <label for="">Campo 'senha' pequeno</label>
-          <input type="password" placeholder="Senha">
-          <small class="input__desc">Help or description text</small>
-        </div>
-      </form>
-    </section>
-    
-    <section>
-      <form action="">
-        <div class="input col-4">
-          <label for="">Nome: <span class="required">*</span></label>
-          <input type="text" placeholder="Nome" required>
-          <small class="input__desc">Help or description text</small>
-        </div>
-        
-        <div class="input col-4">
-          <label for="">E-mail: <span class="required">*</span></label>
-          <input type="email" placeholder="E-mail" required>
-          <small class="input__desc">Help or description text</small>
-        </div>
-        
-        <div class="input col-4">
-          <label for="">Senha: <span class="required">*</span></label>
-          <input type="password" placeholder="Senha" required>
-          <small class="input__desc">Help or description text</small>
-        </div>
-      </form>
-    </section>
-    
-    <section>
-      <form action="">
-        <div class="input input--large col-6">
-          <label for="">Campo 'nome' grande</label>
-          <input type="text" placeholder="Nome">
-        </div>
-        
-        <div class="input input--large col-6">
-          <label for="">Campo 'email' grande</label>
-          <input type="email" placeholder="E-mail">
-        </div>
-      </form>
-    </section>
-    
-    <section>
-      <form action="">
-        <div class="input col-12">
-          <label for="">Campo 'nome' c/ ícone</label>
-          <div class="input--icon">
-            <i class="fa-light fa-user"></i>
-            <input type="text" placeholder="Nome">
+        <div class="col-12 flex--sb">
+          <div class="input col-4">
+            <label for="">Nome: <span class="required">*</span></label>
+            <div class="input--icon">
+              <i class="fa-light fa-user"></i>
+              <input type="text" placeholder="Nome">
+            </div>
+            <small class="input__desc">Help or description text</small>
           </div>
-        </div>
-        
-        <div class="input col-12">
-          <label for="">Campo 'email' c/ ícone</label>
-          <div class="input--icon">
-            <i class="fa-light fa-envelope"></i>
-            <input type="email" placeholder="E-mail">
+          
+          <div class="input col-4">
+            <label for="">E-mail: <span class="required">*</span></label>
+            <div class="input--icon">
+              <i class="fa-light fa-envelope"></i>
+              <input type="email" placeholder="E-mail">
+            </div>
+            <small class="input__desc">Help or description text</small>
           </div>
-        </div>
-      </form>
-    </section>
-    
-    <section>
-      <form action="">
-        <div class="input input--large col-12">
-          <label for="">Campo 'nome' grande e c/ ícone</label>
-          <div class="input--icon">
-            <i class="fa-light fa-user"></i>
-            <input type="text" placeholder="Nome">
-          </div>
-        </div>
-        
-        <div class="input input--large col-12">
-          <label for="">Campo 'email' grande e c/ ícone</label>
-          <div class="input--icon">
-            <i class="fa-light fa-envelope"></i>
-            <input type="email" placeholder="E-mail">
+          
+          <div class="input col-4">
+            <label for="">Senha: <span class="required">*</span></label>
+            <div class="input--icon">
+              <i class="fa-light fa-lock"></i>
+              <input type="password" placeholder="Senha" required>
+            </div>
+            <small class="input__desc">Help or description text</small>
           </div>
         </div>
         
@@ -181,132 +98,6 @@
           <input type="submit" value="Enviar">
         </div>
       </form>
-    </section>
-  </container>
-  
-  <container id="chips">
-    <section>
-      <div class="chips chips--small">
-        <div class="chips__text">
-          Small chip
-        </div>
-      </div>
-      
-      <div class="chips">
-        <div class="chips__text">
-          Name/category
-        </div>
-      </div>
-      
-      <div class="chips chips--large">
-        <div class="chips__text">
-          Large chip
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <div class="chips chips--secondary">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </div>
-      
-      <div class="chips chips--square">
-        <div class="chips__text">
-          Square chip
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <a href="" class="chips chips--clicable">
-        <div class="chips__text">
-          Option 1
-        </div>
-      </a>
-      
-      <div class="chips chips--disabled">
-        <div class="chips__text">
-          Option 1
-        </div>
-      </div>
-      
-      <a href="" class="chips chips--secondary chips--clicable">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </a>
-    </section>
-    
-    <section>
-      <a href="" class="chips chips--clicable chips--tertiary">
-        <div class="chips__text">
-          chips--tertiary
-        </div>
-      </a>
-      
-      <a href="" class="chips chips--secondary chips--clicable  chips--tertiary">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </a>
-    </section>
-    
-    <section>
-      <a href="" class="chips chips--clicable chips--datas">
-        <div class="chips__text">
-          chips--datas
-        </div>
-      </a>
-      
-      <a href="" class="chips chips--secondary chips--clicable  chips--datas">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </a>
-    </section>
-    
-    <section>
-      <a href="" class="chips chips--clicable chips--andamento">
-        <div class="chips__text">
-          chips--andamento
-        </div>
-      </a>
-      
-      <a href="" class="chips chips--secondary chips--clicable  chips--andamento">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </a>
-    </section>
-    
-    <section>
-      <a href="" class="chips chips--clicable chips--concluido">
-        <div class="chips__text">
-          chips--concluido
-        </div>
-      </a>
-      
-      <a href="" class="chips chips--secondary chips--clicable  chips--concluido">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </a>
-    </section>
-    
-    <section>
-      <a href="" class="chips chips--clicable chips--cancelado">
-        <div class="chips__text">
-          chips--cancelado
-        </div>
-      </a>
-      
-      <a href="" class="chips chips--secondary chips--clicable  chips--cancelado">
-        <div class="chips__text">
-          Secondary chip
-        </div>
-      </a>
     </section>
   </container>
   
@@ -365,74 +156,6 @@
       <i class="fa-brands fa-linkedin"></i>
     </section>
   </container>
-  
-  <section id="tooltip">
-    <div class="tooltip">Hover me</div>
-    
-    <div class="tooltip__txt" role="tooltip">
-      This is a tooltip
-      <div class="tooltip__arrow" data-popper-arrow></div>
-    </div>
-  </section>
-  
-  <section id="quotes">
-    <blockquote>
-      <p>“Teste Lorem ipsum dolor sit amet”</p>
-      <cite>Teste Lorem ipsum dolor sit amet</cite>
-    </blockquote>
-    
-    <blockquote class="wp-block-quote">
-      <p>“amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas”</p>
-      <cite>autor xyz</cite>
-    </blockquote>
-    
-    <blockquote class="wp-block-quote has-text-align-center">
-      <p>“Sustainability is an essential part of business, and the FSI 2025 strategy contains the components which are needed to let the sector become a solution to the current challenges.”</p>
-      <cite>autor xyz</cite>
-    </blockquote>
-    
-    <blockquote class="wp-block-quote has-text-align-right">
-      <p>“fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu”</p>
-      <cite>autor xyz</cite>
-    </blockquote>
-  </section>
-  
-  <section id="listas">
-    <ul>
-      <li>Teste de lista</li>
-      <li>Teste de lista</li>
-      <li>Teste de lista</li>
-    </ul>
-    <ol>
-      <li>Teste de lista numérica</li>
-      <li>Teste de lista numérica</li>
-      <li>Teste de lista numérica</li>
-    </ol>
-  </section>
-  
-  <section id="tabela">
-    <table>
-      <thead>
-        <tr>
-          <td>Teste tabela</td>
-          <td>Teste tabela</td>
-          <td>Teste tabela</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Teste tabela</td>
-          <td>Teste tabela</td>
-          <td>Teste tabela</td>
-        </tr>
-        <tr>
-          <td>Teste tabela</td>
-          <td>Teste tabela</td>
-          <td>Teste tabela</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
   
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="../assets/js/tooltip.js"></script>
