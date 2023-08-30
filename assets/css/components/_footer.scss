@@ -1,62 +1,169 @@
 //Footer code
 footer {
-    background: $secondary;
-    padding: 40px 0 30px;
+    background: $black;
+    margin-top: 70px;
+    overflow: hidden;
+    padding: 70px 0;
+    position: relative;
+    
+    &::before, &::after {
+        background: $white;
+        border-radius: 100%;
+        content: '';
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+    }
+    
+    &::before {
+        left: -30px;
+    }
+    
+    &::after {
+        right: -30px;
+    }
 }
 
 .footer {
     &__container {
         align-items: center;
         margin: auto;
+        max-width: 770px;
         
         @include MQ($S) {
             flex-wrap: wrap;
         }
     }
     
-    &__direitos {
-        width: 50%;
-        
-        @include MQ($S) {
-            width: 100%;
-        }
-        
-        h6 {
-            color: $gray;
-            font-family: $title-m;
-            font-weight: 300;
-            margin: 0;
-        }
-    }
-    
     &__social {
         align-items: center;
+        position: relative;
+        width: 313px;
         
         @include MQ($S) {
             justify-content: center;
         }
         
+        &::before {
+            background: url(/assets/images/sections/footer/effect-left.svg) no-repeat;
+            content: '';
+            height: 220px;
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 0;
+        }
+        
         a {
             align-items: center;
-            background: $primary;
+            background: transparent;
             border-radius: 3px;
-            margin-left: 20px;
-            height: 27px;
+            margin: 0 15px;
+            height: 32px;
             text-decoration: none;
-            width: 27px;
-
+            width: auto;
+            z-index: 1;
+            
             @include MQ($S) {
                 margin: 0 15px;
             }
-            
-            i {
-                color: $secondary;
-                font-size: 22px;
-                
-                &.fa-facebook-f {
-                    margin: 0 -2px -5px 0;
+
+            &:hover {
+                i, .st0 {
+                    color: $primary;
+                    fill: $primary;
                 }
             }
+            
+            i {
+                color: $white;
+                font-size: 22px;
+                transition: color .5s ease-in-out;
+                
+                &.fa-facebook-f, &.fa-twitter {
+                    margin-bottom: -1px;
+                }
+            }
+
+            .st0 {
+                fill:#fff;
+                transition: fill .5s ease-in-out;
+            }
+        }
+    }
+    
+    &__list {
+        position: relative;
+        
+        &::after {
+            background: url(/assets/images/sections/footer/effect-right.svg) no-repeat;
+            content: '';
+            height: 285px;
+            right: -100px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+        }
+        
+        a {
+            color: $white;
+            font-family: $title-m;
+            font-size: 22px;
+            padding: 2px 0;
+            text-decoration: none;
+            transition: color .5s ease-in-out;
+            
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &__gov {
+        background: #fff;
+        
+        &-list {
+            align-items: center;
+            margin: 0 -30px;
+            padding: 80px 0;
+        }
+        
+        &-item {
+            // background: $gray;
+            border-radius: 20px;
+            color: #fff;
+            // font-family: $font-m;
+            // font-size: 24px;
+            font-weight: 500;
+            padding: 10px 35px;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            // text-transform: uppercase;
+            transition: background .3s ease-in-out;
+            width: 28%;
+
+            &:hover {
+                // background: $primary;
+                background: #000;
+            }
+
+            max-width: 202px;
+            height: 35px;
+            font-family: 'Open Sans', sans-serif, arial;
+            border: 0;
+            background: #243e63;
+            font-size: 16px;
+        }
+        
+        &-banner {
+            background: #000;
+            padding: 40px 0;
         }
     }
 }
