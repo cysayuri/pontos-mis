@@ -83,9 +83,9 @@ body {
   border-radius: 7px; }
 
 h1 {
-  font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
-  font-size: 84px;
-  line-height: 1.2em; }
+  font-family: "TypoRound Thin", "Roboto", "Calibri", "sans-serif";
+  font-size: 100px;
+  line-height: 1em; }
   @media screen and (max-width: 758px) {
     h1 {
       font-size: 50px; } }
