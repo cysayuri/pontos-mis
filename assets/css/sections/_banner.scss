@@ -1,48 +1,71 @@
 .banner {
-    align-items: center;
-    background: url(../images/global/banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    // position: relative;
-    width: 100vw;
+    margin-top: 20px;
+    position: relative;
     
-    // &::after {
-    //     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #231F20;
-    //     content: '';
-    //     height: 100%;
-    //     left: 0;
-    //     mix-blend-mode: multiply;
-    //     opacity: 0.5;
-    //     position: absolute;
-    //     top: 0;
-    //     width: 100%;
-    // }
-    
-    @include MQ($S) {
-        height: 200px;
+    &::before {
+        background: url(../images/effects/line-1.svg);
+        background-repeat: no-repeat;
+        content: '';
+        height: 250px;
+        left: -2px;
+        position: absolute;
+        top: 100px;
+        width: 100vw;
     }
     
-    // &__title {
-    //     bottom: 50px;
-    //     left: 0;
-    //     position: absolute;
-    //     z-index: 1;
+    &__container {
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        width: 100vw;
         
-    //     @include MQ($S) {
-    //         bottom: 20px;
-    //     }
+        &::after {
+            background: url(../images/effects/line-2.svg);
+            background-repeat: no-repeat;
+            bottom: 0;
+            content: '';
+            height: 330px;
+            left: 65%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 400px;
+        }
         
-    //     .h1 {
-    //         color: #fff;
-    //         margin: 0;
-    //     }
-    // }
+        @include MQ($S) {
+            height: 200px;
+        }
+    }
+    
+    &__img {
+        max-width: 420px;
+        position: relative;
+        width: 50%;
+        
+        &::after {
+            background: url(../images/sections/banner/effect-left.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+            height: 530px;
+            left: 0;
+            position: absolute;
+            top: 53%;
+            transform: translateY(-50%);
+            width: 425px;
+            z-index: -1;
+        }
+        
+        img {
+            height: 270px;
+            object-fit: contain;
+            width: 220px;
+        }
+    }
 
-    img {
-        height: 335px;
-        object-fit: contain;
-        width: 570px;
+    h1 {
+        margin: 0;
+        max-width: 400px;
+        text-align: right;
+        text-transform: uppercase;
     }
 }
