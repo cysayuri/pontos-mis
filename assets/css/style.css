@@ -996,8 +996,7 @@ footer {
     height: 250px;
     left: -2px;
     position: absolute;
-    top: 95px;
-    transform: rotate(3deg);
+    top: 100px;
     width: 100vw; }
   .banner__container {
     align-items: center;
@@ -1007,13 +1006,12 @@ footer {
     .banner__container::after {
       background: url(../images/effects/line-2.svg);
       background-repeat: no-repeat;
-      background-size: contain;
-      bottom: -20px;
+      bottom: 0;
       content: '';
-      height: 320px;
-      left: 47%;
+      height: 330px;
+      left: 65%;
       position: absolute;
-      transform: translateX(-50%) rotate(8deg);
+      transform: translateX(-50%);
       width: 400px; }
     @media screen and (max-width: 758px) {
       .banner__container {
@@ -1021,40 +1019,25 @@ footer {
   .banner__img {
     max-width: 420px;
     position: relative;
-    width: 30%; }
+    width: 50%; }
     .banner__img::after {
+      background: url(../images/sections/banner/effect-left.png);
+      background-repeat: no-repeat;
+      background-size: contain;
       content: '';
       height: 530px;
+      left: 0;
       position: absolute;
+      top: 53%;
       transform: translateY(-50%);
       width: 425px;
       z-index: -1; }
     .banner__img img {
-      height: 90vh;
+      height: 270px;
       object-fit: contain;
-      width: auto; }
-    .banner__img:first-child {
-      margin-left: -70px; }
-      .banner__img:first-child::after {
-        background: url(../images/sections/banner/effect-left.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 530px;
-        left: -90px;
-        top: 50%; }
-      .banner__img:first-child img {
-        height: 95vh;
-        transform: scaleX(-1); }
-    .banner__img:last-child {
-      margin-right: -70px; }
-      .banner__img:last-child::after {
-        background: url(../images/sections/banner/effect-right.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 550px;
-        right: -110px;
-        top: 53%; }
+      width: 220px; }
   .banner h1 {
-    width: 45%; }
-    .banner h1 img {
-      width: 100%; }
+    margin: 0;
+    max-width: 400px;
+    text-align: right;
+    text-transform: uppercase; }

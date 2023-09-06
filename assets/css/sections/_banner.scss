@@ -9,8 +9,7 @@
         height: 250px;
         left: -2px;
         position: absolute;
-        top: 95px;
-        transform: rotate(3deg);
+        top: 100px;
         width: 100vw;
     }
     
@@ -23,13 +22,12 @@
         &::after {
             background: url(../images/effects/line-2.svg);
             background-repeat: no-repeat;
-            background-size: contain;
-            bottom: -20px;
+            bottom: 0;
             content: '';
-            height: 320px;
-            left: 47%;
+            height: 330px;
+            left: 65%;
             position: absolute;
-            transform: translateX(-50%) rotate(8deg);
+            transform: translateX(-50%);
             width: 400px;
         }
         
@@ -41,64 +39,33 @@
     &__img {
         max-width: 420px;
         position: relative;
-        width: 30%;
+        width: 50%;
         
         &::after {
+            background: url(../images/sections/banner/effect-left.png);
+            background-repeat: no-repeat;
+            background-size: contain;
             content: '';
             height: 530px;
+            left: 0;
             position: absolute;
+            top: 53%;
             transform: translateY(-50%);
             width: 425px;
             z-index: -1;
         }
         
         img {
-            height: 90vh;
+            height: 270px;
             object-fit: contain;
-            width: auto;
-        }
-        
-        &:first-child {
-            margin-left: -70px;
-            
-            &::after {
-                background: url(../images/sections/banner/effect-left.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                height: 530px;
-                left: -90px;
-                top: 50%;
-            }
-            
-            img {
-                height: 95vh;
-                transform: scaleX(-1);
-            }
-        }
-        
-        &:last-child {
-            margin-right: -70px;
-            
-            &::after {
-                background: url(../images/sections/banner/effect-right.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                height: 550px;
-                right: -110px;
-                top: 53%;
-            }
+            width: 220px;
         }
     }
-    
-    h1 {
-        width: 45%;
-        // margin: 0;
-        // max-width: 400px;
-        // text-align: right;
-        // text-transform: uppercase;
 
-        img {
-            width: 100%;
-        }
+    h1 {
+        margin: 0;
+        max-width: 400px;
+        text-align: right;
+        text-transform: uppercase;
     }
 }
