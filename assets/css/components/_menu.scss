@@ -92,7 +92,7 @@ menu {
         
         li {
             list-style: none;
-            margin: 0 0 0 50px;
+            margin: 0 0 0 20px;
             position: relative;
             
             @include MQ($M) {
@@ -107,8 +107,8 @@ menu {
             a {
                 display: inline-block;
                 font-family: $title-m;
-                font-size: 22px;
-                padding: 25px 20px;
+                font-size: 21px;
+                padding: 20px 13px;
                 position: relative;
                 text-decoration: none;
                 transition: color .5s ease-in-out;
