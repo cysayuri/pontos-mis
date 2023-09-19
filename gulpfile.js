@@ -21,13 +21,13 @@ function createStyle() {
 
 function keepWatching() {
   browserSync.init({
-    startPath: './',
+    startPath: './pages/',
     server: {
       baseDir: './',
     },
   });
   gulp.watch('./assets/css/**/*.scss', createStyle);
-  gulp.watch('./*.html').on('change', browserSync.reload);
+  gulp.watch('./pages/*.html').on('change', browserSync.reload);
   gulp.watch('./assets/js/*.js').on('change', browserSync.reload);
   gulp.watch('./assets/images/*', imageminWebp);
 }

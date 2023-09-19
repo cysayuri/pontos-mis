@@ -4,7 +4,7 @@ html:not([data-scroll='0']), .page-template-contato, .error404, .single {
         
         ul li a {
             color: $white;
-
+            
             @include MQ($L) {
                 color: $black;
             }
@@ -35,7 +35,7 @@ html:not([data-scroll='0']), .page-template-contato, .error404, .single {
                 }
             }
         }
-
+        
         &__logo {
             filter: invert(1) brightness(5);
         }
@@ -411,7 +411,7 @@ menu {
 menu ul li a {
     color: $black;
     transition: all .5s ease-in-out;
-
+    
     &:after {
         background: $primary;
     }
@@ -423,6 +423,31 @@ menu ul li a {
         
         &:before, &:after {
             background: $black;
+        }
+    }
+}
+
+
+.home {
+    menu {
+        background: #00000041;
+
+        ul li a {
+            color: $white;
+        }
+    }
+    
+    .menu {
+        &__burguer {
+            border-color: $white;
+            
+            &:before, &:after {
+                background: $white;
+            }
+        }
+        
+        &__logo {
+            filter: invert(1) brightness(5);
         }
     }
 }

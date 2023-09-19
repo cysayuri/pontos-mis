@@ -47,7 +47,7 @@ footer {
         }
         
         &::before {
-            background: url(/assets/images/sections/footer/effect-left.svg) no-repeat;
+            background: url(../images/global/footer/effect-left.svg) no-repeat;
             content: '';
             height: 220px;
             left: 0;
@@ -100,7 +100,7 @@ footer {
         position: relative;
         
         &::after {
-            background: url(/assets/images/sections/footer/effect-right.svg) no-repeat;
+            background: url(../images/global/footer/effect-right.svg) no-repeat;
             content: '';
             height: 285px;
             right: -100px;

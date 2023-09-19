@@ -1,0 +1,108 @@
+.sobre {
+    &__banner {
+        margin-top: 20px;
+        position: relative;
+        
+        &::before {
+            background: url(../images/effects/line-1.svg);
+            background-repeat: no-repeat;
+            content: '';
+            height: 250px;
+            left: -2px;
+            position: absolute;
+            top: 95px;
+            transform: rotate(3deg);
+            width: 100vw;
+        }
+        
+        &-container {
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            width: 100vw;
+            
+            &::after {
+                background: url(../images/effects/line-2.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                bottom: -20px;
+                content: '';
+                height: 320px;
+                left: 47%;
+                position: absolute;
+                transform: translateX(-50%) rotate(8deg);
+                width: 400px;
+            }
+            
+            @include MQ($S) {
+                height: 200px;
+            }
+        }
+        
+        &-img {
+            max-width: 420px;
+            position: relative;
+            width: 30%;
+            
+            &::after {
+                content: '';
+                height: 530px;
+                position: absolute;
+                transform: translateY(-50%);
+                width: 425px;
+                z-index: -1;
+            }
+            
+            img {
+                height: 90vh;
+                object-fit: contain;
+                width: auto;
+            }
+            
+            &:first-child {
+                margin-left: -70px;
+                
+                &::after {
+                    background: url(../images/pages/sobre/banner/effect-left.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 530px;
+                    left: -90px;
+                    top: 50%;
+                }
+                
+                img {
+                    height: 95vh;
+                    transform: scaleX(-1);
+                }
+            }
+            
+            &:last-child {
+                margin-right: -70px;
+                
+                &::after {
+                    background: url(../images/pages/sobre/banner/effect-right.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 550px;
+                    right: -110px;
+                    top: 53%;
+                }
+            }
+        }
+        
+        h1 {
+            width: 45%;
+            margin: 0;
+            max-width: 400px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 95px;
+            line-height: 1.05em;
+    
+            // img {
+            //     width: 100%;
+            // }
+        }
+    }
+}
