@@ -18,13 +18,13 @@ form {
 
 label {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: $bold;
     margin: 10px 0 7px;
 }
 
 input, select, textarea {
-    background: transparent;
+    background: #fcfcfc;
     border: 1px solid #E7E3E3;
     border-radius: 5px;
     box-sizing: border-box;
@@ -51,7 +51,7 @@ input, select, textarea {
 }
 
 .input {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
     &--icon {
         position: relative;
@@ -141,6 +141,7 @@ textarea {
     height: 80px;
     line-height: 1.2em;
     margin-bottom: 15px;
+    padding: 13px 16px;
     resize: none;
     
     &::-webkit-scrollbar-track {

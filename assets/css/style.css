@@ -100,7 +100,7 @@ h2 {
 
 h3 {
   font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
-  font-size: 32px;
+  font-size: 38px;
   line-height: 1.2em; }
   @media screen and (max-width: 758px) {
     h3 {
@@ -198,12 +198,12 @@ form {
 
 label {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 750;
   margin: 10px 0 7px; }
 
 input, select, textarea {
-  background: transparent;
+  background: #fcfcfc;
   border: 1px solid #E7E3E3;
   border-radius: 5px;
   box-sizing: border-box;
@@ -223,7 +223,7 @@ input, select, textarea {
     border-color: #D92124; }
 
 .input {
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
   .input--icon {
     position: relative; }
     .input--icon i {
@@ -288,6 +288,7 @@ textarea {
   height: 80px;
   line-height: 1.2em;
   margin-bottom: 15px;
+  padding: 13px 16px;
   resize: none; }
   textarea::-webkit-scrollbar-track {
     margin: 7px 20px 7px 0; }
@@ -801,6 +802,19 @@ menu ul li a {
   .menu__burguer:before, .menu__burguer:after {
     background: #181818; }
 
+.home menu {
+  background: #00000041; }
+  .home menu ul li a {
+    color: #F5F5F5; }
+
+.home .menu__burguer {
+  border-color: #F5F5F5; }
+  .home .menu__burguer:before, .home .menu__burguer:after {
+    background: #F5F5F5; }
+
+.home .menu__logo {
+  filter: invert(1) brightness(5); }
+
 footer {
   background: #181818;
   margin-top: 70px;
@@ -837,7 +851,7 @@ footer {
     .footer__social {
       justify-content: center; } }
   .footer__social::before {
-    background: url(/assets/images/sections/footer/effect-left.svg) no-repeat;
+    background: url(../images/global/footer/effect-left.svg) no-repeat;
     content: '';
     height: 220px;
     left: 0;
@@ -874,7 +888,7 @@ footer {
 .footer__list {
   position: relative; }
   .footer__list::after {
-    background: url(/assets/images/sections/footer/effect-right.svg) no-repeat;
+    background: url(../images/global/footer/effect-right.svg) no-repeat;
     content: '';
     height: 285px;
     right: -100px;
@@ -920,76 +934,176 @@ footer {
     background: #000;
     padding: 40px 0; }
 
-.cookies {
-  background: #FFF;
-  border-radius: 20px;
-  bottom: 30px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-  max-width: 360px;
-  padding: 35px;
-  position: fixed;
-  right: 30px;
-  transition: bottom 0.5s ease-in-out;
-  width: 100%;
-  z-index: 8; }
-  @media screen and (max-width: 500px) {
-    .cookies {
+.ticket {
+  background: #181818;
+  margin: 80px auto 90px;
+  padding: 20px 50px;
+  position: relative;
+  width: 915px; }
+  .ticket::before {
+    left: -29px; }
+  .ticket:after {
+    right: -29px; }
+  .ticket::before, .ticket:after {
+    background: #F5F5F5;
+    border-radius: 100%;
+    content: '';
+    height: 58px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px; }
+  .ticket__container {
+    position: relative; }
+    .ticket__container::before {
+      top: 5px; }
+    .ticket__container:after {
+      bottom: 5px; }
+    .ticket__container::before, .ticket__container:after {
+      background: url(../images/pages/home/ticket.svg) no-repeat;
+      background-size: contain;
+      content: '';
+      height: 32px;
+      position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      right: auto; } }
-  .cookies.disable {
-    bottom: -100%; }
-  .cookies__icon {
-    color: #997FE390;
-    font-size: 30px;
-    margin-right: 16px; }
-  .cookies__close, .cookies__header-title, .cookies p, .cookies a {
-    color: #0B0B0B; }
-  .cookies__header {
-    align-items: center; }
-    .cookies__header-title {
-      font-size: 18px;
-      font-weight: 750;
-      letter-spacing: 0.05em; }
-  .cookies__close {
-    cursor: pointer;
-    font-size: 20px;
-    transition: opacity .5s ease-in-out; }
-    .cookies__close:hover {
-      opacity: .5; }
-  .cookies__body p {
-    font-size: 14px;
-    letter-spacing: 0.01em;
-    line-height: 1.4em;
-    margin: 15px 0 17px; }
-  .cookies__body a {
-    text-decoration: underline;
-    transition: color .5s ease-in-out; }
-    .cookies__body a:hover {
-      color: #D08CF8; }
-  .cookies__body .btn {
-    font-size: 14px;
-    height: fit-content;
-    padding: 7px 20px; }
-  .cookies--secondary {
-    background: #ECE8FF; }
-  .cookies--large {
-    left: 50%;
-    max-width: 930px;
-    right: 0;
-    transform: translateX(-50%); }
-    @media screen and (max-width: 960px) {
-      .cookies--large {
-        max-width: 100%;
-        width: 100%; } }
-    @media screen and (max-width: 758px) {
-      .cookies--large {
-        max-width: 100%; } }
+      width: 100%; }
+    .ticket__container h3 {
+      color: #F5F5F5;
+      text-align: center;
+      margin: auto;
+      padding: 75px 0;
+      font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
+      font-weight: 300;
+      font-size: 28px;
+      max-width: 615px; }
 
-.banner {
+.home__banner {
+  height: 100vh;
+  width: 100%; }
+  .home__banner video {
+    height: 100%;
+    object-position: center -20px;
+    object-fit: cover;
+    width: 100%; }
+
+.home__sobre-item {
+  width: 30%; }
+  .home__sobre-item img {
+    border: 7px solid #181818;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; }
+
+.home__sobre-title {
+  font-family: "TypoRound Thin", "Roboto", "Calibri", "sans-serif";
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 48px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.home__map {
+  margin: 100px auto; }
+  .home__map h3 {
+    font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+  .home__map-img {
+    background: #EBEBEB;
+    border-radius: 70px;
+    display: block;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    width: 750px; }
+    .home__map-img img {
+      height: 100%;
+      object-fit: contain;
+      width: auto; }
+
+.home__patronos {
+  margin: 70px auto; }
+  .home__patronos h3 {
+    font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+  .home__patronos-item {
+    align-items: center;
+    width: 18%; }
+    .home__patronos-item img {
+      height: auto;
+      object-fit: contain;
+      width: 100%; }
+
+.home__contato {
+  background: #EBEBEB; }
+  .home__contato-content {
+    align-items: flex-start;
+    padding: 70px 60px;
+    position: relative; }
+    .home__contato-content::before {
+      top: 15px; }
+    .home__contato-content:after {
+      bottom: 15px; }
+    .home__contato-content::before, .home__contato-content:after {
+      background: url(../images/pages/home/ticket-white.svg) no-repeat;
+      background-position: center;
+      background-size: contain;
+      content: '';
+      filter: grayscale(3) brightness(5);
+      height: 32px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 100%; }
+  .home__contato-text {
+    max-width: 400px; }
+    .home__contato-text h3 {
+      font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
+      font-weight: 300;
+      font-size: 36px;
+      margin: 10px 0 30px;
+      text-transform: uppercase; }
+  .home__contato-phone {
+    font-family: "DMSans Bold", "Roboto", "Calibri", "sans-serif";
+    font-size: 18px;
+    margin: 30px 0; }
+    .home__contato-phone i {
+      font-size: 16px;
+      margin-right: 10px; }
+
+.home__museus {
+  padding: 100px 0 70px;
+  position: relative; }
+  .home__museus:before {
+    background: url(../images/effects/line-12.svg) no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: '';
+    height: 380px;
+    left: 42%;
+    opacity: .3;
+    position: absolute;
+    top: 25px;
+    transform: translateX(-50%) rotate(12deg);
+    width: 300px; }
+  .home__museus-item {
+    width: 45%; }
+    .home__museus-item h3 {
+      font-size: 32px; }
+    .home__museus-item p {
+      font-size: 20px; }
+      .home__museus-item p i {
+        margin: 0 10px 0 5px; }
+
+.sobre__banner {
   margin-top: 20px;
   position: relative; }
-  .banner::before {
+  .sobre__banner::before {
     background: url(../images/effects/line-1.svg);
     background-repeat: no-repeat;
     content: '';
@@ -999,12 +1113,12 @@ footer {
     top: 95px;
     transform: rotate(3deg);
     width: 100vw; }
-  .banner__container {
+  .sobre__banner-container {
     align-items: center;
     height: 100vh;
     position: relative;
     width: 100vw; }
-    .banner__container::after {
+    .sobre__banner-container::after {
       background: url(../images/effects/line-2.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -1016,45 +1130,49 @@ footer {
       transform: translateX(-50%) rotate(8deg);
       width: 400px; }
     @media screen and (max-width: 758px) {
-      .banner__container {
+      .sobre__banner-container {
         height: 200px; } }
-  .banner__img {
+  .sobre__banner-img {
     max-width: 420px;
     position: relative;
     width: 30%; }
-    .banner__img::after {
+    .sobre__banner-img::after {
       content: '';
       height: 530px;
       position: absolute;
       transform: translateY(-50%);
       width: 425px;
       z-index: -1; }
-    .banner__img img {
+    .sobre__banner-img img {
       height: 90vh;
       object-fit: contain;
       width: auto; }
-    .banner__img:first-child {
+    .sobre__banner-img:first-child {
       margin-left: -70px; }
-      .banner__img:first-child::after {
-        background: url(../images/sections/banner/effect-left.png);
+      .sobre__banner-img:first-child::after {
+        background: url(../images/pages/sobre/banner/effect-left.png);
         background-repeat: no-repeat;
         background-size: contain;
         height: 530px;
         left: -90px;
         top: 50%; }
-      .banner__img:first-child img {
+      .sobre__banner-img:first-child img {
         height: 95vh;
         transform: scaleX(-1); }
-    .banner__img:last-child {
+    .sobre__banner-img:last-child {
       margin-right: -70px; }
-      .banner__img:last-child::after {
-        background: url(../images/sections/banner/effect-right.png);
+      .sobre__banner-img:last-child::after {
+        background: url(../images/pages/sobre/banner/effect-right.png);
         background-repeat: no-repeat;
         background-size: contain;
         height: 550px;
         right: -110px;
         top: 53%; }
-  .banner h1 {
-    width: 45%; }
-    .banner h1 img {
-      width: 100%; }
+  .sobre__banner h1 {
+    width: 45%;
+    margin: 0;
+    max-width: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 95px;
+    line-height: 1.05em; }
