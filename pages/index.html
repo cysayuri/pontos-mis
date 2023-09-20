@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link href="../assets/images/fontawesome-pro-6.1.1-web/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <title>Pontos MIS</title>
 </head>
 <body class="home">
@@ -72,29 +73,29 @@
   
   <section class="home__sobre wrapper">
     <div class="home__sobre-list flex--sb">
-      <div class="home__sobre-item">
+      <a href="/pages/sobre.html#filmes" class="home__sobre-item">
         <img src="../assets/images/pages/home/img-1.jpg" alt="Filmes" title="Filmes">
         
         <div class="home__sobre-title">
           Filmes
         </div>
-      </div>
+      </a>
       
-      <div class="home__sobre-item">
+      <a href="/pages/sobre.html#oficinas" class="home__sobre-item">
         <img src="../assets/images/pages/home/img-2.jpg" alt="Oficinas" title="Oficinas">
         
         <div class="home__sobre-title">
           Oficinas
         </div>
-      </div>
+      </a>
       
-      <div class="home__sobre-item">
+      <a href="/pages/sobre.html#exposicoes" class="home__sobre-item">
         <img src="../assets/images/pages/home/img-3.jpg" alt="Exposições" title="Exposições">
         
         <div class="home__sobre-title">
           Exposições
         </div>
-      </div>
+      </a>
     </div>
   </section>
   
@@ -112,45 +113,45 @@
   
   <section class="home__patronos wrapper">
     <h3>Patronos</h3>
-    
-    <div class="home__patronos-list flex--sb">
-      <div class="home__patronos-item flex--ct">
+
+    <div class="carousel home__patronos-list" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/incentivo-cultura.png" alt="Lei de Incentivo à Cultura" title="Lei de Incentivo à Cultura">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/gold.png" alt="Goldman Sachs" title="Goldman Sachs">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/unipar.png" alt="Unipar" title="Unipar">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/youse.png" alt="Youse" title="Youse">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/b3.png" alt="B3" title="B3">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/lenovo.png" alt="Lenovo" title="Lenovo">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/kapitalo.png" alt="Kapitalo Investimentos" title="Kapitalo Investimentos">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/vivologo.png" alt="Vivo" title="Vivo">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/travelex.png" alt="Travelex e Confidence Câmbio" title="Travelex e Confidence Câmbio">
       </div>
-
-      <div class="home__patronos-item flex--ct">
+      
+      <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/tozzini.png" alt="Tozzini Freire Advogados" title="Tozzini Freire Advogados">
       </div>
     </div>
@@ -255,6 +256,8 @@
   
   <script src="../assets/js/include.js"></script>
   <script src="../assets/js/menu.js"></script>
+  <!-- <script src="../assets/js/slider.js"></script> -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
 </html>

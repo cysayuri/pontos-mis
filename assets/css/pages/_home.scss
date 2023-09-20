@@ -15,17 +15,57 @@
     
     &__sobre {
         &-item {
+            text-decoration: none;
             width: 30%;
             
             img {
                 border: 7px solid $black;
                 border-radius: 10px;
+                filter: grayscale(1);
+                transition: border .5s ease-in-out, filter .5s ease-in-out;
                 padding: 20px;
                 width: 100%;
+            }
+            
+            &:hover {
+                img {
+                    filter: none;
+                }
+                
+                &:first-child {
+                    img {
+                        border-color: #AE24FF;
+                    }
+                    
+                    .home__sobre-title {
+                        color: #AE24FF;
+                    }
+                }
+                
+                &:nth-child(2) {
+                    img {
+                        border-color: #4fe796;
+                    }
+                    
+                    .home__sobre-title {
+                        color: #4fe796;
+                    }
+                }
+                
+                &:last-child {
+                    img {
+                        border-color: #FAB93F;
+                    }
+                    
+                    .home__sobre-title {
+                        color: #FAB93F;
+                    }
+                }
             }
         }
         
         &-title {
+            color: $black;
             font-family: $title-t;
             font-weight: 900;
             letter-spacing: 1px;
@@ -33,6 +73,7 @@
             margin-top: 30px;
             text-align: center;
             text-transform: uppercase;
+            transition: color .5s ease-in-out;
         }
     }
     
@@ -41,14 +82,14 @@
     
     &__map {
         margin: 100px auto;
-
+        
         h3 {
             font-family: $title-b;
             font-weight: 300;
             text-align: center;
             text-transform: uppercase;
         }
-
+        
         &-img {
             background: $gray;
             border-radius: 70px;
@@ -57,7 +98,7 @@
             padding: 30px;
             text-align: center;
             width: 750px;
-
+            
             img {
                 height: 100%;
                 object-fit: contain;
@@ -67,8 +108,8 @@
     }
     
     &__patronos {
-        margin: 70px auto;
-
+        margin: 100px auto;
+        
         h3 {
             font-family: $title-b;
             font-weight: 300;
@@ -76,15 +117,39 @@
             text-transform: uppercase;
         }
         
+        &-list {
+            padding: 0 1%;
+            max-width: 920px;
+            margin: auto;
+        }
+
         &-item {
             align-items: center;
+            height: 160px;
+            margin: 0 1%;
             width: 18%;
 
             img {
-                height: auto;
+                height: 100%;
+                max-height: 70px;
+                max-width: 70px;
                 object-fit: contain;
+                transition: all .5s ease-in-out;
                 width: 100%;
             }
+
+            &.is-selected {
+                img {
+                    height: 350px;
+                    max-height: 100%;
+                    max-width: 100%;
+                    width: 300px;
+                }
+            }
+        }
+
+        .flickity-page-dots {
+            display: none;
         }
     }
     
@@ -134,7 +199,7 @@
             font-family: $font-b;
             font-size: 18px;
             margin: 30px 0;
-
+            
             i {
                 font-size: 16px;
                 margin-right: 10px;
@@ -145,7 +210,7 @@
     &__museus {
         padding: 100px 0 70px;
         position: relative;
-
+        
         &:before {
             background: url(../images/effects/line-12.svg) no-repeat;
             background-position: center;
@@ -162,7 +227,7 @@
         
         &-item {
             width: 45%;
-
+            
             h3 {
                 font-size: 32px;
             }

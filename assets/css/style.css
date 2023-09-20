@@ -988,21 +988,40 @@ footer {
     width: 100%; }
 
 .home__sobre-item {
+  text-decoration: none;
   width: 30%; }
   .home__sobre-item img {
     border: 7px solid #181818;
     border-radius: 10px;
+    filter: grayscale(1);
+    transition: border .5s ease-in-out, filter .5s ease-in-out;
     padding: 20px;
     width: 100%; }
+  .home__sobre-item:hover img {
+    filter: none; }
+  .home__sobre-item:hover:first-child img {
+    border-color: #AE24FF; }
+  .home__sobre-item:hover:first-child .home__sobre-title {
+    color: #AE24FF; }
+  .home__sobre-item:hover:nth-child(2) img {
+    border-color: #4fe796; }
+  .home__sobre-item:hover:nth-child(2) .home__sobre-title {
+    color: #4fe796; }
+  .home__sobre-item:hover:last-child img {
+    border-color: #FAB93F; }
+  .home__sobre-item:hover:last-child .home__sobre-title {
+    color: #FAB93F; }
 
 .home__sobre-title {
+  color: #181818;
   font-family: "TypoRound Thin", "Roboto", "Calibri", "sans-serif";
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 48px;
   margin-top: 30px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: color .5s ease-in-out; }
 
 .home__map {
   margin: 100px auto; }
@@ -1025,19 +1044,35 @@ footer {
       width: auto; }
 
 .home__patronos {
-  margin: 70px auto; }
+  margin: 100px auto; }
   .home__patronos h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
     text-align: center;
     text-transform: uppercase; }
+  .home__patronos-list {
+    padding: 0 1%;
+    max-width: 920px;
+    margin: auto; }
   .home__patronos-item {
     align-items: center;
+    height: 160px;
+    margin: 0 1%;
     width: 18%; }
     .home__patronos-item img {
-      height: auto;
+      height: 100%;
+      max-height: 70px;
+      max-width: 70px;
       object-fit: contain;
+      transition: all .5s ease-in-out;
       width: 100%; }
+    .home__patronos-item.is-selected img {
+      height: 350px;
+      max-height: 100%;
+      max-width: 100%;
+      width: 300px; }
+  .home__patronos .flickity-page-dots {
+    display: none; }
 
 .home__contato {
   background: #EBEBEB; }
