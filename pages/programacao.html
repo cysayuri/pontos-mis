@@ -13,7 +13,9 @@
   <div include="../components/menu.html"></div>
   
   <section class="programacao__banner">
-    <video src="../assets/images/pages/home/institucional.mp4" autoplay muted loop></video>
+    <img src="../assets/images/pages/programacao/banner.jpg">
+    
+    <h1>Programação</h1>
   </section>
   
   <section class="ticket">
@@ -21,38 +23,6 @@
       <h3>O programa Pontos Mis tem o intuito de levar cultura e formação para o interior de São Paulo através de três principais eixos:</h3>
     </div>
   </section>
-  
-  <!-- <section class="home__sobre wrapper">
-    <div class="home__sobre-list flex--sb">
-      <a href="/pages/sobre.html#filmes" class="home__sobre-item">
-        <img src="../assets/images/pages/home/img-1.jpg" alt="Filmes" title="Filmes">
-        
-        <div class="home__sobre-title">
-          Filmes
-        </div>
-      </a>
-      
-      <a href="/pages/sobre.html#oficinas" class="home__sobre-item">
-        <img src="../assets/images/pages/home/img-2.jpg" alt="Oficinas" title="Oficinas">
-        
-        <div class="home__sobre-title">
-          Oficinas
-        </div>
-      </a>
-      
-      <a href="/pages/sobre.html#exposicoes" class="home__sobre-item">
-        <img src="../assets/images/pages/home/img-3.jpg" alt="Exposições" title="Exposições">
-        
-        <div class="home__sobre-title">
-          Exposições
-        </div>
-      </a>
-    </div>
-  </section>
-  
-  <section class="home__merch wrapper">
-    <h3>Merchandise</h3>
-  </section> -->
   
   <section class="programacao__map wrapper">
     <div class="programacao__map-content">
@@ -100,7 +70,7 @@
             </g>
           </g>
         </svg>
-
+        
         <svg id="mapa-amarelo" data-name="mapa-amarelo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263.64 343.48">
           <defs>
             <style>
@@ -123,7 +93,7 @@
             <path class="cls-1" d="m0,79.4s28.83-1.32,28.41-32.33c0-.45-.02-.9-.04-1.36-1.3-32.34,38.71,35.19,57.51,26.96,0,0,24.56,55.34,68.86,51.39.47-.04.95-.09,1.43-.15,0,0-10.88,60.64-89.73,38.02,0,0-7.03-83.55-44.47-63.63,0,0-19.06-1.21-21.96-18.9Z"/>
           </g>
         </svg>
-
+        
         <svg id="mapa-verde" data-name="mapa-verde" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373.56 357.35">
           <defs>
             <style>
@@ -149,68 +119,60 @@
       </div>
     </div>
   </section>
-
+  
   <section class="programacao__content wrapper">
-    <div class="programacao__content-list flex--sb">
-      <div id="roxo" class="programacao__content-item">
-       Item 1 - Roxo
+    <h3>Patronos</h3>
+    
+    <div class="carousel programacao__content-list" data-flickity='{ "wrapAround": true }'>
+      <div id="verde" class="carousel-cell programacao__content-item">
+        <img src="../assets/images/pages/programacao/hereditario.jpg" alt="Filme Hereditário" title="Filme Hereditário">
+        
+        <div class="programacao__content-desc flex--sb">
+          <div class="programacao__content-title">Hereditário</div>
+          
+          <div class="programacao__content-text">
+            <p>Exibição</p>
+            <p>Data: 13/10</p>
+            <p>Hora: 19h30</p>
+            <p>Local: CCl</p>
+            <p>Avenida Brasil: 1293</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="amarelo" class="carousel-cell programacao__content-item">
+        <img src="../assets/images/pages/programacao/hereditario.jpg" alt="Do Interior para São Paulo" title="Do Interior para São Paulo">
+        
+        <div class="programacao__content-desc flex--sb">
+          <div class="programacao__content-title">Do Interior para São Paulo</div>
+          
+          <div class="programacao__content-text">
+            <p>Exibição</p>
+            <p>Data: 10/11</p>
+            <p>Hora: 14h00</p>
+            <p>Local: CCl</p>
+            <p>Avenida Brasil: 1293</p>
+          </div>
+        </div>
       </div>
       
-      <div id="amarelo" class="programacao__content-item">
-       Item 2 - Amarelo
-      </div>
-      
-      <div id="verde" class="programacao__content-item">
-       Item 3 - Verde
+      <div id="roxo" class="carousel-cell programacao__content-item">
+        <img src="../assets/images/pages/programacao/hereditario.jpg" alt="Filme Hereditário" title="Filme Hereditário">
+        
+        <div class="programacao__content-desc flex--sb">
+          <div class="programacao__content-title">Hereditário</div>
+          
+          <div class="programacao__content-text">
+            <p>Exibição</p>
+            <p>Data: 24/11</p>
+            <p>Hora: 20h30</p>
+            <p>Local: ---------</p>
+            <p>-------- ---------</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  
-  <!-- <section class="home__patronos wrapper">
-    <h3>Patronos</h3>
-
-    <div class="carousel home__patronos-list" data-flickity='{ "wrapAround": true }'>
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/incentivo-cultura.png" alt="Lei de Incentivo à Cultura" title="Lei de Incentivo à Cultura">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/gold.png" alt="Goldman Sachs" title="Goldman Sachs">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/unipar.png" alt="Unipar" title="Unipar">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/youse.png" alt="Youse" title="Youse">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/b3.png" alt="B3" title="B3">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/lenovo.png" alt="Lenovo" title="Lenovo">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/kapitalo.png" alt="Kapitalo Investimentos" title="Kapitalo Investimentos">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/vivologo.png" alt="Vivo" title="Vivo">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/travelex.png" alt="Travelex e Confidence Câmbio" title="Travelex e Confidence Câmbio">
-      </div>
-      
-      <div class="carousel-cell home__patronos-item flex--ct">
-        <img src="../assets/images/logos/tozzini.png" alt="Tozzini Freire Advogados" title="Tozzini Freire Advogados">
-      </div>
-    </div>
-  </section> -->
   
   <div include="../components/footer.html"></div>
   

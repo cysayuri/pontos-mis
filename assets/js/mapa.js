@@ -9,7 +9,7 @@ programMap.forEach(elem => {
         })
         
         programItem.forEach(idx => {
-            idx.classList.remove('active')
+            idx.classList.remove('disabled')
         })
     
         mapId = elem.getAttribute('id')
@@ -17,9 +17,9 @@ programMap.forEach(elem => {
         programItem.forEach(idx => {
             itemId = idx.getAttribute('id')
 
-            if (mapId == ('mapa-' + itemId)) {
+            if (!(mapId == ('mapa-' + itemId))) {
                 elem.classList.add('active')
-                idx.classList.add('active')
+                idx.classList.add('disabled')
             }
         })
     })

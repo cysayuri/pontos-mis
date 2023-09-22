@@ -1212,100 +1212,123 @@ footer {
     font-size: 95px;
     line-height: 1.05em; }
 
-
-
-
+.programacao__banner {
+  height: 350px;
+  margin-top: 95px;
+  position: relative;
+  width: 100vw; }
+  .programacao__banner::after {
+    background: #00000050;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .programacao__banner img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%; }
+  .programacao__banner h1 {
+    color: #F5F5F5;
+    font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
+    font-size: 80px;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
 
 .programacao__map-content {
   height: 100vh;
-  max-height: 550px;
+  max-height: 450px;
   position: relative;
-  /* height: 615px;
-  width: 815px; */
-}
-
-.programacao__map-content::after {
-  background: url(../images/pages/programacao/maps/pontos.svg) no-repeat;
-  background-position: center;
-  content: '';
-  height: 100%;
-  left: 51.5%;
-  pointer-events: none;
-  position: absolute;
-  top: 48%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.programacao__map-content svg {
-  object-fit: contain;
-}
+  text-align: center; }
+  .programacao__map-content::after {
+    background: url(../images/pages/programacao/maps/pontos.svg) no-repeat;
+    background-position: center;
+    content: '';
+    height: 87%;
+    left: 51%;
+    pointer-events: none;
+    position: absolute;
+    top: 48.3%;
+    transform: translate(-50%, -50%);
+    width: 85%; }
+  .programacao__map-content svg {
+    object-fit: contain; }
+  .programacao__map-content #mapa-bg {
+    height: 450px;
+    width: 600px; }
 
 .programacao__map-cores {
   align-items: center;
-  height: 615px;
+  height: 417px;
   left: 50%;
   margin: auto;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 815px;
-}
-
-.programacao__map-cores svg {
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-}
-  
-.programacao__map-cores svg:hover, .programacao__map-cores svg.active {
-  opacity: 1;
-}
-
-#mapa-bg {
-  height: 100%;
-  width: 100%;
-}
-
-#mapa-roxo {
-  left: 0;
-  height: 340px;
-  top: 30px;
-}
-
-#mapa-amarelo {
-  left: 49%;
-  height: 375px;
-  top: 54.5%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-#mapa-verde {
-  bottom: 32px;
-  height: 390px;
-  right: 0;
-}
+  width: 600px; }
+  .programacao__map-cores svg {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .2s ease-in-out; }
+    .programacao__map-cores svg:hover, .programacao__map-cores svg.active {
+      opacity: 1; }
+  .programacao__map-cores #mapa-roxo {
+    left: 0;
+    height: 250px;
+    top: 5px; }
+  .programacao__map-cores #mapa-amarelo {
+    left: 49%;
+    height: 280px;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .programacao__map-cores #mapa-verde {
+    bottom: 7px;
+    height: 285px;
+    right: 1px; }
 
 .programacao__content {
-  margin: 50px auto;
-}
-
-.programacao__content-item {
-  font-size: 30px;
-}
-
-.programacao__content-item {
-  height: 0;
-  opacity: 0;
-  pointer-events: none;
-  width: 0;
-}
-
-.programacao__content-item.active {
-  height: 100%;
-  opacity: 1;
-  pointer-events: auto;
-  width: 100%;
-}
+  margin: 50px auto; }
+  .programacao__content-item {
+    height: 100%;
+    opacity: 1;
+    pointer-events: auto;
+    width: 30%; }
+    .programacao__content-item.disabled {
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+      width: 0; }
+    .programacao__content-item img {
+      border: 7px solid #181818;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%; }
+    .programacao__content-item#roxo img {
+      border-color: #AE24FF; }
+    .programacao__content-item#verde img {
+      border-color: #4fe796; }
+    .programacao__content-item#amarelo img {
+      border-color: #FAB93F; }
+  .programacao__content-desc {
+    align-items: flex-start;
+    color: #181818; }
+  .programacao__content-title {
+    font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
+    font-size: 28px;
+    font-weight: 900;
+    margin: 20px 0 0; }
+  .programacao__content-text {
+    margin-top: 20px;
+    text-align: right; }
+    .programacao__content-text p {
+      font-family: "TypoRound Thin", "Roboto", "Calibri", "sans-serif";
+      font-size: 22px;
+      font-weight: 900;
+      margin: 5px 0 10px; }

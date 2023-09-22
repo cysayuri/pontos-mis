@@ -1,5 +1,176 @@
 .programacao {
+    &__banner {
+        height: 350px;
+        margin-top: 95px;
+        position: relative;
+        width: 100vw;
+        
+        &::after {
+            background: #00000050;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        h1 {
+            color: $white;
+            font-family: $title-b;
+            font-size: 80px;
+            left: 50%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    }
+    
     &__map {
-
+        &-content {
+            height: 100vh;
+            max-height: 450px;
+            position: relative;
+            text-align: center;
+            
+            &::after {
+                background: url(../images/pages/programacao/maps/pontos.svg) no-repeat;
+                background-position: center;
+                content: '';
+                height: 87%;
+                left: 51%;
+                pointer-events: none;
+                position: absolute;
+                top: 48.3%;
+                transform: translate(-50%, -50%);
+                width: 85%;
+            }
+            
+            svg {
+                object-fit: contain;
+            }
+            
+            #mapa-bg {
+                height: 450px;
+                width: 600px;
+            }
+        }
+        
+        &-cores {
+            align-items: center;
+            height: 417px;
+            left: 50%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            
+            svg {
+                cursor: pointer;
+                opacity: 0;
+                position: absolute;
+                transition: opacity .2s ease-in-out;
+                
+                &:hover, &.active {
+                    opacity: 1;
+                }
+            }
+            
+            #mapa-roxo {
+                left: 0;
+                height: 250px;
+                top: 5px;
+            }
+            
+            #mapa-amarelo {
+                left: 49%;
+                height: 280px;
+                top: 55%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+            }
+            
+            #mapa-verde {
+                bottom: 7px;
+                height: 285px;
+                right: 1px;
+            }
+        }
+    }
+    
+    &__content {
+        margin: 50px auto;
+        
+        &-item {
+            height: 100%;
+            opacity: 1;
+            pointer-events: auto;
+            width: 30%;
+            
+            &.disabled {
+                height: 0;
+                opacity: 0;
+                pointer-events: none;
+                width: 0;
+            }
+            
+            img {
+                border: 7px solid $black;
+                border-radius: 10px;
+                padding: 20px;
+                width: 100%;
+            }
+            
+            &#roxo {
+                img {
+                    border-color: #AE24FF;
+                }
+            }
+            
+            &#verde {
+                img {
+                    border-color: #4fe796;
+                }
+            }
+            
+            &#amarelo {
+                img {
+                    border-color: #FAB93F;
+                }
+            }
+        }
+        
+        &-desc {
+            align-items: flex-start;
+            color: $black;
+        }
+        
+        &-title {
+            font-family: $title-m;
+            font-size: 28px;
+            font-weight: 900;
+            margin: 20px 0 0;
+        }
+        
+        &-text {
+            margin-top: 20px;
+            text-align: right;
+            
+            p {
+                font-family: $title-t;
+                font-size: 22px;
+                font-weight: 900;
+                margin: 5px 0 10px;
+            }
+        }
     }
 }
