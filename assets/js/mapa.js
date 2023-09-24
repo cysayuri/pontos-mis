@@ -1,5 +1,5 @@
 let programMap = document.querySelectorAll('.programacao__map-cores svg')
-let programItem = document.querySelectorAll('.programacao__content-item')
+let programItem = document.querySelectorAll('.programacao__list-item')
 
 programMap.forEach(elem => {
     elem.addEventListener('click', () => {

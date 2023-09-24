@@ -107,18 +107,24 @@
         }
     }
     
-    &__content {
+    &__list {
         margin: 50px auto;
+
+        &-content {
+            flex-wrap: wrap;
+            margin: 0 -1%;
+        }
         
         &-item {
-            height: 100%;
             opacity: 1;
             pointer-events: auto;
+            margin: 3% 1%;
             width: 30%;
             
             &.disabled {
                 height: 0;
                 opacity: 0;
+                margin: 0;
                 pointer-events: none;
                 width: 0;
             }
@@ -126,6 +132,8 @@
             img {
                 border: 7px solid $black;
                 border-radius: 10px;
+                height: 450px;
+                object-fit: cover;
                 padding: 20px;
                 width: 100%;
             }
@@ -156,18 +164,17 @@
         
         &-title {
             font-family: $title-m;
-            font-size: 28px;
+            font-size: 22px;
             font-weight: 900;
             margin: 20px 0 0;
         }
         
         &-text {
             margin-top: 20px;
-            text-align: right;
             
             p {
                 font-family: $title-t;
-                font-size: 22px;
+                font-size: 18px;
                 font-weight: 900;
                 margin: 5px 0 10px;
             }

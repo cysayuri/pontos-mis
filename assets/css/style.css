@@ -1023,6 +1023,45 @@ footer {
   text-transform: uppercase;
   transition: color .5s ease-in-out; }
 
+.home__logo {
+  object-fit: contain;
+  width: 100vw; }
+  .home__logo video {
+    width: 100%; }
+
+.home__merch {
+  margin: 100px auto; }
+  .home__merch h3 {
+    font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+  .home__merch-list {
+    padding: 0 1%;
+    max-width: 920px;
+    margin: auto; }
+  .home__merch-item {
+    align-items: center;
+    height: 220px;
+    margin: 0 1%;
+    max-width: 260px;
+    width: 30%; }
+    .home__merch-item img {
+      border-radius: 20px;
+      height: 100%;
+      max-height: 220px;
+      max-width: 220px;
+      object-fit: contain;
+      transition: all .5s ease-in-out;
+      width: 100%; }
+    .home__merch-item.is-selected img {
+      height: 370px;
+      max-height: 100%;
+      max-width: 100%;
+      width: 300px; }
+  .home__merch .flickity-page-dots {
+    display: none; }
+
 .home__map {
   margin: 100px auto; }
   .home__map h3 {
@@ -1293,42 +1332,47 @@ footer {
     height: 285px;
     right: 1px; }
 
-.programacao__content {
+.programacao__list {
   margin: 50px auto; }
-  .programacao__content-item {
-    height: 100%;
+  .programacao__list-content {
+    flex-wrap: wrap;
+    margin: 0 -1%; }
+  .programacao__list-item {
     opacity: 1;
     pointer-events: auto;
+    margin: 3% 1%;
     width: 30%; }
-    .programacao__content-item.disabled {
+    .programacao__list-item.disabled {
       height: 0;
       opacity: 0;
+      margin: 0;
       pointer-events: none;
       width: 0; }
-    .programacao__content-item img {
+    .programacao__list-item img {
       border: 7px solid #181818;
       border-radius: 10px;
+      height: 450px;
+      object-fit: cover;
       padding: 20px;
       width: 100%; }
-    .programacao__content-item#roxo img {
+    .programacao__list-item#roxo img {
       border-color: #AE24FF; }
-    .programacao__content-item#verde img {
+    .programacao__list-item#verde img {
       border-color: #4fe796; }
-    .programacao__content-item#amarelo img {
+    .programacao__list-item#amarelo img {
       border-color: #FAB93F; }
-  .programacao__content-desc {
+  .programacao__list-desc {
     align-items: flex-start;
     color: #181818; }
-  .programacao__content-title {
+  .programacao__list-title {
     font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 900;
     margin: 20px 0 0; }
-  .programacao__content-text {
-    margin-top: 20px;
-    text-align: right; }
-    .programacao__content-text p {
+  .programacao__list-text {
+    margin-top: 20px; }
+    .programacao__list-text p {
       font-family: "TypoRound Thin", "Roboto", "Calibri", "sans-serif";
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 900;
       margin: 5px 0 10px; }
