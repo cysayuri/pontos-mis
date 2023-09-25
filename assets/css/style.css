@@ -936,7 +936,7 @@ footer {
 
 .ticket {
   background: #181818;
-  margin: 80px auto 90px;
+  margin: 90px auto;
   padding: 20px 50px;
   position: relative;
   width: 915px; }
@@ -1030,7 +1030,7 @@ footer {
     width: 100%; }
 
 .home__merch {
-  margin: 100px auto; }
+  margin: 130px auto; }
   .home__merch h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1042,28 +1042,27 @@ footer {
     margin: auto; }
   .home__merch-item {
     align-items: center;
-    height: 220px;
+    height: 330px;
     margin: 0 1%;
-    max-width: 260px;
     width: 30%; }
     .home__merch-item img {
-      border-radius: 20px;
+      border-radius: 35px;
       height: 100%;
-      max-height: 220px;
+      max-height: 260px;
       max-width: 220px;
       object-fit: contain;
       transition: all .5s ease-in-out;
       width: 100%; }
     .home__merch-item.is-selected img {
-      height: 370px;
+      height: 330px;
       max-height: 100%;
       max-width: 100%;
-      width: 300px; }
+      width: 280px; }
   .home__merch .flickity-page-dots {
     display: none; }
 
 .home__map {
-  margin: 100px auto; }
+  margin: 130px auto 120px; }
   .home__map h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1083,7 +1082,7 @@ footer {
       width: auto; }
 
 .home__patronos {
-  margin: 100px auto; }
+  margin: 120px auto; }
   .home__patronos h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1173,6 +1172,38 @@ footer {
       font-size: 20px; }
       .home__museus-item p i {
         margin: 0 10px 0 5px; }
+
+.home .flickity-button {
+  background: transparent; }
+  .home .flickity-button:focus {
+    box-shadow: none; }
+  .home .flickity-button::after {
+    background: url(../images/global/arrow.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 45px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease-in-out;
+    width: 18px; }
+  .home .flickity-button.previous::after {
+    transform: translate(-50%, -50%) rotate(180deg); }
+  .home .flickity-button svg {
+    display: none; }
+  .home .flickity-button:hover {
+    background: transparent; }
+    .home .flickity-button:hover::after {
+      left: 53%;
+      top: 55%;
+      scale: 1.3; }
+
+.home .flickity-prev-next-button.previous {
+  left: -30px; }
+
+.home .flickity-prev-next-button.next {
+  right: -30px; }
 
 .sobre__banner {
   margin-top: 20px;
