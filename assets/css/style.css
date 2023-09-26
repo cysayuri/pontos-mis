@@ -1295,7 +1295,7 @@ footer {
 
 .sobre__content {
   align-items: center;
-  margin: 130px auto; }
+  margin: -190px auto; }
   .sobre__content-desc {
     width: 60%; }
     .sobre__content-desc h3 {
@@ -1309,16 +1309,36 @@ footer {
   .sobre__content-txt {
     margin-bottom: 40px; }
   .sobre__content-video {
+    margin: -10px 0;
     width: 50%; }
-    .sobre__content-video video {
-      object-fit: contain;
-      width: 100%; }
-  .sobre__content-img--2 img {
-    border-color: #AE24FF; }
-  .sobre__content-img--1 img {
-    border-color: #4fe796; }
-  .sobre__content-img--3 img {
-    border-color: #FAB93F; }
+  .sobre__content-img {
+    padding: 170px 0; }
+    .sobre__content-img--2 img {
+      border-color: #AE24FF; }
+    .sobre__content-img--1 img {
+      border-color: #4fe796; }
+    .sobre__content-img--3 img {
+      border-color: #FAB93F; }
+
+.sobre #sobre {
+  margin: -150px auto -280px; }
+  .sobre #sobre .sobre__content-video {
+    margin-left: -120px; }
+    .sobre #sobre .sobre__content-video video {
+      height: 410px;
+      margin-bottom: -10px;
+      object-fit: cover;
+      width: 90%; }
+
+.sobre #filmes .sobre__content-video {
+  margin-left: -170px; }
+  .sobre #filmes .sobre__content-video video {
+    margin: -20px 0 20px;
+    object-fit: contain;
+    width: 100%; }
+
+.sobre footer {
+  margin-top: 150px; }
 
 .programacao__banner {
   height: 350px;

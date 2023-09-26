@@ -108,7 +108,7 @@
 
     &__content {
         align-items: center;
-        margin: 130px auto;
+        margin: -190px auto;
 
         &-desc {
             width: 60%;
@@ -133,15 +133,13 @@
         }
 
         &-video {
+            margin: -10px 0;
             width: 50%;
-
-            video {
-                object-fit: contain;
-                width: 100%;
-            }
         }
 
         &-img {
+            padding: 170px 0;
+
             &--2 img {
                 border-color: #AE24FF;
             }
@@ -154,5 +152,36 @@
                 border-color: #FAB93F;
             }
         }
+    }
+
+    #sobre {
+        margin: -150px auto -280px;
+
+        .sobre__content-video {
+            margin-left: -120px;
+
+            video {
+                height: 410px;
+                margin-bottom: -10px;
+                object-fit: cover;
+                width: 90%;
+            }
+        }
+    }
+
+    #filmes {
+        .sobre__content-video {
+            margin-left: -170px;
+
+            video {
+                margin: -20px 0 20px;
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 150px;
     }
 }

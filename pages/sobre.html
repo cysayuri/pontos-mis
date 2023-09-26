@@ -9,7 +9,56 @@
   <title>Sobre - Pontos MIS</title>
 </head>
 <body class="sobre">
-  <div include="../components/menu.html"></div>
+  <menu class="menu show-desk">
+    <nav class="menu__container flex--sb wrapper">
+      <a href="/pages/" class="menu__logo"><img src="../assets/images/logos/logo.svg" alt="Pontos MIS" title="Pontos MIS"></a>
+      
+      <div class="menu__main">
+        <div class="menu__content flex--end">
+          <ul class="menu__list flex--sb">
+            <li class="menu__item">
+              <a href="/pages/" class="menu__link">Início</a>
+            </li>
+            <li class="menu__item">
+              <a href="./sobre.html" class="menu__link">Sobre</a>
+            </li>
+            <li class="menu__item">
+              <a href="./programacao.html" class="menu__link">Programação</a>
+            </li>
+            <li class="menu__item">
+              <a href="./educativo" class="menu__link">Educativo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </menu>
+  
+  <menu id="menu-mobile" class="menu show-tablet">
+    <nav class="menu__container">
+      <div class="menu__header flex--sb wrapper">
+        <a href="/pages/" class="menu__logo"><img src="../assets/images/logos/logo.svg" alt="Pontos MIS" title="Pontos MIS"></a>
+        <div class="menu__burguer"></div>
+      </div>
+      
+      <div class="menu__content">
+        <ul class="menu__list flex--sb">
+          <li class="menu__item">
+            <a href="/pages/" class="menu__link">Início</a>
+          </li>
+          <li class="menu__item">
+            <a href="./sobre.html" class="menu__link">Sobre</a>
+          </li>
+          <li class="menu__item">
+            <a href="./programacao.html" class="menu__link">Programação</a>
+          </li>
+          <li class="menu__item">
+            <a href="./educativo" class="menu__link">Educativo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </menu>
   
   <section class="sobre__banner">
     <div class="sobre__banner-container flex--sb wrapper--small">
@@ -28,33 +77,16 @@
     </div>
   </section>
   
-  <section class="sobre__content wrapper flex--sb">
-    <div class="sobre__content-desc">
-      <p>O Pontos MIS é um programa de formação e difusão cultural em todo o Estado de São Paulo. As cidades parceiras recebem programações de sessões de cinema, oficinas, palestras, exposições e formação em gestão cultural, visando a formação de novos públicos para a cultura e para o cinema.</p>
-      <p>O programa estabelece os seguintes eixos de trabalho:</p>
-    </div>
-    
-    <div style="margin-right: -170px;" class="sobre__content-video">
-      <video style="transform: scalex(-1);" src="../assets/images/animacoes/cameraline.mp4" autoplay loop muted></video>
-    </div>
-  </section>
-  
-  <section class="sobre__content wrapper flex--sb">
-    <div style="margin-left: -140px;" class="sobre__content-video">
+  <section id="sobre" class="sobre__content wrapper flex--sb">
+    <div class="sobre__content-img sobre__content-video">
       <video src="../assets/images/animacoes/camera2.mp4" autoplay loop muted></video>
     </div>
     
     <div class="sobre__content-desc">
-      <div class="sobre__content-txt">
-        <h3>Sessões Presenciais</h3>
-        <p>Mensalmente, o Pontos MIS disponibiliza mostras de filmes para as cidades parceiras programarem e exibirem presencialmente em seus respectivos espaços culturais.</p>
-      </div>
-      
-      <div class="sobre__content-txt">
-        <h3>Bate-papo de cinema</h3>
-        <p>Quinzenalmente, pelas plataformas do MIS-SP, o Pontos MIS realiza a curadoria de um filme seguido de debate ao vivo com convidados, como especialistas na área e integrantes da equipe do filme selecionado.</p>
-      </div>
-    </div>  
+      <h3>Sobre o projeto</h3>
+      <p>O Pontos MIS é um programa de formação e difusão cultural em todo o Estado de São Paulo. As cidades parceiras recebem programações de sessões de cinema, oficinas, palestras, exposições e formação em gestão cultural, visando a formação de novos públicos para a cultura e para o cinema.</p>
+      <p>O programa estabelece os seguintes eixos de trabalho:</p>
+    </div>
   </section>
   
   <section class="sobre__content wrapper flex--sb">
@@ -75,11 +107,25 @@
     </div>
   </section>
   
-  <section class="sobre__content wrapper flex--sb">
-    <div class="sobre__content-img sobre__content-img--1 card">
-      <img src="../assets/images/pages/sobre/img-1.jpg">
+  <section id="filmes" class="sobre__content wrapper flex--sb">
+    <div class="sobre__content-img sobre__content-video">
+      <video src="../assets/images/animacoes/cameraline.mp4" autoplay loop muted></video>
     </div>
     
+    <div class="sobre__content-desc">
+      <div class="sobre__content-txt">
+        <h3>Sessões Presenciais</h3>
+        <p>Mensalmente, o Pontos MIS disponibiliza mostras de filmes para as cidades parceiras programarem e exibirem presencialmente em seus respectivos espaços culturais.</p>
+      </div>
+      
+      <div class="sobre__content-txt">
+        <h3>Bate-papo de cinema</h3>
+        <p>Quinzenalmente, pelas plataformas do MIS-SP, o Pontos MIS realiza a curadoria de um filme seguido de debate ao vivo com convidados, como especialistas na área e integrantes da equipe do filme selecionado.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="oficinas" class="sobre__content wrapper flex--sb">
     <div class="sobre__content-desc">
       <div class="sobre__content-txt">
         <h3>Formação</h3>
@@ -92,9 +138,17 @@
         <p>Seleção e acompanhamento de projeto de curta-metragem, em diferentes etapas de sua realização, com o objetivo de colaborar com roteiristas, diretores e produtores residentes do Estado de São Paulo (exceto capital), para aprimorarem seus projetos, dialogando sobre as dúvidas e dificuldades que possam existir em cada fase. Uma equipe de profissionais do Programa Pontos MIS irá orientar e fazer sugestões de desenvolvimento dos projetos aos participantes, de forma gratuita e virtual.</p>
       </div>
     </div>
+    
+    <div class="sobre__content-img sobre__content-img--1 card">
+      <img src="../assets/images/pages/sobre/img-1.jpg">
+    </div>
   </section>
   
-  <section class="sobre__content wrapper flex--sb">
+  <section id="exposicoes" class="sobre__content wrapper flex--sb">
+    <div class="sobre__content-img sobre__content-img--3 card">
+      <img src="../assets/images/pages/sobre/img-3.jpg">
+    </div>
+    
     <div class="sobre__content-desc">
       <div class="sobre__content-txt">
         <h3>Exposições Pontos MIS</h3>
@@ -107,15 +161,55 @@
         <p>Conversa transmitida ao vivo pelo Youtube do MIS sobre as exposições de fotografia do Pontos MIS que circulam pelo estado de São Paulo. Em cada prosa, a tríade de convidados é constituída por um representante do olhar do artista-fotógrafo, um gestor da cidade e o especialista da área como mediador. Essa prosa apresenta e debate com público o processo de criação e a trajetória do artista, as adaptações museográficas da itinerância da exposição, a montagem local e todos os bastidores e curiosidades das exposições.</p>
       </div>
     </div>
+  </section>
+  
+  <footer>
+    <div class="footer__container flex--sb wrapper">
+      <div class="footer__social flex--ct">
+        <a href="https://www.facebook.com/museudaimagemedosom/" class="flex--ct"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/mis_sp/" class="flex--ct"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/mis_sp" class="flex--ct"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://open.spotify.com/user/mis_sp" class="flex--ct"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://www.youtube.com/user/missaopaulo" class="flex--ct"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.tripadvisor.com.br/Attraction_Review-g303631-d2350247-Reviews-Museu_do_Som_e_Imagem_MIS-Sao_Paulo_State_of_Sao_Paulo.html" class="flex--ct">
+          <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.2 320.2" width="25" height="20">
+            <path class="st0" d="M128.2 127.9C92.7 127.9 64 156.6 64 192c0 35.4 28.7 64.1 64.1 64.1 35.4 0 64.1-28.7 64.1-64.1.1-35.4-28.6-64.1-64-64.1zm0 110c-25.3 0-45.9-20.5-45.9-45.9s20.5-45.9 45.9-45.9S174 166.7 174 192s-20.5 45.9-45.8 45.9z"/>
+            <circle class="st0" cx="128.4" cy="191.9" r="31.9"/>
+            <path class="st0" d="M384.2 127.9c-35.4 0-64.1 28.7-64.1 64.1 0 35.4 28.7 64.1 64.1 64.1 35.4 0 64.1-28.7 64.1-64.1 0-35.4-28.7-64.1-64.1-64.1zm0 110c-25.3 0-45.9-20.5-45.9-45.9s20.5-45.9 45.9-45.9S430 166.7 430 192s-20.5 45.9-45.8 45.9z"/>
+            <circle class="st0" cx="384.4" cy="191.9" r="31.9"/>
+            <path class="st0" d="M474.4 101.2l37.7-37.4h-76.4C392.9 29 321.8 0 255.9 0c-66 0-136.5 29-179.3 63.8H0l37.7 37.4C14.4 124.4 0 156.5 0 192c0 70.8 57.4 128.2 128.2 128.2 32.5 0 62.2-12.1 84.8-32.1l43.4 31.9 42.9-31.2-.5-1.2c22.7 20.2 52.5 32.5 85.3 32.5 70.8 0 128.2-57.4 128.2-128.2-.1-35.4-14.6-67.5-37.9-90.7zM368 64.8c-60.7 7.6-108.3 57.6-111.9 119.5-3.7-62-51.4-112.1-112.3-119.5 30.6-22 69.6-32.8 112.1-32.8S337.4 42.8 368 64.8zM128.2 288.2C75 288.2 32 245.1 32 192s43.1-96.2 96.2-96.2 96.2 43.1 96.2 96.2c-.1 53.1-43.1 96.2-96.2 96.2zm256 0c-53.1 0-96.2-43.1-96.2-96.2s43.1-96.2 96.2-96.2 96.2 43.1 96.2 96.2c-.1 53.1-43.1 96.2-96.2 96.2z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="footer__list">
+        <a href="https://www.mis-sp.org.br/sobre" target="_blank" class="footer__list-item flex--end">Sobre</a>
+        <a href="https://www.mis-sp.org.br/sobre/transparencia" target="_blank" class="footer__list-item flex--end">Transparência</a>
+        <a href="https://www.mis-sp.org.br/rodape/fale_conosco" target="_blank" class="footer__list-item flex--end">Fale conosco</a>
+        <a href="https://www.mis-sp.org.br/sobre/trabalhe_conosco" target="_blank" class="footer__list-item flex--end">Trabalhe conosco</a>
+        <a href="https://www.mis-sp.org.br/rodape/selecao_projeto" target="_blank" class="footer__list-item flex--end">Seleção de projetos</a>
+        <a href="https://www.mis-sp.org.br/rodape/faca_seu_evento" target="_blank" class="footer__list-item flex--end">Faça seu evento</a>
+        <a href="https://www.mis-sp.org.br/rodape/imprensa" target="_blank" class="footer__list-item flex--end">Imprensa</a>
+      </div>
+    </div>
+  </footer>
+  
+  <section class="footer__gov">
+    <div class="wrapper--small">
+      <div class="footer__gov-list flex--sb">
+        <a href="https://www.ouvidoria.sp.gov.br/Portal/Default.aspx" target="_blank" class="footer__gov-item">Ouvidoria</a>
+        <a href="http://www.transparencia.sp.gov.br/" target="_blank" class="footer__gov-item">Transparência</a>
+        <a href="http://www.sic.sp.gov.br/" target="_blank" class="footer__gov-item">SIC</a>
+      </div>
+    </div>
     
-    <div class="sobre__content-img sobre__content-img--3 card">
-      <img src="../assets/images/pages/sobre/img-3.jpg">
+    <div class="footer__gov-banner flex--ct">
+      <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+        <img src="../assets/images/global/footer/gov-sp.png" alt="Governo do Estado de São Paulo" title="Governo do Estado de São Paulo">
+      </a>
     </div>
   </section>
   
-  <div include="../components/footer.html"></div>
-  
-  <script src="../assets/js/include.js"></script>
   <script src="../assets/js/menu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
