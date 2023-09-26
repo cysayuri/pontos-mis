@@ -13,6 +13,14 @@
     font-family: 'DMSans Regular';
     src: url(../fonts/DMSans-Regular.ttf);
 }
+@font-face {
+    font-family: 'DMSans Light';
+    src: url(../fonts/DMSans-Light.ttf);
+}
+@font-face {
+    font-family: 'DMSans Thin';
+    src: url(../fonts/DMSans-Thin.ttf);
+}
 
 @font-face {
     font-family: 'TypoRound Bold';
@@ -30,6 +38,8 @@
 $font-b: 'DMSans Bold', 'Roboto', 'Calibri', 'sans-serif';
 $font-m: 'DMSans Medium', 'Roboto', 'Calibri', 'sans-serif';
 $font-r: 'DMSans Regular', 'Roboto', 'Calibri', 'sans-serif';
+$font-l: 'DMSans Light', 'Roboto', 'Calibri', 'sans-serif';
+$font-t: 'DMSans Thin', 'Roboto', 'Calibri', 'sans-serif';
 $title-b: 'TypoRound Bold', 'Roboto', 'Calibri', 'sans-serif';
 $title-m: 'TypoRound Regular', 'Roboto', 'Calibri', 'sans-serif';
 $title-t: 'TypoRound Thin', 'Roboto', 'Calibri', 'sans-serif';
@@ -49,7 +59,7 @@ $tertiary: #F5D49A;
 
 $black: #181818;
 $gray: #EBEBEB;
-$white: #F5F5F5;
+$white: #F4F4F4;
 
 $status-success: #21B35B;
 $status-warning: #FFB21D;

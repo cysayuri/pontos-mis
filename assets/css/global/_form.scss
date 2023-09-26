@@ -228,8 +228,12 @@ input[type="radio"] {
     }
 }
 
+.submit {
+    width: 100%;
+}
+
 input[type="submit"] {
-    border-color: $primary;
+    margin: 0 0 0 auto;
     width: fit-content;
     
     &:focus, &:hover {

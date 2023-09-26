@@ -2,9 +2,9 @@
 button, .btn, input[type="submit"] {
     align-items: center;
     background: transparent;
-    border: 2px solid $primary;
-    border-radius: 20px;
-    color: $primary;
+    border: 2px solid $black;
+    border-radius: 10px;
+    color: $black;
     cursor: pointer;
     display: flex;
     font-family: $font-m;
@@ -19,8 +19,8 @@ button, .btn, input[type="submit"] {
     width: fit-content;
     
     &:hover {
-        background: $primary;
-        border-color: $primary;
+        background: $black;
+        border-color: $black;
         color: #fff;
     }
 }

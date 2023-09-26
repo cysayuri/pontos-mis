@@ -108,7 +108,7 @@
     }
     
     &__list {
-        margin: 50px auto;
+        margin: 50px auto 40px;
 
         &-content {
             flex-wrap: wrap;
@@ -118,8 +118,7 @@
         &-item {
             opacity: 1;
             pointer-events: auto;
-            margin: 3% 1%;
-            width: 30%;
+            margin: 2% 1%;
             
             &.disabled {
                 height: 0;
@@ -130,17 +129,16 @@
             }
             
             img {
-                border: 7px solid $black;
-                border-radius: 10px;
                 height: 450px;
-                object-fit: cover;
-                padding: 20px;
-                width: 100%;
             }
             
             &#roxo {
                 img {
                     border-color: #AE24FF;
+                }
+                
+                .programacao__list-title:before {
+                    background: #AE24FF;
                 }
             }
             
@@ -148,11 +146,19 @@
                 img {
                     border-color: #4fe796;
                 }
+                
+                .programacao__list-title:before {
+                    background: #4fe796;
+                }
             }
             
             &#amarelo {
                 img {
                     border-color: #FAB93F;
+                }
+                
+                .programacao__list-title:before {
+                    background: #FAB93F;
                 }
             }
         }
@@ -166,17 +172,40 @@
             font-family: $title-m;
             font-size: 22px;
             font-weight: 900;
-            margin: 20px 0 0;
+            margin: 20px 0 0 10px;
+            padding: 0 10px 0 25px;
+            position: relative;
+            
+            &::before {
+                border-radius: 1px;
+                content: '';
+                height: 3px;
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+            }
         }
         
         &-text {
-            margin-top: 20px;
+            margin-top: 25px;
+            padding: 0 10px;
             
             p {
-                font-family: $title-t;
+                font-family: $font-l;
                 font-size: 18px;
-                font-weight: 900;
                 margin: 5px 0 10px;
+
+                b {
+                    font-family: $font-b;
+                    letter-spacing: -0.5px;
+
+                    i {
+                        font-size: 16px;
+                        margin-right: 5px;
+                    }
+                }
             }
         }
     }

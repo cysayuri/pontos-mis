@@ -1,0 +1,13 @@
+.card {
+    text-decoration: none;
+    width: 30%;
+    
+    img {
+        border: 7px solid $black;
+        border-radius: 10px;
+        object-fit: cover;
+        padding: 20px;
+        transition: border .5s ease-in-out, filter .5s ease-in-out;
+        width: 100%;
+    }
+}

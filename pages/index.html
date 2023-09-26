@@ -67,13 +67,13 @@
   
   <section class="ticket">
     <div class="ticket__container">
-      <h3>O programa Pontos Mis tem o intuito de levar cultura e formação para o interior de São Paulo através de três principais eixos:</h3>
+      <h3>O programa Pontos Mis é uma extensão do Museu da Imagem e do Som, tendo o intuito de levar cultura e formação para o interior de São Paulo através de três principais eixos:</h3>
     </div>
   </section>
   
   <section class="home__sobre wrapper">
     <div class="home__sobre-list flex--sb">
-      <a href="/pages/sobre.html#filmes" class="home__sobre-item">
+      <a href="/pages/sobre.html#filmes" class="home__sobre-item card">
         <img src="../assets/images/pages/home/img-1.jpg" alt="Filmes" title="Filmes">
         
         <div class="home__sobre-title">
@@ -81,7 +81,7 @@
         </div>
       </a>
       
-      <a href="/pages/sobre.html#oficinas" class="home__sobre-item">
+      <a href="/pages/sobre.html#oficinas" class="home__sobre-item card">
         <img src="../assets/images/pages/home/img-2.jpg" alt="Oficinas" title="Oficinas">
         
         <div class="home__sobre-title">
@@ -89,7 +89,7 @@
         </div>
       </a>
       
-      <a href="/pages/sobre.html#exposicoes" class="home__sobre-item">
+      <a href="/pages/sobre.html#exposicoes" class="home__sobre-item card">
         <img src="../assets/images/pages/home/img-3.jpg" alt="Exposições" title="Exposições">
         
         <div class="home__sobre-title">
@@ -99,18 +99,14 @@
     </div>
   </section>
   
-  <section class="home__logo wrapper">
-    <!-- <video src="../assets/images/animacoes/compfinal/compfinal.mp4" autoplay loop muted></video> -->
+  <section class="home__logo wrapper--small flex--ct">
+    <video src="../assets/images/animacoes/logo.mp4" autoplay loop muted></video>
   </section>
   
   <section class="home__merch wrapper">
     <h3>Merchandise</h3>
 
     <div class="carousel home__merch-list" data-flickity='{ "wrapAround": true }'>
-      <div class="carousel-cell home__merch-item flex--ct">
-        <img src="../assets/images/pages/home/mockups/caneca.jpg" alt="Caneca personalizada" title="Caneca personalizada">
-      </div>
-      
       <div class="carousel-cell home__merch-item flex--ct">
         <img src="../assets/images/pages/home/mockups/camisa.jpg" alt="Camisa personalizada" title="Camisa personalizada">
       </div>
@@ -121,6 +117,10 @@
       
       <div class="carousel-cell home__merch-item flex--ct">
         <img src="../assets/images/pages/home/mockups/pin.jpg" alt="Pin personalizado" title="Pin personalizado">
+      </div>
+      
+      <div class="carousel-cell home__merch-item flex--ct">
+        <img src="../assets/images/pages/home/mockups/caneca.jpg" alt="Caneca personalizada" title="Caneca personalizada">
       </div>
       
       <div class="carousel-cell home__merch-item flex--ct">
@@ -140,7 +140,7 @@
   <section class="home__patronos wrapper">
     <h3>Patronos</h3>
 
-    <div class="carousel home__patronos-list" data-flickity='{ "wrapAround": true }'>
+    <div class="carousel home__patronos-list" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
       <div class="carousel-cell home__patronos-item flex--ct">
         <img src="../assets/images/logos/incentivo-cultura.png" alt="Lei de Incentivo à Cultura" title="Lei de Incentivo à Cultura">
       </div>
@@ -212,6 +212,9 @@
         <div class="textarea col-12">
           <label for="">Mensagem:</label>
           <textarea placeholder="Mensagem" cols="30" rows="10"></textarea>
+        </div>
+        <div class="submit flex--end">
+          <input type="submit" value="Enviar">
         </div>
       </form>
     </div>

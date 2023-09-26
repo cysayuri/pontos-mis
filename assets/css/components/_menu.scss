@@ -451,3 +451,23 @@ menu ul li a {
         }
     }
 }
+
+.sobre {
+    menu {
+        background: #dddddd41;
+
+        ul li a {
+            color: $black;
+        }
+    }
+    
+    .menu {
+        &__burguer {
+            border-color: $black;
+            
+            &:before, &:after {
+                background: $black;
+            }
+        }
+    }
+}
