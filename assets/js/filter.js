@@ -1,7 +1,10 @@
-/*-- ------- Botão ------- --*/
-
 const filterBtn = document.querySelector('.programacao__filter-btn')
 const filterSelect = document.querySelector('.programacao__filter-select')
+
+let programMap = document.querySelectorAll('.programacao__map-cores svg')
+let programItem = document.querySelectorAll('.programacao__list-item')
+
+/*-- ------- Botão ------- --*/
 
 filterBtn.addEventListener('click', () => {
     filterBtn.classList.add('disabled')
@@ -9,14 +12,16 @@ filterBtn.addEventListener('click', () => {
 })
 
 
+// programMap.forEach(elem => {
+//     elem.classList.remove('active')
+// })
+
+
 
 
 
 
 /*-- ------- Mapa ------- --*/
-
-let programMap = document.querySelectorAll('.programacao__map-cores svg')
-let programItem = document.querySelectorAll('.programacao__list-item')
 
 programMap.forEach(elem => {
     elem.addEventListener('click', () => {

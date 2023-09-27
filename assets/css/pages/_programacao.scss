@@ -35,9 +35,11 @@
     }
     
     &__map {
+         margin: -30px auto -60px;
+
         &-content {
             height: 100vh;
-            max-height: 450px;
+            max-height: 370px;
             position: relative;
             text-align: center;
             
@@ -59,20 +61,20 @@
             }
             
             #mapa-bg {
-                height: 450px;
-                width: 600px;
+                height: 370px;
+                width: 500px;
             }
         }
         
         &-cores {
             align-items: center;
-            height: 417px;
+            height: 317px;
             left: 50%;
             margin: auto;
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
-            width: 600px;
+            width: 450px;
             
             svg {
                 cursor: pointer;
@@ -86,23 +88,23 @@
             }
             
             #mapa-roxo {
-                left: 0;
-                height: 250px;
-                top: 5px;
+                left: -27px;
+                height: 210px;
+                top: -10px;
             }
             
             #mapa-amarelo {
-                left: 49%;
-                height: 280px;
-                top: 55%;
+                left: 48.5%;
+                height: 230px;
+                top: 55.3%;
                 transform: translate(-50%, -50%);
                 z-index: 1;
             }
-            
+
             #mapa-verde {
-                bottom: 7px;
-                height: 285px;
-                right: 1px;
+                bottom: -8px;
+                height: 235px;
+                right: -23px;
             }
         }
     }

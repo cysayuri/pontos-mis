@@ -1327,12 +1327,12 @@ footer {
 .sobre #sobre {
   margin: -150px auto -280px; }
   .sobre #sobre .sobre__content-video {
-    margin-left: -120px; }
+    margin-left: -165px; }
     .sobre #sobre .sobre__content-video video {
       height: 410px;
       margin-bottom: -10px;
-      object-fit: cover;
-      width: 90%; }
+      object-fit: contain;
+      width: 105%; }
 
 .sobre #filmes .sobre__content-video {
   margin-left: -170px; }
@@ -1345,7 +1345,7 @@ footer {
   margin-top: 150px; }
 
 .programacao__banner {
-  height: 350px;
+  height: 370px;
   margin-top: 95px;
   position: relative;
   width: 100vw; }
@@ -1372,9 +1372,11 @@ footer {
     transform: translate(-50%, -50%);
     z-index: 1; }
 
+.programacao__map {
+  margin: -30px auto -50px; }
 .programacao__map-content {
   height: 100vh;
-  max-height: 450px;
+  max-height: 370px;
   position: relative;
   text-align: center; }
   .programacao__map-content::after {
@@ -1391,18 +1393,18 @@ footer {
   .programacao__map-content svg {
     object-fit: contain; }
   .programacao__map-content #mapa-bg {
-    height: 450px;
-    width: 600px; }
+    height: 370px;
+    width: 500px; }
 
 .programacao__map-cores {
   align-items: center;
-  height: 417px;
+  height: 317px;
   left: 50%;
   margin: auto;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 600px; }
+  width: 450px; }
   .programacao__map-cores svg {
     cursor: pointer;
     opacity: 0;
@@ -1411,19 +1413,19 @@ footer {
     .programacao__map-cores svg:hover, .programacao__map-cores svg.active {
       opacity: 1; }
   .programacao__map-cores #mapa-roxo {
-    left: 0;
-    height: 250px;
-    top: 5px; }
+    left: -27px;
+    height: 210px;
+    top: -10px; }
   .programacao__map-cores #mapa-amarelo {
-    left: 49%;
-    height: 280px;
-    top: 55%;
+    left: 48.5%;
+    height: 230px;
+    top: 55.3%;
     transform: translate(-50%, -50%);
     z-index: 1; }
   .programacao__map-cores #mapa-verde {
-    bottom: 7px;
-    height: 285px;
-    right: 1px; }
+    bottom: -8px;
+    height: 235px;
+    right: -23px; }
 
 .programacao__list {
   margin: 50px auto 40px; }
