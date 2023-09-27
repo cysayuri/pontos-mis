@@ -171,8 +171,11 @@
   
   <section class="programacao__filter wrapper flex--sb">
     <div class="programacao__filter-select select">
-      <select name="cities">
+      <select id="cities">
         <option selected disabled>Selecione uma cidade</option>
+        <option value="todos">Mostrar todos</option>
+        <option value="aguas-lindoia">Águas de Lindóia</option>
+        <option value="alvares-machado">Álvares Machado</option>
         <option value="americana">Americana</option>
         <option value="amparo">Amparo</option>
         <option value="anhumas">Anhumas</option>
@@ -287,8 +290,6 @@
         <option value="vargem-grande-sul">Vargem Grande do Sul</option>
         <option value="votuporanga">Votuporanga</option>
         <option value="varzea-paulista">Várzea Paulista</option>
-        <option value="aguas-lindoia">Águas de Lindóia</option>
-        <option value="alvares-machado">Álvares Machado</option>
       </select>
     </div>
     
@@ -394,6 +395,11 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="programacao__list-empty">
+      <h3>Infelizmente ainda não há eventos<br><span id="on"></span> programados <span id="empty"></span></h3>
+      <h4>Fique atento para mais novidedes!</h4>
     </div>
   </section>
   
