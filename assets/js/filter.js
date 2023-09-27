@@ -1,5 +1,7 @@
 const filterBtn = document.querySelector('.programacao__filter-btn')
-const filterSelect = document.querySelector('.programacao__filter-select')
+const filterField = document.querySelector('.programacao__filter-select')
+
+let filterSelect = document.querySelectorAll('.programacao__filter-select option')
 
 let programMap = document.querySelectorAll('.programacao__map-cores svg')
 let programItem = document.querySelectorAll('.programacao__list-item')
@@ -8,17 +10,27 @@ let programItem = document.querySelectorAll('.programacao__list-item')
 
 filterBtn.addEventListener('click', () => {
     filterBtn.classList.add('disabled')
-    filterSelect.classList.add('active')
+    filterField.classList.add('active')
 })
 
 
-// programMap.forEach(elem => {
-//     elem.classList.remove('active')
-// })
+filterField.addEventListener('change', (event) => {
+    filterSelect.forEach(elem => {
+        itemValue = event.target.value;
+    })
 
-
-
-
+    programItem.forEach(elem => {
+        if (elem.classList.contains(itemValue)) {
+            elem.classList.remove('disabled')
+        } else {
+            elem.classList.add('disabled')
+        }
+    })
+    
+    programMap.forEach(elem => {
+        elem.classList.remove('active')
+    })
+})
 
 
 /*-- ------- Mapa ------- --*/
@@ -26,7 +38,7 @@ filterBtn.addEventListener('click', () => {
 programMap.forEach(elem => {
     elem.addEventListener('click', () => {
         filterBtn.classList.remove('disabled')
-        filterSelect.classList.remove('active')
+        filterField.classList.remove('active')
         
         programMap.forEach(elem => {
             elem.classList.remove('active')
@@ -39,7 +51,7 @@ programMap.forEach(elem => {
         mapId = elem.getAttribute('id')
 
         programItem.forEach(idx => {
-            itemId = idx.getAttribute('id')
+            itemId = idx.getAttribute('value')
 
             if (!(mapId == ('mapa-' + itemId))) {
                 elem.classList.add('active')
