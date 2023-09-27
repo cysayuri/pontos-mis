@@ -278,18 +278,21 @@ select {
   margin: 15px 20px 30px;
   padding: 0;
   position: relative; }
-  .select:after {
-    border: 1px solid transparent;
-    border-bottom-color: #D08CF8;
-    border-right-color: #D08CF8;
+  .select::before, .select:after {
+    background: #b3b3b3;
+    border-radius: 2px;
     content: '';
-    height: 10px;
+    height: 2px;
     position: absolute;
-    right: 25px;
-    top: calc(50% - 5px);
-    transform: rotate(45deg) translateY(-50%);
+    top: 50%;
     transition: transform .2s ease-out;
-    width: 10px; }
+    width: 15px; }
+  .select::before {
+    right: 20px;
+    transform: rotate(-45deg) translateY(-50%); }
+  .select:after {
+    right: 31px;
+    transform: rotate(45deg) translateY(-50%); }
 
 textarea {
   box-sizing: border-box;
@@ -1485,8 +1488,43 @@ footer {
           margin-right: 5px; }
 
 .programacao__filter {
-  margin: 50px auto;
-  width: 300px; }
+  align-items: center;
+  flex-direction: column;
+  margin: 30px auto -40px; }
+  .programacao__filter-btn {
+    align-items: center;
+    cursor: pointer;
+    margin: 0 2%;
+    transition: all .5s ease-in-out;
+    width: 96%; }
+    .programacao__filter-btn p {
+      font-family: "DMSans Regular", "Roboto", "Calibri", "sans-serif";
+      margin: 0 15px 0 0;
+      opacity: 0;
+      transition: opacity .5s ease-in-out; }
+    .programacao__filter-btn i {
+      font-size: 34px;
+      transition: all .5s ease-in-out; }
+    .programacao__filter-btn:hover p {
+      opacity: 1; }
+    .programacao__filter-btn:hover i {
+      font-size: 42px;
+      margin: -4px 0; }
+    .programacao__filter-btn.disabled {
+      opacity: 0;
+      pointer-events: none; }
+  .programacao__filter-select {
+    margin: 30px 0 -40px;
+    opacity: 0;
+    pointer-events: none;
+    width: 350px; }
+    .programacao__filter-select.active {
+      opacity: 1;
+      pointer-events: auto; }
+    .programacao__filter-select select {
+      font-size: 17px;
+      height: 48px;
+      padding: 12px 20px; }
 
 .educativo__banner {
   height: 350px;

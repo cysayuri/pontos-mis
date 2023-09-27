@@ -121,18 +121,25 @@ select {
     padding: 0;
     position: relative;
     
-    &:after {
-        border: 1px solid transparent;
-        border-bottom-color: $primary;
-        border-right-color: $primary;
+    &::before, &:after {
+        background: #b3b3b3;
+        border-radius: 2px;
         content: '';
-        height: 10px;
+        height: 2px;
         position: absolute;
-        right: 25px;
-        top: calc(50% - 5px);
-        transform: rotate(45deg) translateY(-50%);
+        top: 50%;
         transition: transform .2s ease-out;
-        width: 10px;
+        width: 15px;
+    }
+    
+    &::before {
+        right: 20px;
+        transform: rotate(-45deg) translateY(-50%);
+    }
+    
+    &:after {
+        right: 31px;
+        transform: rotate(45deg) translateY(-50%);
     }
 }
 

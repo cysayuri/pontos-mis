@@ -211,11 +211,62 @@
     }
 
     &__filter {
-        margin: 50px auto;
-        width: 300px;
-
-        select {
+        align-items: center;
+        flex-direction: column;
+        margin: 30px auto -40px;
+        
+        &-btn {
+            align-items: center;
+            cursor: pointer;
+            margin: 0 2%;
+            transition: all .5s ease-in-out;
+            width: 96%;
             
+            p {
+                font-family: $font-r;
+                margin: 0 15px 0 0;
+                opacity: 0;
+                transition: opacity .5s ease-in-out;
+            }
+            
+            i {
+                font-size: 34px;
+                transition: all .5s ease-in-out;
+            }
+
+            &:hover {
+                p {
+                    opacity: 1;
+                }
+
+                i {
+                    font-size: 42px;
+                    margin: -4px 0;
+                }
+            }
+
+            &.disabled {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        
+        &-select {
+            margin: 30px 0 -40px;
+            opacity: 0;
+            pointer-events: none;
+            width: 350px;
+            
+            &.active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+    
+            select {
+                font-size: 17px;
+                height: 48px;
+                padding: 12px 20px;
+            }
         }
     }
 }

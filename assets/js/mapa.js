@@ -3,6 +3,8 @@ let programItem = document.querySelectorAll('.programacao__list-item')
 
 programMap.forEach(elem => {
     elem.addEventListener('click', () => {
+        filterBtn.classList.remove('disabled')
+        filterSelect.classList.remove('active')
         
         programMap.forEach(elem => {
             elem.classList.remove('active')
