@@ -118,10 +118,6 @@
                 }
             }
         }
-
-        .flickity-page-dots {
-            display: none;
-        }
     }
     
     &__map {
@@ -287,6 +283,10 @@
     }
 
     .flickity {
+        &-page-dots {
+            display: none;
+        }
+
         &-button {
             background: transparent;
             
@@ -326,12 +326,14 @@
             }
         }
 
-        &-prev-next-button.previous {
-            left: -30px;
-        }
-
-        &-prev-next-button.next {
-            right: -30px;
+        &-prev-next-button {
+            &.previous {
+                left: -30px;
+            }
+    
+            &.next {
+                right: -30px;
+            }
         }
     }
 }
