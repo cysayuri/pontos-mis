@@ -11,6 +11,22 @@
         }
     }
     
+    &__ticket {
+        position: relative;
+    
+        &::after {
+            background: url(../images/pages/home/line-1.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 725px;
+            left: 30px;
+            position: absolute;
+            top: -100px;
+            width: 100vw;
+            z-index: -1;
+        }
+    }
+
     &__sobre {
         .card {
             img {
@@ -79,6 +95,19 @@
     
     &__merch {
         margin: 70px auto 130px;
+        position: relative;
+    
+        &::after {
+            background: url(../images/pages/home/line-2.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 590px;
+            right: -100px;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+            z-index: -1;
+        }
         
         h3 {
             font-family: $title-b;
@@ -122,6 +151,19 @@
     
     &__map {
         margin: 130px auto 120px;
+        position: relative;
+    
+        &::after {
+            background: url(../images/pages/home/line-3.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 1080px;
+            left: 0;
+            position: absolute;
+            top: -30px;
+            width: 100vw;
+            z-index: -1;
+        }
         
         h3 {
             font-family: $title-b;

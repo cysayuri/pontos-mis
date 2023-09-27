@@ -35,7 +35,22 @@
     }
     
     &__map {
-         margin: -30px auto -60px;
+         margin: -130px auto -60px;
+         padding-top: 100px;
+         position: relative;
+     
+         &::after {
+             background: url(../images/pages/programacao/line.svg) no-repeat;
+             background-size: contain;
+             content: '';
+             height: 955px;
+             left: -100px;
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%);
+             width: 100vw;
+             z-index: -1;
+         }
 
         &-content {
             height: 100vh;

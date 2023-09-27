@@ -33,6 +33,22 @@
             z-index: 1;
         }
     }
+
+    &__ticket {
+        position: relative;
+     
+        &::after {
+            background: url(../images/pages/educativo/line-1.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 650px;
+            right: -10px;
+            position: absolute;
+            top: -90px;
+            width: 550px;
+            z-index: -1;
+        }
+    }
     
     &__alunos, &__profs {
         margin: 70px auto 110px;
@@ -133,6 +149,22 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+
+    &__profs {
+        position: relative;
+     
+        &::after {
+            background: url(../images/pages/educativo/line-2.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 275px;
+            left: -100px;
+            position: absolute;
+            top: -200px;
+            width: 100vw;
+            z-index: -1;
         }
     }
     

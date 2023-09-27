@@ -1003,9 +1003,11 @@ footer {
       max-width: 615px; }
 
 .card {
+  border-radius: 10px;
   text-decoration: none;
   width: 30%; }
   .card img {
+    background: #F4F4F4;
     border: 7px solid #181818;
     border-radius: 10px;
     object-fit: cover;
@@ -1021,6 +1023,19 @@ footer {
     object-position: center -20px;
     object-fit: cover;
     width: 100%; }
+
+.home__ticket {
+  position: relative; }
+  .home__ticket::after {
+    background: url(../images/pages/home/line-1.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 725px;
+    left: 30px;
+    position: absolute;
+    top: -100px;
+    width: 100vw;
+    z-index: -1; }
 
 .home__sobre .card img {
   filter: grayscale(1); }
@@ -1065,7 +1080,18 @@ footer {
     width: 70%; }
 
 .home__merch {
-  margin: 70px auto 130px; }
+  margin: 70px auto 130px;
+  position: relative; }
+  .home__merch::after {
+    background: url(../images/pages/home/line-2.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 590px;
+    right: -100px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1; }
   .home__merch h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1095,7 +1121,18 @@ footer {
       width: 280px; }
 
 .home__map {
-  margin: 130px auto 120px; }
+  margin: 130px auto 120px;
+  position: relative; }
+  .home__map::after {
+    background: url(../images/pages/home/line-3.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: -30px;
+    width: 100vw;
+    z-index: -1; }
   .home__map h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1325,7 +1362,19 @@ footer {
       border-color: #FAB93F; }
 
 .sobre #sobre {
-  margin: -150px auto -280px; }
+  margin: -150px auto -280px;
+  position: relative; }
+  .sobre #sobre::after {
+    background: url(../images/pages/sobre/line-1.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 490px;
+    right: -100px;
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 275px;
+    z-index: -1; }
   .sobre #sobre .sobre__content-video {
     margin-left: -120px; }
     .sobre #sobre .sobre__content-video video {
@@ -1334,12 +1383,38 @@ footer {
       object-fit: contain;
       width: 90%; }
 
-.sobre #filmes .sobre__content-video {
-  margin-left: -170px; }
-  .sobre #filmes .sobre__content-video video {
-    margin: -20px 0 20px;
-    object-fit: contain;
-    width: 100%; }
+.sobre #filmes {
+  position: relative; }
+  .sobre #filmes::after {
+    background: url(../images/pages/sobre/line-2.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 135px;
+    left: -100px;
+    position: absolute;
+    top: -25px;
+    transform: rotate(4deg);
+    width: 980px;
+    z-index: -1; }
+  .sobre #filmes .sobre__content-video {
+    margin-left: -170px; }
+    .sobre #filmes .sobre__content-video video {
+      margin: -20px 0 20px;
+      object-fit: contain;
+      width: 100%; }
+
+.sobre #oficinas {
+  position: relative; }
+  .sobre #oficinas::after {
+    background: url(../images/pages/sobre/line-3.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 735px;
+    left: -95px;
+    position: absolute;
+    top: 50px;
+    width: 100vw;
+    z-index: -1; }
 
 .sobre footer {
   margin-top: 150px; }
@@ -1373,7 +1448,20 @@ footer {
     z-index: 1; }
 
 .programacao__map {
-  margin: -30px auto -60px; }
+  margin: -130px auto -60px;
+  padding-top: 100px;
+  position: relative; }
+  .programacao__map::after {
+    background: url(../images/pages/programacao/line.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 955px;
+    left: -100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    z-index: -1; }
   .programacao__map-content {
     height: 100vh;
     max-height: 370px;
@@ -1588,6 +1676,19 @@ footer {
     transform: translate(-50%, -50%);
     z-index: 1; }
 
+.educativo__ticket {
+  position: relative; }
+  .educativo__ticket::after {
+    background: url(../images/pages/educativo/line-1.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 650px;
+    right: -10px;
+    position: absolute;
+    top: -90px;
+    width: 550px;
+    z-index: -1; }
+
 .educativo__alunos, .educativo__profs {
   margin: 70px auto 110px; }
   .educativo__alunos-desc, .educativo__profs-desc {
@@ -1660,6 +1761,19 @@ footer {
       width: 300px; }
     .educativo__alunos-item.is-selected h4, .educativo__profs-item.is-selected h4 {
       opacity: 1; }
+
+.educativo__profs {
+  position: relative; }
+  .educativo__profs::after {
+    background: url(../images/pages/educativo/line-2.svg) no-repeat;
+    background-size: contain;
+    content: '';
+    height: 275px;
+    left: -100px;
+    position: absolute;
+    top: -200px;
+    width: 100vw;
+    z-index: -1; }
 
 .educativo .flickity-page-dots {
   display: none; }

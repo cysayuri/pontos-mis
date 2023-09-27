@@ -1,8 +1,10 @@
 .card {
+    border-radius: 10px;
     text-decoration: none;
     width: 30%;
     
     img {
+        background: $white;
         border: 7px solid $black;
         border-radius: 10px;
         object-fit: cover;

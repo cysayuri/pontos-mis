@@ -156,6 +156,20 @@
 
     #sobre {
         margin: -150px auto -280px;
+        position: relative;
+    
+        &::after {
+            background: url(../images/pages/sobre/line-1.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 490px;
+            right: -100px;
+            position: absolute;
+            top: 52%;
+            transform: translateY(-50%);
+            width: 275px;
+            z-index: -1;
+        }
 
         .sobre__content-video {
             margin-left: -120px;
@@ -170,6 +184,21 @@
     }
 
     #filmes {
+        position: relative;
+    
+        &::after {
+            background: url(../images/pages/sobre/line-2.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 135px;
+            left: -100px;
+            position: absolute;
+            top: -25px;
+            transform: rotate(4deg);
+            width: 980px;
+            z-index: -1;
+        }
+
         .sobre__content-video {
             margin-left: -170px;
 
@@ -178,6 +207,22 @@
                 object-fit: contain;
                 width: 100%;
             }
+        }
+    }
+
+    #oficinas {
+        position: relative;
+    
+        &::after {
+            background: url(../images/pages/sobre/line-3.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 735px;
+            left: -95px;
+            position: absolute;
+            top: 50px;
+            width: 100vw;
+            z-index: -1;
         }
     }
 
