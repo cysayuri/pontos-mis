@@ -35,7 +35,7 @@ body {
 .show-desk {
     display: block;
     
-    @include MQ($L) {
+    @include MQ($M) {
         display: none;
     }
 }
@@ -43,18 +43,18 @@ body {
 .show-tablet {
     display: none;
     
-    @include MQ($L) {
+    @include MQ($M) {
         display: block;
     }
 }
 
-.show-mobile {
-    display: none;
+// .show-mobile {
+//     display: none;
     
-    @include MQ($S) {
-        display: block;
-    }
-}
+//     @include MQ($S) {
+//         display: block;
+//     }
+// }
 
 ::-webkit-scrollbar {
     background: #e7e7e7;

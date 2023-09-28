@@ -1,38 +1,12 @@
 .sobre {
     &__banner {
         margin: 40px 0 -70px;
-        position: relative;
-        
-        // &::before {
-        //     background: url(../images/effects/line-1.svg);
-        //     background-repeat: no-repeat;
-        //     content: '';
-        //     height: 260px;
-        //     left: 5px;
-        //     position: absolute;
-        //     bottom: 0;
-        //     transform: rotate(191deg);
-        //     width: 100vw;
-        // }
         
         &-container {
             align-items: center;
             height: 100vh;
             position: relative;
             width: 100vw;
-            
-            // &::before {
-            //     background: url(../images/effects/line-2.svg);
-            //     background-repeat: no-repeat;
-            //     background-size: contain;
-            //     top: -40px;
-            //     content: '';
-            //     height: 320px;
-            //     left: 25.7%;
-            //     position: absolute;
-            //     transform: translateX(-50%) rotate(-10deg) scalex(-1);
-            //     width: 400px;
-            // }
             
             @include MQ($S) {
                 height: 200px;
@@ -51,16 +25,29 @@
                 transform: translateY(-50%);
                 width: 425px;
                 z-index: -1;
+        
+                @include MQ($L) {
+                    width: 325px;
+                }
             }
             
             img {
                 height: 90vh;
-                object-fit: contain;
-                width: auto;
+                object-fit: cover;
+                width: 470px;
+                
+                @include MQ($L) {
+                    height: 80vh;
+                    width: 370px;
+                }
             }
             
             &:first-child {
                 margin-left: -70px;
+        
+                @include MQ($L) {
+                    margin-left: 0;
+                }
                 
                 &::after {
                     background: url(../images/pages/sobre/banner/effect-left.png);
@@ -69,16 +56,29 @@
                     height: 530px;
                     left: -90px;
                     top: 50%;
+        
+                    @include MQ($L) {
+                        height: 430px;
+                        left: -50px;
+                    }
                 }
                 
                 img {
                     height: 95vh;
                     transform: scaleX(-1);
+        
+                    @include MQ($L) {
+                        height: 85vh;
+                    }
                 }
             }
             
             &:last-child {
                 margin-right: -70px;
+        
+                @include MQ($L) {
+                    margin-right: 0;
+                }
                 
                 &::after {
                     background: url(../images/pages/sobre/banner/effect-right.png);
@@ -87,6 +87,11 @@
                     height: 550px;
                     right: -110px;
                     top: 53%;
+                    
+                    @include MQ($L) {
+                        height: 450px;
+                        right: -50px;
+                    }
                 }
             }
         }
@@ -99,6 +104,10 @@
             text-align: center;
             text-transform: uppercase;
             width: 45%;
+        
+            @include MQ($L) {
+                font-size: 85px;
+            }
     
             // img {
             //     width: 100%;
@@ -109,6 +118,14 @@
     &__content {
         align-items: center;
         margin: -190px auto;
+        
+        @include MQ($L) {
+            margin: -190px 40px;
+        }
+        
+        &-container {
+            align-items: center;
+        }
 
         &-desc {
             width: 60%;
@@ -125,6 +142,10 @@
                 font-family: $font-r;
                 font-size: 20px;
                 line-height: 1.3em;
+        
+                @include MQ($L) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -157,18 +178,28 @@
     #sobre {
         margin: -150px auto -280px;
         position: relative;
+        
+        @include MQ($L) {
+            margin: -150px 40px -280px;
+        }
     
         &::after {
             background: url(../images/pages/sobre/line-1.svg) no-repeat;
             background-size: contain;
+            background-position: right;
             content: '';
             height: 490px;
-            right: -100px;
+            right: 0;
             position: absolute;
             top: 52%;
             transform: translateY(-50%);
             width: 275px;
             z-index: -1;
+        
+            @include MQ($L) {
+                height: 490px;
+                right: -40px;
+            }
         }
 
         .sobre__content-video {
@@ -176,8 +207,9 @@
 
             video {
                 height: 410px;
-                margin-bottom: -10px;
+                margin: -80px 0 50px;
                 object-fit: contain;
+                object-position: bottom center;
                 width: 90%;
             }
         }
@@ -204,8 +236,10 @@
 
             video {
                 margin: -20px 0 20px;
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
+                object-position: bottom right;
+                height: 320px;
             }
         }
     }

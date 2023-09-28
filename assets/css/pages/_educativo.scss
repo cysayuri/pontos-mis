@@ -53,6 +53,10 @@
     &__alunos, &__profs {
         margin: 70px auto 110px;
         
+        @include MQ($L) {
+            margin: 70px 40px 110px;
+        }
+        
         &-desc {
             margin-bottom: -20px;
             max-width: 500px;

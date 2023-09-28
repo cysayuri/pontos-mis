@@ -22,6 +22,10 @@ h3 {
   font-family: $title-b;
   font-size: 38px;
   line-height: 1.2em;
+        
+  @include MQ($L) {
+    font-size: 32px;
+  }
   
   @include MQ($S) {
     font-size: 28px;
