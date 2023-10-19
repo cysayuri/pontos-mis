@@ -1876,3 +1876,161 @@ footer {
     .educativo__final h2 span {
       font-family: "DMSans Regular", "Roboto", "Calibri", "sans-serif";
       margin-left: -7px; }
+
+.next {
+  position: relative; }
+  .next__banner {
+    height: 350px;
+    margin-top: 95px;
+    position: relative;
+    width: 100vw; }
+    .next__banner img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%; }
+  .next__ticket {
+    position: relative; }
+    .next__ticket span {
+      font-family: "DMSans Bold", "Roboto", "Calibri", "sans-serif"; }
+  .next__galeria-list {
+    flex-wrap: wrap;
+    margin: 0 -1%; }
+  .next__galeria-item {
+    background: transparent;
+    cursor: pointer;
+    margin: 1% 1%;
+    max-height: 412px;
+    max-width: 275px;
+    width: 23%; }
+    .next__galeria-item img {
+      height: 100%;
+      transition: .5s;
+      object-fit: contain;
+      width: 100%; }
+      .next__galeria-item img:hover {
+        box-shadow: 0 5px 10px 3px #D08CF8, 0 7px 15px 5px #D08CF8; }
+  .next__modal {
+    background-color: #000000da;
+    display: none;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10; }
+    .next__modal-content {
+      align-items: center;
+      height: 90vh;
+      left: 50%;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 450px; }
+    .next__modal-close {
+      color: #fff;
+      cursor: pointer;
+      font-size: 55px;
+      font-family: "DMSans Light", "Roboto", "Calibri", "sans-serif";
+      left: 67%;
+      position: absolute;
+      text-decoration: none;
+      top: 20px;
+      transform: translateX(-50%);
+      transition: color .5s ease-in-out; }
+      .next__modal-close:hover, .next__modal-close:focus {
+        color: #999; }
+    .next__modal-btn {
+      background: transparent;
+      cursor: pointer;
+      margin-top: -20px;
+      position: absolute;
+      top: 50%; }
+      .next__modal-btn:hover {
+        background: transparent; }
+        .next__modal-btn:hover:after {
+          filter: none; }
+      .next__modal-btn::after {
+        background: url(../images/global/arrow.svg) no-repeat;
+        background-size: contain;
+        content: '';
+        height: 45px;
+        left: 50%;
+        filter: brightness(5) grayscale(3);
+        position: absolute;
+        top: 50%;
+        transform: translate(-35%, -50%);
+        transition: all .5s ease-in-out;
+        width: 25px; }
+      .next__modal-btn svg {
+        display: none; }
+      .next__modal-btn--prev {
+        left: -70px; }
+        .next__modal-btn--prev::after {
+          transform: translate(-70%, -50%) rotate(180deg); }
+      .next__modal-btn--next {
+        right: -70px; }
+    .next__modal-item {
+      display: none;
+      text-decoration: none;
+      position: relative;
+      width: 400px; }
+      .next__modal-item img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%; }
+      .next__modal-item i {
+        color: #000;
+        font-size: 40px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+        z-index: -1; }
+      .next__modal-item:after {
+        background: #ffffff69;
+        content: '';
+        left: 0;
+        height: 99%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity .5s ease-in-out;
+        width: 100%; }
+      .next__modal-item:hover:after {
+        opacity: 1; }
+      .next__modal-item:hover i {
+        opacity: 1;
+        z-index: 11; }
+  .next__final {
+    margin: 20px auto 110px;
+    max-width: 800px;
+    padding: 40px 0;
+    position: relative; }
+    .next__final::before, .next__final::after {
+      border-top: 5px dotted #000;
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px; }
+    .next__final::before {
+      top: 0; }
+    .next__final::after {
+      bottom: 0; }
+    .next__final h2 {
+      font-family: "TypoRound Thin", "Roboto", "Calibri", "sans-serif";
+      font-size: 34px;
+      letter-spacing: 1px;
+      margin: 0;
+      text-align: center; }
+      .next__final h2 span {
+        font-family: "DMSans Regular", "Roboto", "Calibri", "sans-serif";
+        margin-left: -7px; }
+      .next__final h2 b {
+        font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif"; }
+      .next__final h2 strong {
+        font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
+        color: #ed145b; }
