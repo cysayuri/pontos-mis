@@ -855,6 +855,10 @@ footer {
   align-items: center;
   margin: auto;
   max-width: 770px; }
+  @media screen and (max-width: 960px) {
+    .footer__container {
+      margin: 0 50px;
+      max-width: 100%; } }
   @media screen and (max-width: 758px) {
     .footer__container {
       flex-wrap: wrap; } }
@@ -903,6 +907,9 @@ footer {
 
 .footer__list {
   position: relative; }
+  @media screen and (max-width: 960px) {
+    .footer__list {
+      margin-right: 70px; } }
   .footer__list::after {
     background: url(../images/global/footer/effect-right.svg) no-repeat;
     content: '';
@@ -959,6 +966,10 @@ footer {
   padding: 20px 50px;
   position: relative;
   width: 915px; }
+  @media screen and (max-width: 960px) {
+    .ticket {
+      margin: 90px 40px;
+      width: calc(100% - 100px); } }
   .ticket::before {
     left: -29px; }
   .ticket:after {
@@ -989,13 +1000,17 @@ footer {
       width: 100%; }
     .ticket__container h3 {
       color: #F4F4F4;
-      text-align: center;
-      margin: auto;
-      padding: 75px 0;
       font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
       font-weight: 300;
       font-size: 28px;
-      max-width: 615px; }
+      margin: auto;
+      max-width: 615px;
+      padding: 75px 0;
+      text-align: center; }
+      @media screen and (max-width: 960px) {
+        .ticket__container h3 {
+          font-size: 22px;
+          padding: 65px 0 75px; } }
 
 .card {
   border-radius: 10px;
@@ -1017,6 +1032,9 @@ footer {
 .home__banner {
   height: 100vh;
   width: 100%; }
+  @media screen and (max-width: 960px) {
+    .home__banner {
+      height: 410px; } }
   .home__banner video {
     height: 100%;
     object-position: center -20px;
@@ -1076,6 +1094,10 @@ footer {
   text-align: center;
   text-transform: uppercase;
   transition: color .5s ease-in-out; }
+  @media screen and (max-width: 960px) {
+    .home__sobre-title {
+      font-size: 30px;
+      margin-top: 20px; } }
 
 .home__logo {
   align-items: center;
@@ -1104,6 +1126,9 @@ footer {
         display: none; } }
   .home__merch-content {
     margin: 70px auto 130px; }
+    @media screen and (max-width: 960px) {
+      .home__merch-content {
+        margin: 50px auto 90px; } }
     .home__merch-content h3 {
       font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
       font-weight: 300;
@@ -1111,8 +1136,12 @@ footer {
       text-transform: uppercase; }
   .home__merch-list {
     padding: 0 1%;
-    max-width: 920px;
-    margin: auto; }
+    margin: auto;
+    max-width: 920px; }
+    @media screen and (max-width: 960px) {
+      .home__merch-list {
+        margin: 0 40px;
+        max-width: 95vw; } }
   .home__merch-item {
     align-items: center;
     height: 330px;
@@ -1126,15 +1155,26 @@ footer {
       object-fit: contain;
       transition: all .5s ease-in-out;
       width: 100%; }
+      @media screen and (max-width: 960px) {
+        .home__merch-item img {
+          max-height: 210px;
+          max-width: 170px; } }
     .home__merch-item.is-selected img {
       height: 330px;
       max-height: 100%;
       max-width: 100%;
       width: 280px; }
+      @media screen and (max-width: 960px) {
+        .home__merch-item.is-selected img {
+          height: 280px;
+          width: 230px; } }
 
 .home__map {
   margin: 130px auto 120px;
   position: relative; }
+  @media screen and (max-width: 960px) {
+    .home__map {
+      margin: 90px auto; } }
   .home__map::after {
     background: url(../images/pages/home/line-3.svg) no-repeat;
     background-size: contain;
@@ -1164,13 +1204,23 @@ footer {
     padding: 30px;
     text-align: center;
     width: 750px; }
+    @media screen and (max-width: 960px) {
+      .home__map-img {
+        border-radius: 50px;
+        width: 80%; } }
     .home__map-img img {
       height: 100%;
       object-fit: contain;
       width: auto; }
+      @media screen and (max-width: 960px) {
+        .home__map-img img {
+          width: 75%; } }
 
 .home__patronos {
   margin: 120px auto; }
+  @media screen and (max-width: 960px) {
+    .home__patronos {
+      margin: 110px auto 80px; } }
   .home__patronos h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1180,6 +1230,9 @@ footer {
     padding: 0 1%;
     max-width: 920px;
     margin: auto; }
+    @media screen and (max-width: 960px) {
+      .home__patronos-list {
+        max-width: 80%; } }
   .home__patronos-item {
     align-items: center;
     height: 160px;
@@ -1206,6 +1259,9 @@ footer {
     align-items: flex-start;
     padding: 70px 60px;
     position: relative; }
+    @media screen and (max-width: 960px) {
+      .home__contato-content {
+        flex-wrap: wrap; } }
     .home__contato-content::before {
       top: 15px; }
     .home__contato-content:after {
@@ -1221,8 +1277,17 @@ footer {
       position: absolute;
       transform: translateX(-50%);
       width: 100%; }
+      @media screen and (max-width: 960px) {
+        .home__contato-content::before, .home__contato-content:after {
+          height: 30px;
+          width: 95%; } }
   .home__contato-text {
     max-width: 400px; }
+    @media screen and (max-width: 960px) {
+      .home__contato-text {
+        margin-bottom: 30px;
+        max-width: 100%;
+        width: 100%; } }
     .home__contato-text h3 {
       font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
       font-weight: 300;
@@ -1236,10 +1301,24 @@ footer {
     .home__contato-phone i {
       font-size: 16px;
       margin-right: 10px; }
+  @media screen and (max-width: 960px) {
+    .home__contato-form {
+      margin: 0;
+      width: 100%; } }
+  @media screen and (max-width: 960px) {
+    .home__contato-form .input {
+      padding: 0;
+      width: 48%; } }
+  @media screen and (max-width: 960px) {
+    .home__contato-form .textarea, .home__contato-form .submit {
+      padding: 0; } }
 
 .home__museus {
   padding: 100px 0 70px;
   position: relative; }
+  @media screen and (max-width: 960px) {
+    .home__museus {
+      padding: 60px 0 10px; } }
   .home__museus:before {
     background: url(../images/effects/line-12.svg) no-repeat;
     background-position: center;
@@ -1258,8 +1337,15 @@ footer {
     @media screen and (min-width: 1380px) {
       .home__museus:before {
         display: none; } }
+  @media screen and (max-width: 960px) {
+    .home__museus-list {
+      flex-wrap: wrap; } }
   .home__museus-item {
     width: 45%; }
+    @media screen and (max-width: 960px) {
+      .home__museus-item {
+        margin: 10px 0;
+        width: 100%; } }
     .home__museus-item h3 {
       font-size: 32px; }
     .home__museus-item p {

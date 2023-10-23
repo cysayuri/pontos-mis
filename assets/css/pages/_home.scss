@@ -2,6 +2,10 @@
     &__banner {
         height: 100vh;
         width: 100%;
+            
+        @include MQ($M) {
+            height: 410px;
+        }
         
         video {
             height: 100%;
@@ -24,11 +28,11 @@
             top: -100px;
             width: calc(100vw - 30px);
             z-index: -1;
-
+            
             @include MQ($L) {
                 display: none;
             }
-
+            
             @media screen and (min-width: $XL) {
                 display: none;
             }
@@ -88,6 +92,11 @@
             text-align: center;
             text-transform: uppercase;
             transition: color .5s ease-in-out;
+            
+            @include MQ($M) {
+                font-size: 30px;
+                margin-top: 20px;
+            }
         }
     }
     
@@ -114,18 +123,22 @@
             top: 0;
             width: 150px;
             z-index: -1;
-
+            
             @include MQ($L) {
                 display: none;
             }
-
+            
             @media screen and (min-width: $XL) {
                 display: none;
             }
         }
-
+        
         &-content {
             margin: 70px auto 130px;
+            
+            @include MQ($M) {
+                margin: 50px auto 90px;
+            }
             
             h3 {
                 font-family: $title-b;
@@ -137,8 +150,13 @@
         
         &-list {
             padding: 0 1%;
-            max-width: 920px;
             margin: auto;
+            max-width: 920px;
+            
+            @include MQ($M) {
+                margin: 0 40px;
+                max-width: 95vw;
+            }
         }
         
         &-item {
@@ -155,6 +173,11 @@
                 object-fit: contain;
                 transition: all .5s ease-in-out;
                 width: 100%;
+                
+                @include MQ($M) {
+                    max-height: 210px;
+                    max-width: 170px;
+                }
             }
             
             &.is-selected {
@@ -163,6 +186,11 @@
                     max-height: 100%;
                     max-width: 100%;
                     width: 280px;
+                    
+                    @include MQ($M) {
+                        height: 280px;
+                        width: 230px;
+                    }
                 }
             }
         }
@@ -171,6 +199,10 @@
     &__map {
         margin: 130px auto 120px;
         position: relative;
+        
+        @include MQ($M) {
+            margin: 90px auto;
+        }
         
         &::after {
             background: url(../images/pages/home/line-3.svg) no-repeat;
@@ -182,11 +214,11 @@
             top: -30px;
             width: 100vw;
             z-index: -1;
-
+            
             @include MQ($L) {
                 display: none;
             }
-
+            
             @media screen and (min-width: $XL) {
                 display: none;
             }
@@ -208,16 +240,29 @@
             text-align: center;
             width: 750px;
             
+            @include MQ($M) {
+                border-radius: 50px;
+                width: 80%;
+            }
+            
             img {
                 height: 100%;
                 object-fit: contain;
                 width: auto;
+                
+                @include MQ($M) {
+                    width: 75%;
+                }
             }
         }
     }
     
     &__patronos {
         margin: 120px auto;
+        
+        @include MQ($M) {
+            margin: 110px auto 80px;
+        }
         
         h3 {
             font-family: $title-b;
@@ -230,6 +275,10 @@
             padding: 0 1%;
             max-width: 920px;
             margin: auto;
+            
+            @include MQ($M) {
+                max-width: 80%;
+            }
         }
         
         &-item {
@@ -270,6 +319,10 @@
             padding: 70px 60px;
             position: relative;
             
+            @include MQ($M) {
+                flex-wrap: wrap;
+            }
+            
             &::before {
                 top: 15px;
             }
@@ -289,11 +342,22 @@
                 position: absolute;
                 transform: translateX(-50%);
                 width: 100%;
+            
+                @include MQ($M) {
+                    height: 30px;
+                    width: 95%;
+                }
             }
         }
         
         &-text {
             max-width: 400px;
+            
+            @include MQ($M) {
+                margin-bottom: 30px;
+                max-width: 100%;
+                width: 100%;
+            }
             
             h3 {
                 font-family: $title-b;
@@ -314,11 +378,35 @@
                 margin-right: 10px;
             }
         }
+        
+        &-form {
+            @include MQ($M) {
+                margin: 0;
+                width: 100%;
+            }
+            
+            .input {
+                @include MQ($M) {
+                    padding: 0;
+                    width: 48%;
+                }
+            }
+            
+            .textarea, .submit {
+                @include MQ($M) {
+                    padding: 0;
+                }
+            }
+        }
     }
     
     &__museus {
         padding: 100px 0 70px;
         position: relative;
+            
+        @include MQ($M) {
+            padding: 60px 0 10px;
+        }
         
         &:before {
             background: url(../images/effects/line-12.svg) no-repeat;
@@ -332,18 +420,29 @@
             top: 25px;
             transform: translateX(-50%) rotate(12deg);
             width: 300px;
-
+            
             @include MQ($L) {
                 display: none;
             }
-
+            
             @media screen and (min-width: $XL) {
                 display: none;
             }
         }
         
+        &-list {
+            @include MQ($M) {
+                flex-wrap: wrap;
+            }
+        }   
+        
         &-item {
             width: 45%;
+            
+            @include MQ($M) {
+                margin: 10px 0;
+                width: 100%;
+            }
             
             h3 {
                 font-size: 32px;

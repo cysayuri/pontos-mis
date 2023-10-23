@@ -32,6 +32,11 @@ footer {
         margin: auto;
         max-width: 770px;
         
+        @include MQ($M) {
+            margin: 0 50px;
+            max-width: 100%;
+        }
+        
         @include MQ($S) {
             flex-wrap: wrap;
         }
@@ -98,6 +103,10 @@ footer {
     
     &__list {
         position: relative;
+            
+        @include MQ($M) {
+            margin-right: 70px;
+        }
         
         &::after {
             background: url(../images/global/footer/effect-right.svg) no-repeat;
