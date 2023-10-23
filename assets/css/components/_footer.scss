@@ -108,6 +108,10 @@ footer {
             top: 50%;
             transform: translateY(-50%);
             width: 30px;
+
+            @include MQ($L) {
+                right: -60px;
+            }
         }
         
         a {

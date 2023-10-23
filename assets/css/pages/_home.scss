@@ -24,6 +24,14 @@
             top: -100px;
             width: calc(100vw - 30px);
             z-index: -1;
+
+            @include MQ($L) {
+                display: none;
+            }
+
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
         }
     }
     
@@ -106,6 +114,14 @@
             top: 0;
             width: 150px;
             z-index: -1;
+
+            @include MQ($L) {
+                display: none;
+            }
+
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
         }
 
         &-content {
@@ -166,6 +182,14 @@
             top: -30px;
             width: 100vw;
             z-index: -1;
+
+            @include MQ($L) {
+                display: none;
+            }
+
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
         }
         
         h3 {
@@ -308,6 +332,14 @@
             top: 25px;
             transform: translateX(-50%) rotate(12deg);
             width: 300px;
+
+            @include MQ($L) {
+                display: none;
+            }
+
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
         }
         
         &-item {

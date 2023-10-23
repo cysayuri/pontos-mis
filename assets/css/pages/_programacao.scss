@@ -50,6 +50,14 @@
              transform: translateY(-50%);
              width: 100vw;
              z-index: -1;
+
+             @include MQ($L) {
+                 display: none;
+             }
+ 
+             @media screen and (min-width: $XL) {
+                 display: none;
+             }
          }
 
         &-content {
@@ -151,6 +159,10 @@
             
             img {
                 height: 450px;
+                
+                @include MQ($L) {
+                    height: 390px;
+                }
             }
             
             &.roxo {

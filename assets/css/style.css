@@ -912,6 +912,9 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     width: 30px; }
+    @media screen and (max-width: 1170px) {
+      .footer__list::after {
+        right: -60px; } }
   .footer__list a {
     color: #F4F4F4;
     font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
@@ -1006,6 +1009,10 @@ footer {
     padding: 20px;
     transition: border .5s ease-in-out, filter .5s ease-in-out;
     width: 100%; }
+    @media screen and (max-width: 1170px) {
+      .card img {
+        border-width: 5px;
+        padding: 15px; } }
 
 .home__banner {
   height: 100vh;
@@ -1028,6 +1035,12 @@ footer {
     top: -100px;
     width: calc(100vw - 30px);
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .home__ticket::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .home__ticket::after {
+        display: none; } }
 
 .home__sobre .card img {
   filter: grayscale(1); }
@@ -1083,6 +1096,12 @@ footer {
     top: 0;
     width: 150px;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .home__merch::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .home__merch::after {
+        display: none; } }
   .home__merch-content {
     margin: 70px auto 130px; }
     .home__merch-content h3 {
@@ -1126,6 +1145,12 @@ footer {
     top: -30px;
     width: 100vw;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .home__map::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .home__map::after {
+        display: none; } }
   .home__map h3 {
     font-family: "TypoRound Bold", "Roboto", "Calibri", "sans-serif";
     font-weight: 300;
@@ -1227,6 +1252,12 @@ footer {
     top: 25px;
     transform: translateX(-50%) rotate(12deg);
     width: 300px; }
+    @media screen and (max-width: 1170px) {
+      .home__museus:before {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .home__museus:before {
+        display: none; } }
   .home__museus-item {
     width: 45%; }
     .home__museus-item h3 {
@@ -1379,6 +1410,9 @@ footer {
   .sobre__content-video {
     margin: -10px 0;
     width: 50%; }
+    @media screen and (max-width: 1170px) {
+      .sobre__content-video {
+        margin: 30px 0; } }
   .sobre__content-img {
     padding: 170px 0; }
     .sobre__content-img--2 img {
@@ -1408,16 +1442,27 @@ footer {
     z-index: -1; }
     @media screen and (max-width: 1170px) {
       .sobre #sobre::after {
-        height: 490px;
-        right: -40px; } }
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .sobre #sobre::after {
+        display: none; } }
   .sobre #sobre .sobre__content-video {
     margin-left: -120px; }
+    @media screen and (max-width: 1170px) {
+      .sobre #sobre .sobre__content-video {
+        margin: -30px 0 -10px -120px;
+        padding: 100px 0 190px; } }
     .sobre #sobre .sobre__content-video video {
       height: 410px;
       margin: -80px 0 50px;
       object-fit: contain;
       object-position: bottom center;
       width: 90%; }
+      @media screen and (max-width: 1170px) {
+        .sobre #sobre .sobre__content-video video {
+          margin: 100px 0 -150px;
+          object-position: top right;
+          width: 100%; } }
 
 .sobre #filmes {
   position: relative; }
@@ -1432,14 +1477,27 @@ footer {
     transform: rotate(4deg);
     width: 980px;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .sobre #filmes::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .sobre #filmes::after {
+        display: none; } }
   .sobre #filmes .sobre__content-video {
     margin-left: -170px; }
+    @media screen and (max-width: 1170px) {
+      .sobre #filmes .sobre__content-video {
+        padding: 130px 0; } }
     .sobre #filmes .sobre__content-video video {
       margin: -20px 0 20px;
       object-fit: cover;
       width: 100%;
       object-position: bottom right;
       height: 320px; }
+      @media screen and (max-width: 1170px) {
+        .sobre #filmes .sobre__content-video video {
+          margin: -30px 0 10px 60px;
+          height: 250px; } }
 
 .sobre #oficinas {
   position: relative; }
@@ -1453,6 +1511,12 @@ footer {
     top: 50px;
     width: 100vw;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .sobre #oficinas::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .sobre #oficinas::after {
+        display: none; } }
 
 .sobre footer {
   margin-top: 150px; }
@@ -1500,6 +1564,12 @@ footer {
     transform: translateY(-50%);
     width: 100vw;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .programacao__map::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .programacao__map::after {
+        display: none; } }
   .programacao__map-content {
     height: 100vh;
     max-height: 370px;
@@ -1571,6 +1641,9 @@ footer {
         height: 0; }
     .programacao__list-item img {
       height: 450px; }
+      @media screen and (max-width: 1170px) {
+        .programacao__list-item img {
+          height: 390px; } }
     .programacao__list-item.roxo img {
       border-color: #AE24FF; }
     .programacao__list-item.roxo .programacao__list-title:before {
@@ -1726,6 +1799,12 @@ footer {
     top: -90px;
     width: 550px;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .educativo__ticket::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .educativo__ticket::after {
+        display: none; } }
 
 .educativo__alunos, .educativo__profs {
   margin: 70px auto 110px; }
@@ -1815,6 +1894,12 @@ footer {
     top: -200px;
     width: 100vw;
     z-index: -1; }
+    @media screen and (max-width: 1170px) {
+      .educativo__profs::after {
+        display: none; } }
+    @media screen and (min-width: 1380px) {
+      .educativo__profs::after {
+        display: none; } }
 
 .educativo .flickity-page-dots {
   display: none; }

@@ -11,5 +11,10 @@
         padding: 20px;
         transition: border .5s ease-in-out, filter .5s ease-in-out;
         width: 100%;
+
+        @include MQ($L) {
+            border-width: 5px;
+            padding: 15px;
+        }
     }
 }

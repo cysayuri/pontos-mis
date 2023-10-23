@@ -47,6 +47,14 @@
             top: -90px;
             width: 550px;
             z-index: -1;
+
+            @include MQ($L) {
+                display: none;
+            }
+
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
         }
     }
     
@@ -169,6 +177,14 @@
             top: -200px;
             width: 100vw;
             z-index: -1;
+
+            @include MQ($L) {
+                display: none;
+            }
+
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
         }
     }
     
