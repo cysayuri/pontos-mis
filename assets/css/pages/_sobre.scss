@@ -8,6 +8,13 @@
             position: relative;
             width: 100vw;
             
+            @include MQ($M) {
+                height: 570px;
+                margin: 0;
+                overflow: hidden;
+                padding: 0 40px;
+            }
+            
             @include MQ($S) {
                 height: 200px;
             }
@@ -29,6 +36,10 @@
                 @include MQ($L) {
                     width: 325px;
                 }
+                
+                @include MQ($M) {
+                    width: 290px;
+                }
             }
             
             img {
@@ -39,6 +50,11 @@
                 @include MQ($L) {
                     height: 80vh;
                     width: 370px;
+                }
+                
+                @include MQ($M) {
+                    height: 450px;
+                    width: 250px;
                 }
             }
             
@@ -69,6 +85,11 @@
                     
                     @include MQ($L) {
                         height: 85vh;
+                    }
+                    
+                    @include MQ($M) {
+                        height: 480px;
+                        margin-top: -10px;
                     }
                 }
             }
@@ -108,202 +129,267 @@
             @include MQ($L) {
                 font-size: 85px;
             }
-            
-            // img {
-                //     width: 100%;
-                // }
+                
+            @include MQ($M) {
+                font-size: 75px;
             }
-        }
-        
-        &__content {
-            align-items: center;
-            margin: -190px auto;
-            
-            @include MQ($L) {
-                margin: -190px 40px;
-            }
-            
-            &-container {
-                align-items: center;
-            }
-            
-            &-desc {
-                width: 60%;
-                
-                h3 {
-                    margin: 0 0 30px;
-                }
-                
-                h5 {
-                    margin: 0 0 10px;
-                }
-                
-                p {
-                    font-family: $font-r;
-                    font-size: 20px;
-                    line-height: 1.3em;
-                    
-                    @include MQ($L) {
-                        font-size: 16px;
-                    }
-                }
-            }
-            
-            &-txt {
-                margin-bottom: 40px;
-            }
-            
-            &-video {
-                margin: -10px 0;
-                width: 50%;
-                
-                @include MQ($L) {
-                    margin: 30px 0;
-                }
-            }
-            
-            &-img {
-                padding: 170px 0;
-                
-                &--2 img {
-                    border-color: #AE24FF;
-                }
-                
-                &--1 img {
-                    border-color: #4fe796;
-                }
-                
-                &--3 img {
-                    border-color: #FAB93F;
-                }
-            }
-        }
-        
-        #sobre {
-            margin: -150px auto -280px;
-            position: relative;
-            
-            @include MQ($L) {
-                margin: -150px 40px -280px;
-            }
-            
-            &::after {
-                background: url(../images/pages/sobre/line-1.svg) no-repeat;
-                background-size: contain;
-                background-position: right;
-                content: '';
-                height: 490px;
-                right: 0;
-                position: absolute;
-                top: 52%;
-                transform: translateY(-50%);
-                width: 275px;
-                z-index: -1;
-                
-                @include MQ($L) {
-                    display: none;
-                }
-                
-                @media screen and (min-width: $XL) {
-                    display: none;
-                }
-            }
-            
-            .sobre__content-video {
-                margin-left: -120px;
-                
-                @include MQ($L) {
-                    margin: -30px 0 -10px -120px;
-                    padding: 100px 0 190px;
-                }
-                
-                video {
-                    height: 410px;
-                    margin: -80px 0 50px;
-                    object-fit: contain;
-                    object-position: bottom center;
-                    width: 90%;
-                    
-                    @include MQ($L) {
-                        margin: 100px 0 -150px;
-                        object-position: top right;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        
-        #filmes {
-            position: relative;
-            
-            &::after {
-                background: url(../images/pages/sobre/line-2.svg) no-repeat;
-                background-size: contain;
-                content: '';
-                height: 135px;
-                left: -100px;
-                position: absolute;
-                top: -25px;
-                transform: rotate(4deg);
-                width: 980px;
-                z-index: -1;
-                
-                @include MQ($L) {
-                    display: none;
-                }
-                
-                @media screen and (min-width: $XL) {
-                    display: none;
-                }
-            }
-            
-            .sobre__content-video {
-                margin-left: -170px;
-                
-                @include MQ($L) {
-                    padding: 130px 0;
-                }
-
-                video {
-                    margin: -20px 0 20px;
-                    object-fit: cover;
-                    width: 100%;
-                    object-position: bottom right;
-                    height: 320px;
-                    
-                    @include MQ($L) {
-                        margin: -30px 0 10px 60px;
-                        height: 250px;
-                    }
-                }
-            }
-        }
-        
-        #oficinas {
-            position: relative;
-            
-            &::after {
-                background: url(../images/pages/sobre/line-3.svg) no-repeat;
-                background-size: contain;
-                content: '';
-                height: 735px;
-                left: -95px;
-                position: absolute;
-                top: 50px;
-                width: 100vw;
-                z-index: -1;
-                
-                @include MQ($L) {
-                    display: none;
-                }
-                
-                @media screen and (min-width: $XL) {
-                    display: none;
-                }
-            }
-        }
-        
-        footer {
-            margin-top: 150px;
         }
     }
+    
+    &__content {
+        align-items: center;
+        margin: -190px auto;
+        
+        @include MQ($L) {
+            margin: -190px 40px;
+        }
+                
+        @include MQ($M) {
+            flex-direction: column;
+            margin: 70px 40px;
+        }
+        
+        &-container {
+            align-items: center;
+                
+            @include MQ($M) {
+                flex-direction: column;
+                margin: 0;
+            }
+        }
+        
+        &-desc {
+            width: 60%;
+                
+            @include MQ($M) {
+                width: 100%;
+            }
+            
+            h3 {
+                margin: 0 0 30px;
+            }
+            
+            h5 {
+                margin: 0 0 10px;
+            }
+            
+            p {
+                font-family: $font-r;
+                font-size: 20px;
+                line-height: 1.3em;
+                
+                @include MQ($L) {
+                    font-size: 16px;
+                }
+            }
+        }
+        
+        &-txt {
+            margin-bottom: 40px;
+        }
+        
+        &-video {
+            margin: -10px 0;
+            width: 50%;
+            
+            @include MQ($L) {
+                margin: 30px 0;
+            }
+        }
+        
+        &-img {
+            padding: 170px 0;
+                
+            @include MQ($M) {
+                padding: 30px 0;
+                width: 40%;
+            }
+            
+            &--2 img {
+                border-color: #AE24FF;
+            }
+            
+            &--1 img {
+                border-color: #4fe796;
+            }
+            
+            &--3 img {
+                border-color: #FAB93F;
+            }
+        }
+    }
+    
+    #sobre {
+        margin: -150px auto -280px;
+        position: relative;
+        
+        @include MQ($L) {
+            margin: -150px 40px -280px;
+        }
+                
+        @include MQ($M) {
+            margin: 70px 40px;
+        }
+        
+        &::after {
+            background: url(../images/pages/sobre/line-1.svg) no-repeat;
+            background-size: contain;
+            background-position: right;
+            content: '';
+            height: 490px;
+            right: 0;
+            position: absolute;
+            top: 52%;
+            transform: translateY(-50%);
+            width: 275px;
+            z-index: -1;
+            
+            @include MQ($L) {
+                display: none;
+            }
+            
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
+        }
+        
+        .sobre__content-video {
+            margin-left: -120px;
+            
+            @include MQ($L) {
+                margin: -30px 0 -10px -120px;
+                padding: 100px 0 190px;
+            }
+            
+            @include MQ($M) {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            
+            video {
+                height: 410px;
+                margin: -80px 0 50px;
+                object-fit: contain;
+                object-position: bottom center;
+                width: 90%;
+                
+                @include MQ($L) {
+                    margin: 100px 0 -150px;
+                    object-position: top right;
+                    width: 100%;
+                }
+                
+                @include MQ($M) {
+                    margin: 0;
+                    object-position: center right;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    #filmes {
+        position: relative;
+        
+        &::after {
+            background: url(../images/pages/sobre/line-2.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 135px;
+            left: -100px;
+            position: absolute;
+            top: -25px;
+            transform: rotate(4deg);
+            width: 980px;
+            z-index: -1;
+            
+            @include MQ($L) {
+                display: none;
+            }
+            
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
+        }
+        
+        .sobre__content-video {
+            margin-left: -170px;
+            
+            @include MQ($L) {
+                padding: 130px 0;
+            }
+                
+            @include MQ($M) {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            
+            video {
+                height: 320px;
+                margin: -20px 0 20px;
+                object-fit: cover;
+                object-position: bottom right;
+                width: 100%;
+                
+                @include MQ($L) {
+                    margin: -30px 0 10px 60px;
+                    height: 250px;
+                }
+                
+                @include MQ($M) {
+                    height: 410px;
+                    margin: 0;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
+    
+    #oficinas {
+        position: relative;
+        
+        &::after {
+            background: url(../images/pages/sobre/line-3.svg) no-repeat;
+            background-size: contain;
+            content: '';
+            height: 735px;
+            left: -95px;
+            position: absolute;
+            top: 50px;
+            width: 100vw;
+            z-index: -1;
+            
+            @include MQ($L) {
+                display: none;
+            }
+            
+            @media screen and (min-width: $XL) {
+                display: none;
+            }
+        }
+    }
+    
+    footer {
+        margin-top: 150px;
+                
+        @include MQ($M) {
+            margin-top: 90px;
+        }
+    }
+
+    // h3 {
+    //     @include MQ($M) {
+    //         font-size: 26px;
+    //         margin-bottom: 15px;
+    //     }
+    // }
+
+    // h5 {
+    //     @include MQ($M) {
+    //         font-size: 20px;       
+    //     }
+    // }
+}

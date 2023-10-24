@@ -1597,6 +1597,12 @@ footer {
     height: 100vh;
     position: relative;
     width: 100vw; }
+    @media screen and (max-width: 960px) {
+      .sobre__banner-container {
+        height: 570px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0 40px; } }
     @media screen and (max-width: 758px) {
       .sobre__banner-container {
         height: 200px; } }
@@ -1614,6 +1620,9 @@ footer {
       @media screen and (max-width: 1170px) {
         .sobre__banner-img::after {
           width: 325px; } }
+      @media screen and (max-width: 960px) {
+        .sobre__banner-img::after {
+          width: 290px; } }
     .sobre__banner-img img {
       height: 90vh;
       object-fit: cover;
@@ -1622,6 +1631,10 @@ footer {
         .sobre__banner-img img {
           height: 80vh;
           width: 370px; } }
+      @media screen and (max-width: 960px) {
+        .sobre__banner-img img {
+          height: 450px;
+          width: 250px; } }
     .sobre__banner-img:first-child {
       margin-left: -70px; }
       @media screen and (max-width: 1170px) {
@@ -1644,6 +1657,10 @@ footer {
         @media screen and (max-width: 1170px) {
           .sobre__banner-img:first-child img {
             height: 85vh; } }
+        @media screen and (max-width: 960px) {
+          .sobre__banner-img:first-child img {
+            height: 480px;
+            margin-top: -10px; } }
     .sobre__banner-img:last-child {
       margin-right: -70px; }
       @media screen and (max-width: 1170px) {
@@ -1671,6 +1688,9 @@ footer {
     @media screen and (max-width: 1170px) {
       .sobre__banner h1 {
         font-size: 85px; } }
+    @media screen and (max-width: 960px) {
+      .sobre__banner h1 {
+        font-size: 75px; } }
 
 .sobre__content {
   align-items: center;
@@ -1678,10 +1698,21 @@ footer {
   @media screen and (max-width: 1170px) {
     .sobre__content {
       margin: -190px 40px; } }
+  @media screen and (max-width: 960px) {
+    .sobre__content {
+      flex-direction: column;
+      margin: 70px 40px; } }
   .sobre__content-container {
     align-items: center; }
+    @media screen and (max-width: 960px) {
+      .sobre__content-container {
+        flex-direction: column;
+        margin: 0; } }
   .sobre__content-desc {
     width: 60%; }
+    @media screen and (max-width: 960px) {
+      .sobre__content-desc {
+        width: 100%; } }
     .sobre__content-desc h3 {
       margin: 0 0 30px; }
     .sobre__content-desc h5 {
@@ -1703,6 +1734,10 @@ footer {
         margin: 30px 0; } }
   .sobre__content-img {
     padding: 170px 0; }
+    @media screen and (max-width: 960px) {
+      .sobre__content-img {
+        padding: 30px 0;
+        width: 40%; } }
     .sobre__content-img--2 img {
       border-color: #AE24FF; }
     .sobre__content-img--1 img {
@@ -1716,6 +1751,9 @@ footer {
   @media screen and (max-width: 1170px) {
     .sobre #sobre {
       margin: -150px 40px -280px; } }
+  @media screen and (max-width: 960px) {
+    .sobre #sobre {
+      margin: 70px 40px; } }
   .sobre #sobre::after {
     background: url(../images/pages/sobre/line-1.svg) no-repeat;
     background-size: contain;
@@ -1740,6 +1778,11 @@ footer {
       .sobre #sobre .sobre__content-video {
         margin: -30px 0 -10px -120px;
         padding: 100px 0 190px; } }
+    @media screen and (max-width: 960px) {
+      .sobre #sobre .sobre__content-video {
+        margin: 0;
+        padding: 0;
+        width: 100%; } }
     .sobre #sobre .sobre__content-video video {
       height: 410px;
       margin: -80px 0 50px;
@@ -1750,6 +1793,11 @@ footer {
         .sobre #sobre .sobre__content-video video {
           margin: 100px 0 -150px;
           object-position: top right;
+          width: 100%; } }
+      @media screen and (max-width: 960px) {
+        .sobre #sobre .sobre__content-video video {
+          margin: 0;
+          object-position: center right;
           width: 100%; } }
 
 .sobre #filmes {
@@ -1776,16 +1824,27 @@ footer {
     @media screen and (max-width: 1170px) {
       .sobre #filmes .sobre__content-video {
         padding: 130px 0; } }
+    @media screen and (max-width: 960px) {
+      .sobre #filmes .sobre__content-video {
+        margin: 0;
+        padding: 0;
+        width: 100%; } }
     .sobre #filmes .sobre__content-video video {
+      height: 320px;
       margin: -20px 0 20px;
       object-fit: cover;
-      width: 100%;
       object-position: bottom right;
-      height: 320px; }
+      width: 100%; }
       @media screen and (max-width: 1170px) {
         .sobre #filmes .sobre__content-video video {
           margin: -30px 0 10px 60px;
           height: 250px; } }
+      @media screen and (max-width: 960px) {
+        .sobre #filmes .sobre__content-video video {
+          height: 410px;
+          margin: 0;
+          object-fit: contain;
+          object-position: center; } }
 
 .sobre #oficinas {
   position: relative; }
@@ -1808,6 +1867,9 @@ footer {
 
 .sobre footer {
   margin-top: 150px; }
+  @media screen and (max-width: 960px) {
+    .sobre footer {
+      margin-top: 90px; } }
 
 .programacao__banner {
   height: 350px;
