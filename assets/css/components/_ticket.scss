@@ -7,7 +7,20 @@
 
     @include MQ($M) {
         margin: 90px 40px;
-        width: calc(100% - 100px);
+        width: calc(100% - 80px);
+    }
+
+    @include MQ($S) {
+        margin: 50px 20px 70px;
+        width: calc(100% - 40px);
+    }
+
+    @include MQ($S) {
+        margin: 30px 20px 50px;
+    }
+
+    @include MQ($XS) {
+        margin: 40px 20px;
     }
     
     &::before {
@@ -27,6 +40,16 @@
         top: 50%;
         transform: translateY(-50%);
         width: 58px;
+        
+        @include MQ($S) {
+            height: 50px;
+            width: 50px;
+        }
+        
+        @include MQ($XS) {
+            height: 40px;
+            width: 45px;
+        }
     }
     
     &__container {
@@ -49,6 +72,17 @@
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
+        
+            @include MQ($S) {
+                background: url(../images/pages/home/ticket-white.svg) no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 12px;
+            }
+
+            @include MQ($XS) {
+                height: 7px;
+            }
         }
 
         h3 {
@@ -64,6 +98,15 @@
             @include MQ($M) {
                 font-size: 22px;
                 padding: 65px 0 75px;
+            }
+
+            @include MQ($S) {
+                font-size: 16px;
+                padding: 45px 0;
+            }
+
+            @include MQ($XS) {
+                padding: 35px 0;
             }
         }
     }

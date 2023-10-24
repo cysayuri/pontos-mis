@@ -5,10 +5,6 @@ html:not([data-scroll='0']), .page-template-contato, .error404, .single {
         ul li a {
             color: $white;
             
-            @include MQ($M) {
-                color: $black;
-            }
-            
             &:after {
                 background: $primary;
             }
@@ -21,18 +17,6 @@ html:not([data-scroll='0']), .page-template-contato, .error404, .single {
             
             &:before, &:after {
                 background: $white;
-            }
-            
-            &.is-active {
-                @include MQ($M) {
-                    border-color: $black;
-                }
-                
-                &:before, &:after {
-                    @include MQ($M) {
-                        background: $black;
-                    }
-                }
             }
         }
         
@@ -87,7 +71,7 @@ menu {
         }
         
         @include MQ($XS) {
-            padding-top: 15px;
+            padding-top: 30px;
         }
         
         li {
@@ -125,10 +109,9 @@ menu {
                 }
                 
                 @include MQ($XS) {
-                    font-size: 16px;
-                    padding-left: 10px;
+                    font-size: 22px;
                 }
-                
+
                 &:after {
                     background: $primary;
                     content: '';
@@ -168,10 +151,8 @@ menu {
     transition: background .5s ease-in-out;
     
     &.is-active {
-        background: $primary;
-        
         .menu__content {
-            left: 0;
+            right: 0;
             pointer-events: auto;
             z-index: 7;
         }
@@ -187,21 +168,13 @@ menu {
             width: 35%;
         }
         
-        @include MQ(600px) {
-            width: auto;
-        }
-        
         img {
             transition: opacity .5s ease-in-out;
             width: 170px;
             
             @include MQ($M) {
-                margin-top: 7px;
-                width: 90px;
-            }
-            
-            @include MQ($S) {
-                width: 50px;
+                margin-top: 2px;
+                width: 120px;
             }
             
             &:hover {
@@ -216,9 +189,9 @@ menu {
         z-index: 2;
         
         @include MQ($M) {
-            height: 120px;
+            height: 75px;
             max-width: 100vw;
-            padding: 7px 0;
+            padding: 15px 0;
         }
         
         @include MQ($S) {
@@ -251,6 +224,14 @@ menu {
             padding: 3px 0 5px;
         }
         
+        @include MQ($S) {
+            padding: 17px 0 5px;
+        }
+        
+        @include MQ($XS) {
+            padding: 17px 5px 5px;
+        }
+        
         &-search {
             @include MQ($M) {
                 width: 75%;
@@ -270,7 +251,7 @@ menu {
     }
     
     &__burguer {
-        border-bottom: 2px solid;
+        border-bottom: 2px solid $black;
         cursor: pointer;
         padding: 10px 0;
         position: relative;
@@ -304,9 +285,6 @@ menu {
                 margin: -13px 3px 0 -3px;
             }
             
-            @include MQ($XS) {
-            }
-            
             &::before {
                 top: 20px;
                 transform: rotate(-85deg);
@@ -326,6 +304,7 @@ menu {
         }
         
         &::before, &::after {
+            background: $black;
             border-radius: 5px;
             content: '';
             height: 2px;
@@ -364,29 +343,22 @@ menu {
     
     &__content {
         @include MQ($M) {
-            background: $primary;
-            box-shadow: 4px 20px 10px rgba(0, 0, 0, .5);
-            bottom: 0;
-            height: calc(100vh - 110px);
+            background: $black;
+            bottom: 0px;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, .5);
+            height: calc(100vh - 75px);
             opacity: 1;
             padding: 10px 30px 0 20px;
             pointer-events: none;
             position: fixed;
-            left: -200%;
-            transition: left .5s ease-in-out;
-            width: 27%;
+            right: -200%;
+            transition: right .5s ease-in-out;
+            width: 35%;
             z-index: -5;
         }
         
-        @include MQ($M) {
-            box-shadow: 5px 10px 10px rgba(0, 0, 0, .5);
-            position: relative;
-            top: 0px;
-            height: 100vh;
-            width: 35%;
-        }
-        
         @include MQ($S) {
+            height: calc(100vh - 62px);
             width: 45%;
         }
         
@@ -410,20 +382,15 @@ menu ul li a {
     }
 }
 
-.menu {
-    &__burguer {
-        border-color: $black;
-        
-        &:before, &:after {
-            background: $black;
-        }
-    }
-}
 
 
 .home {
     menu {
         background: #00000041;
+
+        @include MQ($M) {
+            background: $black;
+        }
 
         ul li a {
             color: $white;

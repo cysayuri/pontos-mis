@@ -5,6 +5,10 @@ footer {
     overflow: hidden;
     padding: 70px 0;
     position: relative;
+        
+    @include MQ($S) {
+        padding: 60px 0 80px;
+    }
     
     &::before, &::after {
         background: $white;
@@ -15,14 +19,33 @@ footer {
         top: 50%;
         transform: translateY(-50%);
         width: 60px;
+        
+        @include MQ($S) {
+            height: 80px;
+            width: 80px;
+        }
     }
     
     &::before {
         left: -30px;
+        
+        @include MQ($S) {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -45px;
+        }
     }
     
     &::after {
         right: -30px;
+        
+        @include MQ($S) {
+            bottom: -45px;
+            top: auto;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -39,6 +62,7 @@ footer {
         
         @include MQ($S) {
             flex-wrap: wrap;
+            flex-direction: column-reverse;
         }
     }
     
@@ -49,6 +73,12 @@ footer {
         
         @include MQ($S) {
             justify-content: center;
+            padding: 100px 0;
+            margin: auto;
+        }
+
+        @include MQ($XS) {
+            width: 100%;
         }
         
         &::before {
@@ -61,6 +91,13 @@ footer {
             transform: translateY(-50%);
             width: 100%;
             z-index: 0;
+            
+            @include MQ($XS) {
+                background-position: center;
+                background-size: contain;
+                height: 190px;
+                top: 52%;
+            }
         }
         
         a {
@@ -76,7 +113,7 @@ footer {
             @include MQ($S) {
                 margin: 0 15px;
             }
-
+            
             &:hover {
                 i, .st0 {
                     color: $primary;
@@ -93,7 +130,7 @@ footer {
                     margin-bottom: -1px;
                 }
             }
-
+            
             .st0 {
                 fill:#fff;
                 transition: fill .5s ease-in-out;
@@ -103,9 +140,14 @@ footer {
     
     &__list {
         position: relative;
-            
+        
         @include MQ($M) {
             margin-right: 70px;
+        }
+        
+        @include MQ($S) {
+            margin: 20px 0 50px;
+            width: 100%;
         }
         
         &::after {
@@ -117,9 +159,18 @@ footer {
             top: 50%;
             transform: translateY(-50%);
             width: 30px;
-
+            
             @include MQ($L) {
                 right: -60px;
+            }
+            
+            @include MQ($S) {
+                // background-position: center;
+                // left: 46.5%;
+                // right: auto;
+                // top: -170px;
+                // transform: rotate(90deg) translateX(-50%);
+                display: none;
             }
         }
         
@@ -131,12 +182,17 @@ footer {
             text-decoration: none;
             transition: color .5s ease-in-out;
             
+            @include MQ($S) {
+                justify-content: center;
+                margin: 5px 0;
+            }
+            
             &:hover {
                 color: $primary;
             }
         }
     }
-
+    
     &__gov {
         background: #fff;
         
@@ -144,34 +200,41 @@ footer {
             align-items: center;
             margin: 0 -30px;
             padding: 80px 0;
+            
+            @include MQ($S) {
+                flex-direction: column;
+                margin: 0;
+                padding: 30px 0;
+            }
         }
         
         &-item {
-            // background: $gray;
+            background: #243e63;
+            border: 0;
             border-radius: 20px;
             color: #fff;
-            // font-family: $font-m;
-            // font-size: 24px;
+            font-family: 'Open Sans', sans-serif, arial;
+            font-size: 16px;
             font-weight: 500;
+            height: 35px;
             padding: 10px 35px;
             justify-content: center;
+            max-width: 202px;
             text-align: center;
             text-decoration: none;
-            // text-transform: uppercase;
             transition: background .3s ease-in-out;
             width: 28%;
-
+            
+            @include MQ($S) {
+                height: 40px;
+                margin: 15px auto;
+                padding: 13px 40px;
+                width: 50%;
+            }
+            
             &:hover {
-                // background: $primary;
                 background: #000;
             }
-
-            max-width: 202px;
-            height: 35px;
-            font-family: 'Open Sans', sans-serif, arial;
-            border: 0;
-            background: #243e63;
-            font-size: 16px;
         }
         
         &-banner {
