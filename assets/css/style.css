@@ -1605,7 +1605,7 @@ footer {
         padding: 0 40px; } }
     @media screen and (max-width: 758px) {
       .sobre__banner-container {
-        height: 200px; } }
+        height: 330px; } }
   .sobre__banner-img {
     max-width: 420px;
     position: relative;
@@ -1635,11 +1635,23 @@ footer {
         .sobre__banner-img img {
           height: 450px;
           width: 250px; } }
+      @media screen and (max-width: 758px) {
+        .sobre__banner-img img {
+          height: 250px; } }
+      @media screen and (max-width: 500px) {
+        .sobre__banner-img img {
+          height: 220px; } }
     .sobre__banner-img:first-child {
       margin-left: -70px; }
       @media screen and (max-width: 1170px) {
         .sobre__banner-img:first-child {
           margin-left: 0; } }
+      @media screen and (max-width: 758px) {
+        .sobre__banner-img:first-child {
+          margin-top: -10px; } }
+      @media screen and (max-width: 500px) {
+        .sobre__banner-img:first-child {
+          margin-left: -7px; } }
       .sobre__banner-img:first-child::after {
         background: url(../images/pages/sobre/banner/effect-left.png);
         background-repeat: no-repeat;
@@ -1651,6 +1663,12 @@ footer {
           .sobre__banner-img:first-child::after {
             height: 430px;
             left: -50px; } }
+        @media screen and (max-width: 758px) {
+          .sobre__banner-img:first-child::after {
+            height: 240px; } }
+        @media screen and (max-width: 500px) {
+          .sobre__banner-img:first-child::after {
+            height: 200px; } }
       .sobre__banner-img:first-child img {
         height: 95vh;
         transform: scaleX(-1); }
@@ -1661,6 +1679,13 @@ footer {
           .sobre__banner-img:first-child img {
             height: 480px;
             margin-top: -10px; } }
+        @media screen and (max-width: 758px) {
+          .sobre__banner-img:first-child img {
+            height: 280px;
+            margin-top: 0; } }
+        @media screen and (max-width: 500px) {
+          .sobre__banner-img:first-child img {
+            height: 220px; } }
     .sobre__banner-img:last-child {
       margin-right: -70px; }
       @media screen and (max-width: 1170px) {
@@ -1677,6 +1702,14 @@ footer {
           .sobre__banner-img:last-child::after {
             height: 450px;
             right: -50px; } }
+        @media screen and (max-width: 758px) {
+          .sobre__banner-img:last-child::after {
+            height: 240px;
+            right: -150px; } }
+        @media screen and (max-width: 500px) {
+          .sobre__banner-img:last-child::after {
+            height: 210px;
+            right: -170px; } }
   .sobre__banner h1 {
     font-size: 95px;
     line-height: 1.05em;
@@ -1691,6 +1724,12 @@ footer {
     @media screen and (max-width: 960px) {
       .sobre__banner h1 {
         font-size: 75px; } }
+    @media screen and (max-width: 758px) {
+      .sobre__banner h1 {
+        font-size: 53px; } }
+    @media screen and (max-width: 500px) {
+      .sobre__banner h1 {
+        font-size: 40px; } }
 
 .sobre__content {
   align-items: center;
@@ -1702,6 +1741,9 @@ footer {
     .sobre__content {
       flex-direction: column;
       margin: 70px 40px; } }
+  @media screen and (max-width: 758px) {
+    .sobre__content {
+      margin: 70px 20px; } }
   .sobre__content-container {
     align-items: center; }
     @media screen and (max-width: 960px) {
@@ -1738,6 +1780,13 @@ footer {
       .sobre__content-img {
         padding: 30px 0;
         width: 40%; } }
+    @media screen and (max-width: 758px) {
+      .sobre__content-img {
+        padding: 0;
+        width: 50%; } }
+    @media screen and (max-width: 500px) {
+      .sobre__content-img {
+        width: 70%; } }
     .sobre__content-img--2 img {
       border-color: #AE24FF; }
     .sobre__content-img--1 img {
@@ -1754,6 +1803,9 @@ footer {
   @media screen and (max-width: 960px) {
     .sobre #sobre {
       margin: 70px 40px; } }
+  @media screen and (max-width: 758px) {
+    .sobre #sobre {
+      margin: 70px 20px; } }
   .sobre #sobre::after {
     background: url(../images/pages/sobre/line-1.svg) no-repeat;
     background-size: contain;
@@ -1782,7 +1834,10 @@ footer {
       .sobre #sobre .sobre__content-video {
         margin: 0;
         padding: 0;
-        width: 100%; } }
+        width: 70%; } }
+    @media screen and (max-width: 500px) {
+      .sobre #sobre .sobre__content-video {
+        width: 85%; } }
     .sobre #sobre .sobre__content-video video {
       height: 410px;
       margin: -80px 0 50px;
@@ -1796,12 +1851,26 @@ footer {
           width: 100%; } }
       @media screen and (max-width: 960px) {
         .sobre #sobre .sobre__content-video video {
+          height: 330px;
           margin: 0;
           object-position: center right;
           width: 100%; } }
+      @media screen and (max-width: 758px) {
+        .sobre #sobre .sobre__content-video video {
+          height: 200px;
+          margin: 0 0 -20px; } }
+      @media screen and (max-width: 500px) {
+        .sobre #sobre .sobre__content-video video {
+          height: 180px; } }
+  @media screen and (max-width: 960px) {
+    .sobre #sobre .sobre__content-container {
+      flex-direction: column-reverse; } }
 
 .sobre #filmes {
   position: relative; }
+  @media screen and (max-width: 960px) {
+    .sobre #filmes {
+      flex-direction: column-reverse; } }
   .sobre #filmes::after {
     background: url(../images/pages/sobre/line-2.svg) no-repeat;
     background-size: contain;
@@ -1828,7 +1897,13 @@ footer {
       .sobre #filmes .sobre__content-video {
         margin: 0;
         padding: 0;
-        width: 100%; } }
+        width: 70%; } }
+    @media screen and (max-width: 758px) {
+      .sobre #filmes .sobre__content-video {
+        margin: -15px 0 -20px; } }
+    @media screen and (max-width: 500px) {
+      .sobre #filmes .sobre__content-video {
+        width: 80%; } }
     .sobre #filmes .sobre__content-video video {
       height: 320px;
       margin: -20px 0 20px;
@@ -1841,10 +1916,16 @@ footer {
           height: 250px; } }
       @media screen and (max-width: 960px) {
         .sobre #filmes .sobre__content-video video {
-          height: 410px;
+          height: 300px;
           margin: 0;
           object-fit: contain;
           object-position: center; } }
+      @media screen and (max-width: 758px) {
+        .sobre #filmes .sobre__content-video video {
+          height: 200px; } }
+      @media screen and (max-width: 500px) {
+        .sobre #filmes .sobre__content-video video {
+          height: 180px; } }
 
 .sobre #oficinas {
   position: relative; }
@@ -1864,6 +1945,10 @@ footer {
     @media screen and (min-width: 1380px) {
       .sobre #oficinas::after {
         display: none; } }
+
+@media screen and (max-width: 960px) {
+  .sobre #exposicoes {
+    flex-direction: column-reverse; } }
 
 .sobre footer {
   margin-top: 150px; }

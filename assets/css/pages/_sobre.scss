@@ -16,7 +16,7 @@
             }
             
             @include MQ($S) {
-                height: 200px;
+                height: 330px;
             }
         }
         
@@ -56,6 +56,14 @@
                     height: 450px;
                     width: 250px;
                 }
+                
+                @include MQ($S) {
+                    height: 250px;
+                }
+                
+                @include MQ($XS) {
+                    height: 220px;
+                }
             }
             
             &:first-child {
@@ -63,6 +71,14 @@
                 
                 @include MQ($L) {
                     margin-left: 0;
+                }
+                
+                @include MQ($S) {
+                    margin-top: -10px;
+                }
+                
+                @include MQ($XS) {
+                    margin-left: -7px;
                 }
                 
                 &::after {
@@ -77,6 +93,14 @@
                         height: 430px;
                         left: -50px;
                     }
+                    
+                    @include MQ($S) {
+                        height: 240px;
+                    }
+                    
+                    @include MQ($XS) {
+                        height: 200px;
+                    }
                 }
                 
                 img {
@@ -90,6 +114,15 @@
                     @include MQ($M) {
                         height: 480px;
                         margin-top: -10px;
+                    }
+                    
+                    @include MQ($S) {
+                        height: 280px;
+                        margin-top: 0;
+                    }
+                    
+                    @include MQ($XS) {
+                        height: 220px;
                     }
                 }
             }
@@ -113,6 +146,16 @@
                         height: 450px;
                         right: -50px;
                     }
+                    
+                    @include MQ($S) {
+                        height: 240px;
+                        right: -150px;
+                    }
+                    
+                    @include MQ($XS) {
+                        height: 210px;
+                        right: -170px;
+                    }
                 }
             }
         }
@@ -129,9 +172,17 @@
             @include MQ($L) {
                 font-size: 85px;
             }
-                
+            
             @include MQ($M) {
                 font-size: 75px;
+            }
+            
+            @include MQ($S) {
+                font-size: 53px;
+            }
+            
+            @include MQ($XS) {
+                font-size: 40px;
             }
         }
     }
@@ -143,15 +194,19 @@
         @include MQ($L) {
             margin: -190px 40px;
         }
-                
+        
         @include MQ($M) {
             flex-direction: column;
             margin: 70px 40px;
         }
         
+        @include MQ($S) {
+            margin: 70px 20px;
+        }
+        
         &-container {
             align-items: center;
-                
+            
             @include MQ($M) {
                 flex-direction: column;
                 margin: 0;
@@ -160,7 +215,7 @@
         
         &-desc {
             width: 60%;
-                
+            
             @include MQ($M) {
                 width: 100%;
             }
@@ -199,10 +254,19 @@
         
         &-img {
             padding: 170px 0;
-                
+            
             @include MQ($M) {
                 padding: 30px 0;
                 width: 40%;
+            }
+            
+            @include MQ($S) {
+                padding: 0;
+                width: 50%;
+            }
+            
+            @include MQ($XS) {
+                width: 70%;
             }
             
             &--2 img {
@@ -226,9 +290,13 @@
         @include MQ($L) {
             margin: -150px 40px -280px;
         }
-                
+        
         @include MQ($M) {
             margin: 70px 40px;
+        }
+        
+        @include MQ($S) {
+            margin: 70px 20px;
         }
         
         &::after {
@@ -253,37 +321,59 @@
             }
         }
         
-        .sobre__content-video {
-            margin-left: -120px;
-            
-            @include MQ($L) {
-                margin: -30px 0 -10px -120px;
-                padding: 100px 0 190px;
-            }
-            
-            @include MQ($M) {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-            }
-            
-            video {
-                height: 410px;
-                margin: -80px 0 50px;
-                object-fit: contain;
-                object-position: bottom center;
-                width: 90%;
+        .sobre__content {
+            &-video {
+                margin-left: -120px;
                 
                 @include MQ($L) {
-                    margin: 100px 0 -150px;
-                    object-position: top right;
-                    width: 100%;
+                    margin: -30px 0 -10px -120px;
+                    padding: 100px 0 190px;
                 }
                 
                 @include MQ($M) {
                     margin: 0;
-                    object-position: center right;
-                    width: 100%;
+                    padding: 0;
+                    width: 70%;
+                }
+                
+                @include MQ($XS) {
+                    width: 85%;
+                }
+                
+                video {
+                    height: 410px;
+                    margin: -80px 0 50px;
+                    object-fit: contain;
+                    object-position: bottom center;
+                    width: 90%;
+                    
+                    @include MQ($L) {
+                        margin: 100px 0 -150px;
+                        object-position: top right;
+                        width: 100%;
+                    }
+                    
+                    @include MQ($M) {
+                        height: 330px;
+                        margin: 0;
+                        object-position: center right;
+                        width: 100%;
+                    }
+                    
+                    @include MQ($S) {
+                        height: 200px;
+                        margin: 0 0 -20px;
+                    }
+                    
+                    @include MQ($XS) {
+                        height: 180px;
+                    }
+                }
+            }
+            
+            &-container {
+                @include MQ($M) {
+                    flex-direction: column-reverse;
                 }
             }
         }
@@ -291,6 +381,10 @@
     
     #filmes {
         position: relative;
+        
+        @include MQ($M) {
+            flex-direction: column-reverse;
+        }
         
         &::after {
             background: url(../images/pages/sobre/line-2.svg) no-repeat;
@@ -319,11 +413,19 @@
             @include MQ($L) {
                 padding: 130px 0;
             }
-                
+            
             @include MQ($M) {
                 margin: 0;
                 padding: 0;
-                width: 100%;
+                width: 70%;
+            }
+            
+            @include MQ($S) {
+                margin: -15px 0 -20px;
+            }
+            
+            @include MQ($XS) {
+                width: 80%;
             }
             
             video {
@@ -339,10 +441,18 @@
                 }
                 
                 @include MQ($M) {
-                    height: 410px;
+                    height: 300px;
                     margin: 0;
                     object-fit: contain;
                     object-position: center;
+                }
+                
+                @include MQ($S) {
+                    height: 200px;
+                }
+                
+                @include MQ($XS) {
+                    height: 180px;
                 }
             }
         }
@@ -372,24 +482,17 @@
         }
     }
     
+    #exposicoes {
+        @include MQ($M) {
+            flex-direction: column-reverse;
+        }
+    }
+    
     footer {
         margin-top: 150px;
-                
+        
         @include MQ($M) {
             margin-top: 90px;
         }
     }
-
-    // h3 {
-    //     @include MQ($M) {
-    //         font-size: 26px;
-    //         margin-bottom: 15px;
-    //     }
-    // }
-
-    // h5 {
-    //     @include MQ($M) {
-    //         font-size: 20px;       
-    //     }
-    // }
 }
