@@ -209,6 +209,10 @@ menu {
         position: relative;
         transition: opacity .5s ease-in-out;
         
+        @include MQ($XS) {
+            padding-top: 0;
+        }
+        
         &.disabled {
             opacity: 0;
             pointer-events: none;
@@ -373,7 +377,10 @@ menu {
         }
         
         @include MQ($XS) {
+            align-items: center;
             box-shadow: none;
+            display: flex;
+            height: 100vh;
             overflow-x: hidden;
             overflow-y: auto;
             padding: 0 15px 20px;

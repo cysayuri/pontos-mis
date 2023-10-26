@@ -169,7 +169,18 @@
             }
             
             @include MQ($XS) {
+                display: none;
                 width: 85%;
+            }
+        }
+
+        img {
+            display: none;
+            margin: 40px auto 60px;
+            width: 75%;
+            
+            @include MQ($XS) {
+                display: block;
             }
         }
     }

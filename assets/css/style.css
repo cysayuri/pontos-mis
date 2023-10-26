@@ -661,6 +661,9 @@ menu {
   .menu__list {
     position: relative;
     transition: opacity .5s ease-in-out; }
+    @media screen and (max-width: 500px) {
+      .menu__list {
+        padding-top: 0; } }
     .menu__list.disabled {
       opacity: 0;
       pointer-events: none; }
@@ -782,7 +785,10 @@ menu {
       width: 45%; } }
   @media screen and (max-width: 500px) {
     .menu__content {
+      align-items: center;
       box-shadow: none;
+      display: flex;
+      height: 100vh;
       overflow-x: hidden;
       overflow-y: auto;
       padding: 0 15px 20px;
@@ -1232,7 +1238,15 @@ footer {
         width: 60%; } }
     @media screen and (max-width: 500px) {
       .home__logo video {
+        display: none;
         width: 85%; } }
+  .home__logo img {
+    display: none;
+    margin: 40px auto 60px;
+    width: 75%; }
+    @media screen and (max-width: 500px) {
+      .home__logo img {
+        display: block; } }
 
 .home__merch {
   position: relative; }
@@ -1606,7 +1620,7 @@ footer {
           margin-top: -10px; } }
       @media screen and (max-width: 500px) {
         .sobre__banner-img:first-child {
-          margin-left: -7px; } }
+          margin-left: 0; } }
       .sobre__banner-img:first-child::after {
         background: url(../images/pages/sobre/banner/effect-left.png);
         background-repeat: no-repeat;
@@ -1623,7 +1637,8 @@ footer {
             height: 240px; } }
         @media screen and (max-width: 500px) {
           .sobre__banner-img:first-child::after {
-            height: 200px; } }
+            height: 200px;
+            left: -40px; } }
       .sobre__banner-img:first-child img {
         height: 95vh;
         transform: scaleX(-1); }
@@ -1664,7 +1679,7 @@ footer {
         @media screen and (max-width: 500px) {
           .sobre__banner-img:last-child::after {
             height: 210px;
-            right: -170px; } }
+            right: -180px; } }
   .sobre__banner h1 {
     font-size: 95px;
     line-height: 1.05em;
@@ -1798,7 +1813,15 @@ footer {
           margin: 0 0 -20px; } }
       @media screen and (max-width: 500px) {
         .sobre #sobre .sobre__content-video video {
-          height: 180px; } }
+          height: 180px;
+          display: none; } }
+    .sobre #sobre .sobre__content-video img {
+      display: none;
+      margin: 10px auto 0;
+      width: 80%; }
+      @media screen and (max-width: 500px) {
+        .sobre #sobre .sobre__content-video img {
+          display: block; } }
   @media screen and (max-width: 960px) {
     .sobre #sobre .sobre__content-container {
       flex-direction: column-reverse; } }
@@ -1823,6 +1846,7 @@ footer {
         margin: -15px 0 -20px; } }
     @media screen and (max-width: 500px) {
       .sobre #filmes .sobre__content-video {
+        margin: -15px 30px -20px 0;
         width: 80%; } }
     .sobre #filmes .sobre__content-video video {
       height: 320px;
@@ -1845,7 +1869,15 @@ footer {
           height: 200px; } }
       @media screen and (max-width: 500px) {
         .sobre #filmes .sobre__content-video video {
+          display: none;
           height: 180px; } }
+    .sobre #filmes .sobre__content-video img {
+      display: none;
+      margin: 10px auto 0;
+      width: 80%; }
+      @media screen and (max-width: 500px) {
+        .sobre #filmes .sobre__content-video img {
+          display: block; } }
 
 .sobre #oficinas {
   position: relative; }

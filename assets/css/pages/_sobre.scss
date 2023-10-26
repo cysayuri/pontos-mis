@@ -78,7 +78,7 @@
                 }
                 
                 @include MQ($XS) {
-                    margin-left: -7px;
+                    margin-left: 0;
                 }
                 
                 &::after {
@@ -100,6 +100,7 @@
                     
                     @include MQ($XS) {
                         height: 200px;
+                        left: -40px;
                     }
                 }
                 
@@ -154,7 +155,7 @@
                     
                     @include MQ($XS) {
                         height: 210px;
-                        right: -170px;
+                        right: -180px;
                     }
                 }
             }
@@ -367,6 +368,17 @@
                     
                     @include MQ($XS) {
                         height: 180px;
+                        display: none;
+                    }
+                }
+
+                img {
+                    display: none;
+                    margin: 10px auto 0;
+                    width: 80%;
+                    
+                    @include MQ($XS) {
+                        display: block;
                     }
                 }
             }
@@ -425,6 +437,7 @@
             }
             
             @include MQ($XS) {
+                margin: -15px 30px -20px 0;
                 width: 80%;
             }
             
@@ -452,7 +465,18 @@
                 }
                 
                 @include MQ($XS) {
+                    display: none;
                     height: 180px;
+                }
+            }
+
+            img {
+                display: none;
+                margin: 10px auto 0;
+                width: 80%;
+                
+                @include MQ($XS) {
+                    display: block;
                 }
             }
         }
