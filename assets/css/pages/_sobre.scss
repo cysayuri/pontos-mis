@@ -299,27 +299,27 @@
             margin: 70px 20px;
         }
         
-        &::after {
-            background: url(../images/pages/sobre/line-1.svg) no-repeat;
-            background-size: contain;
-            background-position: right;
-            content: '';
-            height: 490px;
-            right: 0;
-            position: absolute;
-            top: 52%;
-            transform: translateY(-50%);
-            width: 275px;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/sobre/line-1.svg) no-repeat;
+        //     background-size: contain;
+        //     background-position: right;
+        //     content: '';
+        //     height: 490px;
+        //     right: 0;
+        //     position: absolute;
+        //     top: 52%;
+        //     transform: translateY(-50%);
+        //     width: 275px;
+        //     z-index: -1;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: $XL) {
+        //         display: none;
+        //     }
+        // }
         
         .sobre__content {
             &-video {
@@ -386,26 +386,26 @@
             flex-direction: column-reverse;
         }
         
-        &::after {
-            background: url(../images/pages/sobre/line-2.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 135px;
-            left: -100px;
-            position: absolute;
-            top: -25px;
-            transform: rotate(4deg);
-            width: 980px;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/sobre/line-2.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 135px;
+        //     left: -100px;
+        //     position: absolute;
+        //     top: -25px;
+        //     transform: rotate(4deg);
+        //     width: 980px;
+        //     z-index: -1;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: $XL) {
+        //         display: none;
+        //     }
+        // }
         
         .sobre__content-video {
             margin-left: -170px;
@@ -461,25 +461,25 @@
     #oficinas {
         position: relative;
         
-        &::after {
-            background: url(../images/pages/sobre/line-3.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 735px;
-            left: -95px;
-            position: absolute;
-            top: 50px;
-            width: 100vw;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/sobre/line-3.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 735px;
+        //     left: -95px;
+        //     position: absolute;
+        //     top: 50px;
+        //     width: 100vw;
+        //     z-index: -1;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: $XL) {
+        //         display: none;
+        //     }
+        // }
     }
     
     #exposicoes {

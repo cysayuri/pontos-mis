@@ -5,6 +5,19 @@
         position: relative;
         width: 100vw;
         
+        @include MQ($M) {
+            height: 300px;
+            margin-top: 75px;
+        }
+
+        @include MQ($S) {
+            height: 220px;
+        }
+
+        @include MQ($XS) {
+            height: 200px;
+        }
+        
         &::after {
             background: #00000050;
             content: '';
@@ -31,31 +44,43 @@
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+        
+            @include MQ($M) {
+                font-size: 70px;
+            }
+        
+            @include MQ($S) {
+                font-size: 52px;
+            }
+        
+            @include MQ($XS) {
+                font-size: 38px;
+            }
         }
     }
 
     &__ticket {
         position: relative;
      
-        &::after {
-            background: url(../images/pages/educativo/line-1.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 650px;
-            right: -10px;
-            position: absolute;
-            top: -90px;
-            width: 550px;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/educativo/line-1.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 650px;
+        //     right: -10px;
+        //     position: absolute;
+        //     top: -90px;
+        //     width: 550px;
+        //     z-index: -1;
 
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
 
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: 1200px) {
+        //         display: none;
+        //     }
+        // }
     }
     
     &__alunos, &__profs {
@@ -167,25 +192,25 @@
     &__profs {
         position: relative;
      
-        &::after {
-            background: url(../images/pages/educativo/line-2.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 275px;
-            left: -100px;
-            position: absolute;
-            top: -200px;
-            width: 100vw;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/educativo/line-2.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 275px;
+        //     left: -100px;
+        //     position: absolute;
+        //     top: -200px;
+        //     width: 100vw;
+        //     z-index: -1;
 
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
 
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: $XL) {
+        //         display: none;
+        //     }
+        // }
     }
     
     .flickity {

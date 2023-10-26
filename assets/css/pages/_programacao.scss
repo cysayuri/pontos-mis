@@ -5,6 +5,19 @@
         position: relative;
         width: 100vw;
         
+        @include MQ($M) {
+            height: 300px;
+            margin-top: 75px;
+        }
+
+        @include MQ($S) {
+            height: 220px;
+        }
+
+        @include MQ($XS) {
+            height: 200px;
+        }
+        
         &::after {
             background: #00000050;
             content: '';
@@ -31,6 +44,18 @@
             top: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+        
+            @include MQ($M) {
+                font-size: 70px;
+            }
+        
+            @include MQ($S) {
+                font-size: 52px;
+            }
+        
+            @include MQ($XS) {
+                font-size: 38px;
+            }
         }
     }
     
@@ -38,33 +63,46 @@
          margin: -130px auto -60px;
          padding-top: 100px;
          position: relative;
-     
-         &::after {
-             background: url(../images/pages/programacao/line.svg) no-repeat;
-             background-size: contain;
-             content: '';
-             height: 955px;
-             left: -100px;
-             position: absolute;
-             top: 50%;
-             transform: translateY(-50%);
-             width: 100vw;
-             z-index: -1;
-
-             @include MQ($L) {
-                 display: none;
-             }
- 
-             @media screen and (min-width: $XL) {
-                 display: none;
-             }
+         
+         @include MQ($XS) {
+             margin: 50px auto -30px;
+             padding-top: 0;
          }
+     
+        //  &::after {
+        //      background: url(../images/pages/programacao/line.svg) no-repeat;
+        //      background-size: contain;
+        //      content: '';
+        //      height: 955px;
+        //      left: -100px;
+        //      position: absolute;
+        //      top: 50%;
+        //      transform: translateY(-50%);
+        //      width: 100vw;
+        //      z-index: -1;
+
+        //      @include MQ($L) {
+        //          display: none;
+        //      }
+ 
+        //      @media screen and (min-width: 1200px) {
+        //          display: none;
+        //      }
+        //  }
 
         &-content {
             height: 100vh;
             max-height: 370px;
             position: relative;
             text-align: center;
+            
+            @include MQ($XS) {
+                height: 230px;
+                left: 50%;
+                max-height: none;
+                transform: translateX(-50%);
+                width: 340px;
+            }
             
             &::after {
                 background: url(../images/pages/programacao/maps/pontos.svg) no-repeat;
@@ -77,6 +115,14 @@
                 top: 48.3%;
                 transform: translate(-50%, -50%);
                 width: 85%;
+                z-index: 1;
+        
+                @include MQ($XS) {
+                    height: 97%;
+                    left: 52%;
+                    top: 48%;
+                    width: 95%;
+                }
             }
             
             svg {
@@ -86,6 +132,14 @@
             #mapa-bg {
                 height: 370px;
                 width: 500px;
+                
+                @include MQ($XS) {
+                    height: 230px;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 340px;
+                }
             }
         }
         
@@ -98,6 +152,14 @@
             top: 50%;
             transform: translate(-50%, -50%);
             width: 450px;
+            
+            @include MQ($XS) {
+                height: 100%;
+                left: 0;
+                top: 0;
+                transform: none;
+                width: 100%;
+            }
             
             svg {
                 cursor: pointer;
@@ -114,6 +176,12 @@
                 left: -27px;
                 height: 210px;
                 top: -10px;
+        
+                @include MQ($XS) {
+                    left: 1px;
+                    height: 140px;
+                    top: 1px;
+                }
             }
             
             #mapa-amarelo {
@@ -122,28 +190,68 @@
                 top: 55.3%;
                 transform: translate(-50%, -50%);
                 z-index: 1;
+        
+                @include MQ($XS) {
+                    left: 48.7%;
+                    height: 155px;
+                    top: 55%;
+                }
             }
 
             #mapa-verde {
                 bottom: -8px;
                 height: 235px;
                 right: -23px;
+        
+                @include MQ($XS) {
+                    bottom: 0.5px;
+                    height: 162px;
+                    right: 0;
+                }
             }
         }
     }
     
     &__list {
+        overflow: hidden;
         margin: 50px auto 40px;
+
+        @include MQ($M) {
+            margin: 70px 40px 40px;
+        }
+
+        @include MQ($S) {
+            margin: 70px 20px 40px;
+        }
 
         &-content {
             flex-wrap: wrap;
             margin: 0 -1%;
+
+            @include MQ($M) {
+                margin: 0 -2%;
+            }
         }
         
         &-item {
             opacity: 1;
             pointer-events: auto;
             margin: 2% 1%;
+
+            @include MQ($M) {
+                margin: 2%;
+                width: 46%;
+            }
+
+            @include MQ($S) {
+                margin: 3% 2%;
+                width: 70%;
+            }
+        
+            @include MQ($XS) {
+                margin: 2% 0 6%;
+                width: 310px;
+            }
             
             &.disabled {
                 height: 0;
@@ -161,6 +269,26 @@
                 height: 450px;
                 
                 @include MQ($L) {
+                    height: 390px;
+                }
+
+                @include MQ($M) {
+                    height: 500px;
+                }
+
+                @include MQ(840px) {
+                    height: 450px;
+                }
+
+                @include MQ(780px) {
+                    height: 420px;
+                }
+
+                @include MQ($S) {
+                    height: 460px;
+                }
+        
+                @include MQ($XS) {
                     height: 390px;
                 }
             }
@@ -244,14 +372,19 @@
 
         &-empty {
             height: 0;
-            margin: 50px auto;
+            margin: 0 auto;
             max-width: 670px;
             opacity: 0;
             pointer-events: none;
             text-align: center;
             transition: opacity .5s ease-in-out;
+
+            @include MQ($S) {
+                max-width: 100%;
+            }
             
             &.active {
+                margin: 50px auto;
                 opacity: 1;
                 pointer-events: auto;
                 height: auto;
@@ -261,6 +394,14 @@
                 font-family: $title-t;
                 font-weight: 900;
                 font-size: 32px;
+
+                @include MQ($S) {
+                    font-size: 28px;
+                }
+
+                @include MQ($XS) {
+                    font-size: 22px;
+                }
                 
                 b {
                     font-family: $title-b;
@@ -272,6 +413,14 @@
                 font-weight: 100;
                 font-size: 28px;
                 position: relative;
+
+                @include MQ($S) {
+                    font-size: 26px;
+                }
+
+                @include MQ($XS) {
+                    font-size: 20px;
+                }
                         
                 &::before {
                     border-top: 5px dotted #000;
@@ -281,6 +430,12 @@
                     top: -20px;
                     transform: translateX(-50%);
                     width: 20px;
+            
+                    @include MQ($XS) {
+                        border-width: 3px;
+                        top: -15px;
+                        width: 15px;
+                    }
                 }
             }
         }
@@ -290,6 +445,14 @@
         align-items: center;
         flex-direction: column;
         margin: 30px auto -40px;
+
+        @include MQ($M) {
+            margin: 30px 40px -40px;
+        }
+
+        @include MQ($S) {
+            margin: 30px 20px -40px;
+        }
         
         &-btn {
             align-items: center;
@@ -332,6 +495,10 @@
             opacity: 0;
             pointer-events: none;
             width: 350px;
+        
+            @include MQ($XS) {
+                width: 85%;
+            }
             
             &.active {
                 opacity: 1;

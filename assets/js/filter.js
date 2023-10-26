@@ -63,6 +63,7 @@ programMap.forEach(elem => {
     elem.addEventListener('click', () => {
         filterBtn.classList.remove('disabled')
         filterField.classList.remove('active')
+        programEmpty.classList.remove('active')
         
         programMap.forEach(elem => {
             elem.classList.remove('active')

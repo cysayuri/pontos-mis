@@ -7,6 +7,15 @@
         position: relative;
         width: 100vw;
         
+        @include MQ($M) {
+            height: 300px;
+            margin-top: 75px;
+        }
+
+        @include MQ($S) {
+            height: 220px;
+        }
+        
         img {
             height: 100%;
             object-fit: cover;

@@ -11,12 +11,9 @@
     }
 
     @include MQ($S) {
-        margin: 50px 20px 70px;
-        width: calc(100% - 40px);
-    }
-
-    @include MQ($S) {
         margin: 30px 20px 50px;
+        overflow: hidden;
+        width: calc(100% - 40px);
     }
 
     @include MQ($XS) {

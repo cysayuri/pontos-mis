@@ -42,6 +42,7 @@ menu {
     }
     
     @include MQ($M) {
+        background: $black;
         width: 100vw;
     }
     
@@ -111,7 +112,7 @@ menu {
                 @include MQ($XS) {
                     font-size: 22px;
                 }
-
+                
                 &:after {
                     background: $primary;
                     content: '';
@@ -165,6 +166,7 @@ menu {
         z-index: 8;
         
         @include MQ($M) {
+            filter: invert(1) brightness(5);
             width: 35%;
         }
         
@@ -259,6 +261,10 @@ menu {
         width: 30px;
         z-index: 10;
         
+        @include MQ($M) {
+            border-color: $white;
+        }
+        
         @include MQ($S) {
             margin: 3px 0 0;
         }
@@ -313,6 +319,10 @@ menu {
             transition: all .5s ease-in-out;
             width: 30px;
             
+            @include MQ($M) {
+                background: $white;
+            }
+            
             @include MQ($XS) {
                 width: 25px;
             }
@@ -346,7 +356,7 @@ menu {
             background: $black;
             bottom: 0px;
             box-shadow: 5px 10px 10px rgba(0, 0, 0, .5);
-            height: calc(100vh - 75px);
+            height: calc(100vh - 74px);
             opacity: 1;
             padding: 10px 30px 0 20px;
             pointer-events: none;
@@ -376,6 +386,10 @@ menu {
 menu ul li a {
     color: $black;
     transition: all .5s ease-in-out;
+
+    @include MQ($M) {
+        color: $white;
+    }
     
     &:after {
         background: $primary;
@@ -387,11 +401,11 @@ menu ul li a {
 .home {
     menu {
         background: #00000041;
-
+        
         @include MQ($M) {
             background: $black;
         }
-
+        
         ul li a {
             color: $white;
         }
@@ -415,9 +429,17 @@ menu ul li a {
 .sobre {
     menu {
         background: #dddddd41;
-
+        
+        @include MQ($M) {
+            background: $black;
+        }
+        
         ul li a {
             color: $black;
+            
+            @include MQ($M) {
+                color: $white;
+            }
         }
     }
     
@@ -425,8 +447,16 @@ menu ul li a {
         &__burguer {
             border-color: $black;
             
+            @include MQ($M) {
+                border-color: $white;
+            }
+            
             &:before, &:after {
                 background: $black;
+                
+                @include MQ($M) {
+                    background: $white;
+                }
             }
         }
     }

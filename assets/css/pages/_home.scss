@@ -31,25 +31,25 @@
             overflow: hidden;
         }
         
-        &::after {
-            background: url(../images/pages/home/line-1.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 725px;
-            left: 30px;
-            position: absolute;
-            top: -100px;
-            width: calc(100vw - 30px);
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/home/line-1.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 725px;
+        //     left: 30px;
+        //     position: absolute;
+        //     top: -100px;
+        //     width: calc(100vw - 30px);
+        //     z-index: -1;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: 1200px) {
+        //         display: none;
+        //     }
+        // }
     }
     
     &__sobre {
@@ -177,25 +177,25 @@
     &__merch {
         position: relative;
         
-        &::after {
-            background: url(../images/pages/home/line-2.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 590px;
-            right: 0;
-            position: absolute;
-            top: 0;
-            width: 150px;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/home/line-2.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 590px;
+        //     right: 0;
+        //     position: absolute;
+        //     top: 0;
+        //     width: 150px;
+        //     z-index: -1;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: 1200px) {
+        //         display: none;
+        //     }
+        // }
         
         &-content {
             margin: 70px auto 130px;
@@ -297,25 +297,25 @@
             margin: 70px auto 80px;
         }
         
-        &::after {
-            background: url(../images/pages/home/line-3.svg) no-repeat;
-            background-size: contain;
-            content: '';
-            height: 1080px;
-            left: 0;
-            position: absolute;
-            top: -30px;
-            width: 100vw;
-            z-index: -1;
+        // &::after {
+        //     background: url(../images/pages/home/line-3.svg) no-repeat;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 1080px;
+        //     left: 0;
+        //     position: absolute;
+        //     top: -30px;
+        //     width: 100vw;
+        //     z-index: -1;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: 1200px) {
+        //         display: none;
+        //     }
+        // }
         
         h3 {
             font-family: $title-b;
@@ -564,27 +564,27 @@
             padding: 50px 0 0;
         }
         
-        &:before {
-            background: url(../images/effects/line-12.svg) no-repeat;
-            background-position: center;
-            background-size: contain;
-            content: '';
-            height: 380px;
-            left: 42%;
-            opacity: .3;
-            position: absolute;
-            top: 25px;
-            transform: translateX(-50%) rotate(12deg);
-            width: 300px;
+        // &:before {
+        //     background: url(../images/effects/line-12.svg) no-repeat;
+        //     background-position: center;
+        //     background-size: contain;
+        //     content: '';
+        //     height: 380px;
+        //     left: 42%;
+        //     opacity: .3;
+        //     position: absolute;
+        //     top: 25px;
+        //     transform: translateX(-50%) rotate(12deg);
+        //     width: 300px;
             
-            @include MQ($L) {
-                display: none;
-            }
+        //     @include MQ($L) {
+        //         display: none;
+        //     }
             
-            @media screen and (min-width: $XL) {
-                display: none;
-            }
-        }
+        //     @media screen and (min-width: 1200px) {
+        //         display: none;
+        //     }
+        // }
         
         &-list {
             @include MQ($M) {
