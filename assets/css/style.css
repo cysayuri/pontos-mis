@@ -2269,6 +2269,9 @@ footer {
   @media screen and (max-width: 1170px) {
     .educativo__alunos, .educativo__profs {
       margin: 70px 40px 110px; } }
+  @media screen and (max-width: 758px) {
+    .educativo__alunos, .educativo__profs {
+      margin: 70px 20px 110px; } }
   .educativo__alunos-desc, .educativo__profs-desc {
     margin-bottom: -20px;
     max-width: 500px; }
@@ -2282,13 +2285,22 @@ footer {
       font-weight: 300;
       margin: 0 0 20px;
       text-transform: uppercase; }
+      @media screen and (max-width: 500px) {
+        .educativo__alunos-desc h3, .educativo__profs-desc h3 {
+          font-size: 22px; } }
     .educativo__alunos-desc p, .educativo__profs-desc p {
       font-family: "DMSans Regular", "Roboto", "Calibri", "sans-serif";
       font-size: 20px; }
+      @media screen and (max-width: 500px) {
+        .educativo__alunos-desc p, .educativo__profs-desc p {
+          font-size: 16px; } }
   .educativo__alunos-list, .educativo__profs-list {
     padding: 0 1%;
     max-width: 920px;
     margin: auto; }
+    @media screen and (max-width: 500px) {
+      .educativo__alunos-list, .educativo__profs-list {
+        margin: 0 20px; } }
   .educativo__alunos-item, .educativo__profs-item {
     align-items: center;
     flex-direction: column;
@@ -2296,6 +2308,23 @@ footer {
     margin: 0 1%;
     padding: 70px 0;
     width: 30%; }
+    @media screen and (max-width: 960px) {
+      .educativo__alunos-item, .educativo__profs-item {
+        height: 380px; } }
+    @media screen and (max-width: 850px) {
+      .educativo__alunos-item, .educativo__profs-item {
+        height: 360px; } }
+    @media screen and (max-width: 800px) {
+      .educativo__alunos-item, .educativo__profs-item {
+        height: 340px; } }
+    @media screen and (max-width: 758px) {
+      .educativo__alunos-item, .educativo__profs-item {
+        height: 300px; } }
+    @media screen and (max-width: 500px) {
+      .educativo__alunos-item, .educativo__profs-item {
+        height: 350px;
+        margin: 0 5%;
+        width: 230px; } }
     .educativo__alunos-item img, .educativo__profs-item img {
       border-radius: 20px;
       height: 100%;
@@ -2304,6 +2333,18 @@ footer {
       object-fit: cover;
       transition: all .5s ease-in-out;
       width: 100%; }
+      @media screen and (max-width: 960px) {
+        .educativo__alunos-item img, .educativo__profs-item img {
+          max-height: 150px;
+          max-width: 150px; } }
+      @media screen and (max-width: 758px) {
+        .educativo__alunos-item img, .educativo__profs-item img {
+          max-height: 90px;
+          max-width: 90px; } }
+      @media screen and (max-width: 500px) {
+        .educativo__alunos-item img, .educativo__profs-item img {
+          max-height: 180px;
+          max-width: 180px; } }
     .educativo__alunos-item h4, .educativo__profs-item h4 {
       font-family: "TypoRound Regular", "Roboto", "Calibri", "sans-serif";
       font-weight: 100;
@@ -2312,6 +2353,16 @@ footer {
       opacity: 0;
       position: relative;
       text-transform: uppercase; }
+      @media screen and (max-width: 960px) {
+        .educativo__alunos-item h4, .educativo__profs-item h4 {
+          font-size: 18px; } }
+      @media screen and (max-width: 758px) {
+        .educativo__alunos-item h4, .educativo__profs-item h4 {
+          font-size: 14px;
+          margin: 20px -10px -40px; } }
+      @media screen and (max-width: 500px) {
+        .educativo__alunos-item h4, .educativo__profs-item h4 {
+          font-size: 16px; } }
       .educativo__alunos-item h4::before, .educativo__alunos-item h4::after, .educativo__profs-item h4::before, .educativo__profs-item h4::after {
         content: '';
         left: 50%;
@@ -2337,6 +2388,18 @@ footer {
       max-height: 100%;
       max-width: 100%;
       width: 300px; }
+      @media screen and (max-width: 960px) {
+        .educativo__alunos-item.is-selected img, .educativo__profs-item.is-selected img {
+          height: 200px;
+          width: 200px; } }
+      @media screen and (max-width: 758px) {
+        .educativo__alunos-item.is-selected img, .educativo__profs-item.is-selected img {
+          height: 130px;
+          width: 130px; } }
+      @media screen and (max-width: 500px) {
+        .educativo__alunos-item.is-selected img, .educativo__profs-item.is-selected img {
+          height: 270px;
+          width: 270px; } }
     .educativo__alunos-item.is-selected h4, .educativo__profs-item.is-selected h4 {
       opacity: 1; }
 
@@ -2383,6 +2446,12 @@ footer {
   max-width: 800px;
   padding: 40px 0;
   position: relative; }
+  @media screen and (max-width: 960px) {
+    .educativo__final {
+      margin: 20px 40px 110px; } }
+  @media screen and (max-width: 758px) {
+    .educativo__final {
+      margin: 20px 20px 110px; } }
   .educativo__final::before, .educativo__final::after {
     border-top: 5px dotted #000;
     content: '';
@@ -2400,6 +2469,15 @@ footer {
     letter-spacing: 1px;
     margin: 0;
     text-align: center; }
+    @media screen and (max-width: 960px) {
+      .educativo__final h2 {
+        font-size: 32px; } }
+    @media screen and (max-width: 758px) {
+      .educativo__final h2 {
+        font-size: 28px; } }
+    @media screen and (max-width: 500px) {
+      .educativo__final h2 {
+        font-size: 24px; } }
     .educativo__final h2 span {
       font-family: "DMSans Regular", "Roboto", "Calibri", "sans-serif";
       margin-left: -7px; }
@@ -2574,7 +2652,7 @@ footer {
           font-size: 28px; } }
       @media screen and (max-width: 500px) {
         .next__final h2 {
-          font-size: 26px; } }
+          font-size: 24px; } }
       .next__final h2 span {
         font-family: "DMSans Regular", "Roboto", "Calibri", "sans-serif";
         margin-left: -7px; }
