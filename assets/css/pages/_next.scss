@@ -197,6 +197,14 @@
         max-width: 800px;
         padding: 40px 0;
         position: relative;
+            
+        @include MQ($M) {
+            margin: 20px 40px 110px;
+        }
+            
+        @include MQ($S) {
+            margin: 50px 20px 110px;
+        }
         
         &::before, &::after {
             border-top: 5px dotted #000;
@@ -221,6 +229,18 @@
             letter-spacing: 1px;
             margin: 0;
             text-align: center;
+            
+            @include MQ($M) {
+                font-size: 32px;
+            }
+            
+            @include MQ($S) {
+                font-size: 28px;
+            }
+            
+            @include MQ($XS) {
+                font-size: 26px;
+            }
             
             span {
                 font-family: $font-r;
