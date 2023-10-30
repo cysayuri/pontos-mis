@@ -11,7 +11,7 @@
             height: 300px;
             margin-top: 75px;
         }
-
+        
         @include MQ($S) {
             height: 220px;
         }
@@ -36,7 +36,7 @@
             flex-wrap: wrap;
             margin: 0 -1%;
         }
-
+        
         &-item {
             background: transparent;
             cursor: pointer;
@@ -44,6 +44,10 @@
             max-height: 412px;
             max-width: 275px;
             width: 23%;
+
+            @include MQ($XS) {
+                width: 31%;
+            }
             
             img {
                 height: 100%;
@@ -57,7 +61,7 @@
             }
         }
     }
-
+    
     &__modal {
         background-color: #000000da;
         display: none;
@@ -77,6 +81,37 @@
             top: 50%;
             transform: translate(-50%, -50%);
             width: 450px;
+            
+            @include MQ($L) {
+                height: calc(90vh - 10px);
+                padding: 5px 0;
+                width: 350px;
+            }
+            
+            @include MQ($M) {
+                height: 75vh;
+                padding: 5px 0;
+                width: 75vw;
+            }
+            
+            @include MQ(870px) {
+                width: 71vw;
+            }
+            
+            @include MQ(800px) {
+                height: 830px;
+                width: 550px;
+            }
+            
+            @include MQ($S) {
+                height: 82vh;
+                width: 72vw;
+            }
+            
+            @include MQ($XS) {
+                height: 445px;
+                width: 290px;
+            }
         }
         
         &-close {
@@ -90,6 +125,40 @@
             top: 20px;
             transform: translateX(-50%);
             transition: color .5s ease-in-out;
+            
+            @include MQ($L) {
+                left: 70%;
+            }
+            
+            @include MQ($M) {
+                font-size: 95px;
+                left: auto;
+                right: 90px;
+                top: 60px;
+            }
+            
+            @include MQ(870px) {
+                font-size: 90px;
+                right: 90px;
+                top: 50px;
+            }
+            
+            @include MQ(800px) {
+                font-size: 75px;
+                right: 90px;
+                top: 20px;
+            }
+
+            @include MQ($S) {
+                font-size: 55px;
+                right: 20px;
+                top: 20px;
+            }
+
+            @include MQ($XS) {
+                right: 15px;
+                top: 15px;
+            }
             
             &:hover,
             &:focus {
@@ -124,6 +193,16 @@
                 transform: translate(-35%, -50%);
                 transition: all .5s ease-in-out;
                 width: 25px;
+                
+                @include MQ($S) {
+                    height: 40px;
+                    width: 20px;
+                }
+                
+                @include MQ($XS) {
+                    height: 35px;
+                    width: 15px;
+                }
             }
             
             svg {
@@ -133,6 +212,18 @@
             &--prev {
                 left: -70px;
                 
+                @include MQ($M) {
+                    left: -50px;
+                }
+                
+                @include MQ($S) {
+                    left: -30px;
+                }
+                
+                @include MQ($XS) {
+                    left: -17px;
+                }
+                
                 &::after {
                     transform: translate(-70%, -50%) rotate(180deg);
                 }
@@ -140,6 +231,18 @@
             
             &--next {
                 right: -70px;
+                
+                @include MQ($M) {
+                    right: -50px;
+                }
+                
+                @include MQ($S) {
+                    right: -30px;
+                }
+                
+                @include MQ($XS) {
+                    right: -17px;
+                }
             }
         }
         
@@ -149,12 +252,21 @@
             position: relative;
             width: 400px;
             
+            @include MQ($L) {
+                height: 100%;
+                width: 350px;
+            }
+            
+            @include MQ($M) {
+                width: 100%;
+            }
+            
             img {
                 height: 100%;
                 object-fit: contain;
                 width: 100%;
             }
-    
+            
             i {
                 color: #000;
                 font-size: 40px;
@@ -165,6 +277,18 @@
                 opacity: 0;
                 transition: opacity .5s ease-in-out;
                 z-index: -1;
+                
+                @include MQ($M) {
+                    font-size: 55px;
+                }
+                
+                @include MQ($S) {
+                    font-size: 40px;
+                }
+                
+                @include MQ($XS) {
+                    font-size: 30px;
+                }
             }
             
             &:after {
@@ -177,8 +301,12 @@
                 top: 0;
                 transition: opacity .5s ease-in-out;
                 width: 100%;
+                
+                @include MQ($L) {
+                    height: 100%;
+                }
             }
-    
+            
             &:hover {
                 &:after {
                     opacity: 1;
@@ -197,11 +325,11 @@
         max-width: 800px;
         padding: 40px 0;
         position: relative;
-            
+        
         @include MQ($M) {
             margin: 20px 40px 110px;
         }
-            
+        
         @include MQ($S) {
             margin: 50px 20px 110px;
         }
