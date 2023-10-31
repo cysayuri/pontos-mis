@@ -52,7 +52,7 @@
             img {
                 height: 100%;
                 transition: .5s;
-                object-fit: contain;
+                object-fit: cover;
                 width: 100%;
                 
                 &:hover {
@@ -109,7 +109,7 @@
             }
             
             @include MQ($XS) {
-                height: 445px;
+                height: 415px;
                 width: 290px;
             }
         }

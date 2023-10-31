@@ -2552,7 +2552,7 @@ footer {
     .next__galeria-item img {
       height: 100%;
       transition: .5s;
-      object-fit: contain;
+      object-fit: cover;
       width: 100%; }
       .next__galeria-item img:hover {
         box-shadow: 0 5px 10px 3px #D08CF8, 0 7px 15px 5px #D08CF8; }
@@ -2597,7 +2597,7 @@ footer {
           width: 72vw; } }
       @media screen and (max-width: 500px) {
         .next__modal-content {
-          height: 445px;
+          height: 415px;
           width: 290px; } }
     .next__modal-close {
       color: #fff;
