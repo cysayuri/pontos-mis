@@ -472,19 +472,23 @@
                 transition: opacity .5s ease-in-out;
             }
             
-            i {
+            i, .i {
                 font-size: 34px;
                 transition: all .5s ease-in-out;
+                height: 30px;
+                width: 30px;
             }
-
+            
             &:hover {
                 p {
                     opacity: 1;
                 }
-
-                i {
+                
+                i, .i {
                     font-size: 42px;
                     margin: -4px 0;
+                    height: 35px;
+                    width: 35px;
                 }
             }
 

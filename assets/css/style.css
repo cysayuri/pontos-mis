@@ -2227,14 +2227,18 @@ footer {
       margin: 0 15px 0 0;
       opacity: 0;
       transition: opacity .5s ease-in-out; }
-    .programacao__filter-btn i {
+    .programacao__filter-btn i, .programacao__filter-btn .i {
       font-size: 34px;
-      transition: all .5s ease-in-out; }
+      transition: all .5s ease-in-out;
+      height: 30px;
+      width: 30px; }
     .programacao__filter-btn:hover p {
       opacity: 1; }
-    .programacao__filter-btn:hover i {
+    .programacao__filter-btn:hover i, .programacao__filter-btn:hover .i {
       font-size: 42px;
-      margin: -4px 0; }
+      margin: -4px 0;
+      height: 35px;
+      width: 35px; }
     .programacao__filter-btn.disabled {
       opacity: 0;
       pointer-events: none; }
