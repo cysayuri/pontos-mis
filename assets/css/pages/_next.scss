@@ -110,7 +110,7 @@
             
             @include MQ($XS) {
                 height: 415px;
-                width: 290px;
+                width: 270px;
             }
         }
         
@@ -261,13 +261,13 @@
                 width: 100%;
             }
             
-            img {
+            img:not(.i) {
                 height: 100%;
                 object-fit: contain;
                 width: 100%;
             }
             
-            i {
+            i, .i {
                 color: #000;
                 font-size: 40px;
                 left: 50%;
@@ -277,17 +277,22 @@
                 opacity: 0;
                 transition: opacity .5s ease-in-out;
                 z-index: -1;
+                height: 40px;
+                width: 40px;
                 
                 @include MQ($M) {
-                    font-size: 55px;
+                    height: 50px;
+                    width: 50px;
                 }
                 
                 @include MQ($S) {
-                    font-size: 40px;
+                    height: 40px;
+                    width: 40px;
                 }
                 
                 @include MQ($XS) {
-                    font-size: 30px;
+                    height: 30px;
+                    width: 30px;
                 }
             }
             
@@ -312,7 +317,7 @@
                     opacity: 1;
                 }
                 
-                i {
+                i, .i {
                     opacity: 1;
                     z-index: 11;
                 }

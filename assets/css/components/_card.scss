@@ -11,7 +11,7 @@
         width: 70%;
     }
     
-    img {
+    img:not(.i) {
         background: $white;
         border: 7px solid $black;
         border-radius: 10px;

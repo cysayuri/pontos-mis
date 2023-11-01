@@ -265,7 +265,7 @@
                 }
             }
             
-            img {
+            img:not(.i) {
                 height: 450px;
                 
                 @include MQ($L) {
@@ -291,6 +291,10 @@
                 @include MQ($XS) {
                     height: 390px;
                 }
+            }
+
+            .i {
+                margin: 2px 0 -2px;
             }
             
             &.roxo {
